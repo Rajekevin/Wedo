@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="It's time to be awesome !" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta property="og:image" content="public/img/wedo.png" />
-        <link rel="stylesheet" href="public/css/style.css" />
-        <link rel="stylesheet" href="public/css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/form.css" />
+
+
 
         <title>Wedo</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -34,6 +39,7 @@
                 });
             });
         </script>
+      <!--END SMOOTHSCROLL -->
 
     </head>
 </head>
@@ -41,7 +47,7 @@
 <body>
     <header class="scroll">
         <div class="content">
-            <div class="logo"><a href="#banner" class="js-scrollTo"><img src="public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
+            <div class="logo"><a href="#banner" class="js-scrollTo"><img src="<?= WEBROOT; ?>/public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
             <nav>
                 <ul>
                     <li><a class="js-scrollTo" href="#musculation">Musculation</a>
@@ -58,7 +64,7 @@
 
                     <li><a href="">Evenements</a></li>
 
-                    <li><a href="">Inscription</a></li>
+                    <li><a class="js-scrollTo" href="<?= WEBROOT; ?>user/subscribe">Inscription</a></li>
                     <li><a href="">Connexion</a></li>
                     <li><a href="">Contact</a>
 
@@ -85,7 +91,7 @@
             </div> -->
         </div>
     </header>
-
+<br/><br/><br/> <br/><br/>
 
 
  <?php include $this->view;?>
@@ -103,13 +109,13 @@
         <a href="#" class="footer__logo"></a>
 
                 <p class="footer-links">
-                    <a href="index'; ?>">Acceuil</a>
+                    <a href="index">Acceuil</a>
                     ·
-                    <a href="musculation'; ?>">Musculation</a>
+                    <a href="musculation">Musculation</a>
                     ·
-                    <a href="fitness'; ?>">Fitness</a>
+                    <a href="fitness">Fitness</a>
                     ·
-                    <a href="reglement'; ?>">Mentions Légales</a>
+                    <a href="reglement">Mentions Légales</a>
                 </p>
 
                 <p class="footer-company-name">Designed, Developed &amp; Hosted By Wedo &copy; 2016
