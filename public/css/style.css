@@ -409,6 +409,13 @@ header nav ul li:hover .sous_menu{
 	.banner_container .home_slider{
 		height: auto;
 	}
+
+
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
 }
 
 
@@ -433,6 +440,18 @@ header nav ul li:hover .sous_menu{
 	header nav ul li a{
 		font-size: 20px;
 	}
+
+
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
+
+
+
+
+
 }
 
 
@@ -449,6 +468,15 @@ header nav ul li:hover .sous_menu{
 	.banner_container .home_slider{
 		height: auto;
 	}
+
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
+
+
+
 }
 @media (max-width: 1023px) {
 	.content{
@@ -521,6 +549,12 @@ header nav ul li:hover .sous_menu{
 	footer .black_logo{
 		width: 288px;
 		margin-top: 20px;
+	}
+
+
+	#contact .footer-distributed {
+		max-width: 288px;
+		height: 20px;
 	}
 
 	header{
@@ -611,6 +645,11 @@ header nav ul li:hover .sous_menu{
 		width: 25px;
 		height: 25px;
 	}
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
 }
 @media (max-width: 767px) {
 
@@ -639,6 +678,12 @@ header nav ul li:hover .sous_menu{
 	.banner_container .home_slider {
 		font-size: 18px;
 		line-height: 22px;
+	}
+
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
 	}
 }
 @media (max-width: 767px) {
@@ -717,6 +762,12 @@ header nav ul li:hover .sous_menu{
 		text-align: center;
 		margin: 0 auto;
 	}
+
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
 }
 @media (max-width: 320px) {
 }
@@ -729,6 +780,11 @@ header nav ul li:hover .sous_menu{
 .error_404 .namesportife span{
 	font-size: 42px;
 }
+
+#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
 
 
 
@@ -782,6 +838,11 @@ header nav ul li:hover .sous_menu{
 		display: inline-block;
 		margin-top: 10px;
 	}
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
 }
 
 .list_all_users #list_admins,
@@ -815,6 +876,12 @@ header nav ul li:hover .sous_menu{
 	}
 	.Wedo_Button.see_more{
 		width: 260px;
+	}
+
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
 	}
 
 }
@@ -1024,3 +1091,6 @@ h1:before {
     position: relative;
     margin: 1% 0 0 0%;
 }
+
+/*style form*/
+
