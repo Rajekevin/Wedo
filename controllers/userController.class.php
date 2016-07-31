@@ -166,13 +166,10 @@ class userController{
 			$date = date('Y-m-d', strtotime($date1));
 			$membre->setBirth($date);				
 			$membre->setPass($pwd);
-			// $membre->setVille($args['ville']);
 			$membre->setDateInscription(date('Y-m-d H:i:s'));
 			$membre->setActif($actif);
-			// $membre->setMail($args['email']);
 			$membre->setVille($args['ville']);
 			$membre->setStatut($statut);			
-			// $membre->setAvatar($img);
 			$membre->setToken();
 			$membre->save();
 
@@ -209,131 +206,233 @@ class userController{
 	public function activerCompteAction($args){
 		session_start();
 		$v = new view();
+
+
 		$v->setView("user/login");
 		//var_dump($args);
 		
-		if(isset($args['login'])){
-			$error = FALSE;
-			$msg_error = "Identifiants incorrects";
+
+		$id = $_GET['id'];
+		var_dump($id);
+	
+					//On renseigne la classe user
+
+					$membre=  new membre();
+					$membre->setId($id);
+		         	$membre->setToken();
+		         	//On active le compte
+
+		         	$actif=1;
+		         	$membre->setActif($actif);
+		         	$membre->save();
+
+
+
+		         	$error = FALSE;
+					$msg_error= "Identifiants incorrects";
 
 			//Si les inputs email et password sont initialisé
 			if(isset($args['email']) AND isset($args['pass'])){
 				
 				//Demander au serveur SQL toutes les informations en fonction de l'email
-				$membre = new Membre();
-				$tab = $user->getOneBy(['email'=>$args['email']]);
+				$membre= new membre();
+				$tab = $membre->getOneBy(['mail'=>$args['email']]);
+
 
 				//Si aucune information, identifiants not ok
 				if(empty($tab)){
 					$error = TRUE;
-				}else{
-
-					//Sinon on vérifie le mot de passe
-					$pwd = $tab['pass'];
+				}else{				
 					
-					if (!password_verify($args['pass'], $pwd)) {
+
+		         	$membre->setMail($args['email']);				
+					if (!password_verify($args['pass'], $tab['pass'])) {
 					    $error = TRUE;
 					}
+
+
+						//vérification actif
+				if ($tab['actif'] == 0) {
+					$error = TRUE;
+					$msg_error = "Votre compte n'est pas encore activé";
+					}
+					
 				}
+
+			
+
 
 				if($error == TRUE){
 		            echo "<ul>";
 		            echo $msg_error;
 		            echo "</ul>";
 		        }else{
-					//On renseigne la classe user
-					$membre->setId($tab['id']);
+		         	
+		         	//On renseigne la classe user
+					//$membre->setId($args['id']);
 		         	$membre->setToken();
-		         	//On active le compte
-		         	$membre->setActif(1);
 		         	$membre->save();
-
-		       
-
-					//on déclare les variables session avec l'id et le token de l'user
+		         
 		         	$_SESSION['id'] = $tab['id'];
 		         	$_SESSION['login'] = $tab['login'];
-					$_SESSION['token'] = $user->getToken();
-					$_SESSION['id'] = $tab['id'];
-					$_SESSION['avatar'] = $tab['avatar'];
+					$_SESSION['token'] = $tab['token'];
+					$_SESSION['statut'] = $tab['statut'];
 
-		        	// header('Location: '.LIEN_ABSOLU);
+					header('Location: '.LINK);
+					//on déclare les variables session avec l'id et le token de l'user		         
+		        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
 		        }
 
 			}
-				
-		}
+
+		       
+
+		
 	}
 	/*end*/
 
 
-
-
-
-		public function loginAction($args){
+public function loginAction($args)
+	{
 		session_start();
 		$v = new view();
 		$v->setView("user/login");
-				
-		//var_dump($args);
+
+
+
+
 		
-		if(isset($args['login'])){
 			$error = FALSE;
-			$msg_error = "Identifiants incorrects";
+			$msg_error= "Identifiants incorrects";
 
 			//Si les inputs email et password sont initialisé
 			if(isset($args['email']) AND isset($args['pass'])){
 				
 				//Demander au serveur SQL toutes les informations en fonction de l'email
-				$membre = new membre();
-				$tab = $membre->getOneBy(['email'=>$args['email']]);
+				$membre= new membre();
+				$tab = $membre->getOneBy(['mail'=>$args['email']]);
+
 
 				//Si aucune information, identifiants not ok
 				if(empty($tab)){
 					$error = TRUE;
-				}else{
-
-					//Sinon on vérifie le mot de passe
-					$pwd = $tab['pass'];
+				}else{				
 					
-					if (!password_verify($args['pass'], $pwd)) {
+
+		         	$membre->setMail($args['email']);				
+					if (!password_verify($args['pass'], $tab['pass'])) {
 					    $error = TRUE;
 					}
-				}
 
-				//vérification actif
+
+						//vérification actif
 				if ($tab['actif'] == 0) {
 					$error = TRUE;
 					$msg_error = "Votre compte n'est pas encore activé";
+					}
+					
 				}
+
+				
+
 
 				if($error == TRUE){
 		            echo "<ul>";
 		            echo $msg_error;
 		            echo "</ul>";
 		        }else{
-					//On renseigne la classe user
-					$membre->setId($tab['id']);
+		         	
+		         	//On renseigne la classe user
+					//$membre->setId($args['id']);
 		         	$membre->setToken();
 		         	$membre->save();
-
-		         	//setcookie("name",$user["name"]);
-					//setcookie("firstname",$user["firstname"]);
-
-					//on déclare les variables session avec l'id et le token de l'user
+		         
 		         	$_SESSION['id'] = $tab['id'];
 		         	$_SESSION['login'] = $tab['login'];
-					$_SESSION['token'] = $user->getToken();
-					$_SESSION['id'] = $tab['id'];
-					$_SESSION['avatar'] = $tab['avatar'];
+					$_SESSION['token'] = $tab['token'];
+					$_SESSION['statut'] = $tab['statut'];
 
-		        	// header('Location: '.LIEN_ABSOLU);
+					header('Location: '.LINK);
+					//on déclare les variables session avec l'id et le token de l'user		         
+		        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
 		        }
 
 			}
-				
-		}
+
 	}
+
+
+	// 	public function loginAction($args){
+	// 	session_start();
+
+
+
+		
+				
+	// var_dump($args);
+	// echo"cc";
+		
+		
+	
+	// 		//Si les inputs email et password sont initialisé
+	// 		if(isset($args['email']) AND isset($args['pass'])){
+	// 			echo"popo";
+	// 			//Demander au serveur SQL toutes les informations en fonction de l'email
+	// 			$membre = new membre();
+	// 			$tab = $membre->getOneBy(['email'=>$args['email']]);
+
+	// 			var_dump($tab);
+
+	// 			//Si aucune information, identifiants not ok
+	// 			if(empty($tab)){
+	// 				$error = TRUE;
+	// 			}else{
+
+	// 				//Sinon on vérifie le mot de passe
+	// 				$pwd = $tab['pass'];
+					
+	// 				if (!password_verify($args['pass'], $pwd)) {
+	// 				    $error = TRUE;
+	// 				}
+	// 			}
+
+	// 			var_dump($tab['actif']);
+
+	// 			//vérification actif
+	// 			if ($tab['actif'] == 0) {
+	// 				$error = TRUE;
+	// 				$msg_error = "Votre compte n'est pas encore activé";
+	// 			}
+
+	// 			if($error == TRUE){
+	// 	            echo "<ul>";
+	// 	            echo $msg_error;
+	// 	            echo "</ul>";
+	// 	        }else{
+	// 				//On renseigne la classe user
+	// 				// $membre->setId($tab['id']);
+	// 	   //       	$membre->setToken();
+	// 	   //       	$membre->save();
+
+	// 	   //       	//setcookie("name",$user["name"]);
+	// 				// //setcookie("firstname",$user["firstname"]);
+
+	// 				// //on déclare les variables session avec l'id et le token de l'user
+	// 	   //       	$_SESSION['id'] = $tab['id'];
+	// 	   //       	$_SESSION['login'] = $tab['login'];
+	// 				// $_SESSION['token'] = $user->getToken();
+	// 				// $_SESSION['id'] = $tab['id'];
+	// 				// $_SESSION['avatar'] = $tab['avatar'];
+
+	// 	        	header('Location: '.LINK);
+
+	// 	        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
+	// 	        }
+
+	// 		}
+				
+		
+	// }
 	/*end*/
 
 
