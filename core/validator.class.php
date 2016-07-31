@@ -28,12 +28,10 @@ class Validator extends basesql{
 			elseif($options["msgerror"]=="new_username" && self::existUsername($data[$name])){
 				$listErrors[]=$options["msgerror"];
 			}
-			elseif($options["msgerror"] == "username_doesnt_exists" && !self::existUsername($data[$name])) {
+			elseif($options["msgerror"] == "login_doesnt_exists" && !self::existlogin($data[$name])) {
 				$listErrors[] = $options["msgerror"];
 			}
-			elseif($options["msgerror"]=="teamName" && !self::existTeamName($data[$name])){
-				$listErrors[]=$options["msgerror"];
-			}
+		
 			elseif($options["msgerror"]=="emailOrUsername" && !self::verifUsernameOrEmail($data[$name])){
 				$listErrors[]=$options["msgerror"];
 			}
@@ -85,28 +83,10 @@ class Validator extends basesql{
 		}
 	}
 
-	//fonction de verif pour l'invitation par email ou username
-	public static function verifUsernameOrEmail($var){
-		if(!self::emailCorrect($var)){//Si email
-			$idUser = User::findBy("email",$var,"string");
-			//premiere partie de la requete : on verifie que l'utilisateur n'est pas deja dans la team, ou si il n'est pas deja invité
-			if($idUser){
-				return !(TeamHasUser::findBy(["idUser","idTeam"],[$idUser[0]->id,$_SESSION['idTeam']],["int","int"]) || (Invitation::findBy(["idTeamInviting","idUserInvited"],[$_SESSION['idTeam'],$idUser[0]->id],["int","int"])));
-			}else{
-				return false;
-			}
-		}else{//Sinon pseudo
-			$idUser = User::findBy("username",$var,"string");
-			if($idUser){
-				return !(TeamHasUser::findBy(["idUser","idTeam"],[$idUser[0]->id,$_SESSION['idTeam']],["int","int"]) || (Invitation::findBy(["idTeamInviting","idUserInvited"],[$_SESSION['idTeam'],$idUser[0]->id],["int","int"])));
-			}else{
-				return false;
-			}
-		}
-	}
+
 
 	public static function emailExist($email) {
-		return (User::findBy("email", $email, "string"));
+		return (Membre::findBy("email", $email, "string"));
 	}
 
 	public static function isFileEmpty($var){
@@ -136,18 +116,14 @@ class Validator extends basesql{
 	}
 
 	public static function newEmailCorrect($var){
-		return !((filter_var($var,FILTER_VALIDATE_EMAIL)) && (User::findBy("email", $var, "string")) );
+		return !((filter_var($var,FILTER_VALIDATE_EMAIL)) && (Membre::findBy("email", $var, "string")) );
 	}
 
-	public static function existUsername($var){
-		return (User::findBy("username",$var,"string"));
+	public static function existlogin($var){
+		return (Membre::findBy("login",$var,"string"));
 	}
 
-	public static function newExistTeamName($var){
-		if(!self::notChangingTeamName($var)){
-			return !(strlen($var)<4 || strlen($var)>30);
-		}
-	}
+
 
 	public static function existTeamName($var){
 		return !((strlen($var)<4 || strlen($var)>30) || (Team::findBy("teamName",$var,"string")));

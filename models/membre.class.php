@@ -94,7 +94,14 @@ class membre extends basesql{
                         "email"=>[ "label"=>"Votre email", "type"=>"text", "id"=>"email", "required"=>1, "msgerror"=>"email" ]
                     ]
         ];
-    } 
+    }
+
+
+
+       public static function emailExist($mail) {
+            return (Membre::findBy("mail", $mail, "string"));
+            }
+ 
 
 
 }

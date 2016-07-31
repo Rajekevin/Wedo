@@ -55,7 +55,7 @@
   <label id="icon" for="name"><i  class="icon-globe"></i></label>
   <input type="text" name="ville" id="name" placeholder="Ville" required/><br/>
 
-
+  <input type="hidden" name="susbcribe" value="6se84f3" />
  
    <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU)</a>.</p>
   <!--  <a href="#" class="button">Inscription</a> -->

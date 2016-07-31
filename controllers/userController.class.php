@@ -105,6 +105,11 @@ class userController{
 	           $msg_error .= "<li>Le code est incorrect";
 	        }*/
 
+
+	     
+
+
+
 	      
 	        $now = new DateTime();
 
@@ -170,9 +175,27 @@ class userController{
 	       	$statut=2; 
 	       	$actif=0;
 	       		//$img="defaut.jpg";
-
+	   
 
 			$membre = new membre(); 
+
+
+
+			if($membre->emailExist($args['email'])){
+				echo '<script type="text/javascript">window.alert("cette email existe déjà");</script>';
+
+				
+
+				}else{
+
+				
+
+
+
+				$membre->setMail($args['email']);
+		
+
+
 			$membre->setLogin($args['login']);
 			$membre->setSexe($args['sexe']);
 
@@ -193,7 +216,7 @@ class userController{
 			// $membre->setVille($args['ville']);
 			$membre->setDateInscription(date('Y-m-d H:i:s'));
 			$membre->setActif($actif);
-			$membre->setMail($args['email']);
+			// $membre->setMail($args['email']);
 
 			$membre->setVille($args['ville']);
 			$membre->setStatut($statut);
@@ -203,7 +226,9 @@ class userController{
 			$membre->setToken();
 
 			$membre->save();
+			}
 
+		
 
 			//on récupère l'id de l'utilisateur
 

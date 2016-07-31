@@ -33,3 +33,20 @@
 [31-Jul-2016 10:33:25 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
 [31-Jul-2016 10:33:25 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
 [31-Jul-2016 10:33:25 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:97
+[31-Jul-2016 11:04:49 Europe/Paris] PHP Notice:  Undefined index: subscribe in C:\wamp\www\wedo\controllers\userController.class.php on line 174
+[31-Jul-2016 11:04:49 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 11:04:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 11:04:49 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 11:04:49 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\wedo\core\validator.class.php on line 9
+[31-Jul-2016 11:04:49 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 11:04:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 11:04:49 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 11:04:49 Europe/Paris] PHP   3. Validator::check() C:\wamp\www\wedo\controllers\userController.class.php:174
+[31-Jul-2016 11:08:37 Europe/Paris] PHP Fatal error:  Call to undefined function emailExist() in C:\wamp\www\wedo\controllers\userController.class.php on line 111
+[31-Jul-2016 11:08:37 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 11:08:37 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 11:08:37 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 11:09:31 Europe/Paris] PHP Fatal error:  Call to undefined function emailExist() in C:\wamp\www\wedo\controllers\userController.class.php on line 184
+[31-Jul-2016 11:09:31 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 11:09:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 11:09:31 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
