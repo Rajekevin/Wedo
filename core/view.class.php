@@ -37,7 +37,7 @@ class view{
 
 
 
-	public function setViewBo($view, $layout="templateMenuBo"){
+	public function setViewBo($view, $layout="templateBo"){
 		$path_view = "views/".$view.".php";
 		$path_template = "views/".$layout.".php";
 		if (file_exists($path_view)) {

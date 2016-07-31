@@ -19,7 +19,31 @@ class adminController{
 		 	
 		 	if ($_SESSION['login'] && $_SESSION['statut']== 1) {
 
-		 		 	header('Location:'.LINK.'admin/index' );
+		 		 	
+
+
+		 		$v = new view();
+				$v -> setViewBo("admin/admin");	
+				// $a = new commentaire();
+				// $commentaire = $a->getAllBy([],['id'=>'DESC'], 1);
+				// $v->assign('commentaire',$commentaire);
+				// //Compteur commentaire pour Stat BO
+				// $commentaires = $a->getAllBy([],[], '');
+				// $v->assign('commentaires',$commentaires);
+				//Compteur d'articles pour stat BO
+				$a = new article();
+				$articles = $a->getAllBy([],[],'');
+				$v->assign('articles', $articles);
+				//Compteur d'utilisateur pour stat BO
+				$a = new membre();
+				$users = $a->getAllBy([],[],'');
+				$v->assign('users', $users);	
+				// $a = new connectes();
+				$a = new connectes();
+				$connectes = $a->getAllBy([],[],'');
+				foreach ($connectes as $key => $value): 
+
+				endforeach; 
 		 		
 		 			
 		
@@ -125,6 +149,151 @@ class adminController{
 
 
 		}/*exit*/
+
+
+
+
+
+		public function articleListAction($args){
+		session_start();
+
+	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
+	            { 
+		$v = new view();
+		$v->setViewBo("admin/article/articlelist");
+		
+		/* List of articles */
+		$a = new article();
+		$article = $a->getAllBy([],['id'=>'DESC'],'');
+
+
+		$v->assign('articlelist',$article);
+
+
+	}
+	else{echo"no no no"; }
+		
+	}/*exit*/
+
+
+
+
+
+	public function removeArticleAction($args){
+	 
+			session_start();
+			if (isset($_SESSION['login'])&&($_SESSION['statut']==1) ){ 
+			
+			$v = new view();
+			$v->setViewBo("admin/article/removeArticle");
+			/* List of articles */
+			$a = new article();
+			$article = $a->getAllBy([],[],'');
+			$v->assign('removeArticle',$article);
+		}else{
+			echo "Impossible d'accéder à cette page :(";
+		}
+	}/*exit*/
+
+
+	public function updateArticleAction($args){
+		session_start();
+
+	if (isset($_SESSION['login'])&&($_SESSION['statut']==1)   )
+	         { 
+			$v = new view();
+			$v->setViewBo("admin/article/updateArticle");
+			/* List of articles */
+
+			$a = new article();
+			$article = $a->getAllBy([],[],'');
+			$v->assign('updateArticle',$article);
+
+			$c = new categorie();
+		    $categorie = $c->getAllBy([],[],'');
+
+			$v->assign('categorie',$categorie);
+		}else{
+			echo"Impossible d'accéder à cette page";
+		}
+			
+	}/*exit*/
+
+
+
+		public function createArticleAction($args){
+		session_start();
+
+
+
+	    
+		if (isset($_SESSION['login'])&&($_SESSION['statut']==1)   ){ 
+		$var = implode ($args);
+                            	
+		$v = new view();
+		$v->setViewBo("admin/article/createArticle");
+		/* List of articles */
+
+		$a = new article();
+		$article = $a->getAllBy([],[],'');
+
+		$c = new categorie();
+		$categorie = $c->getAllBy([],[],'');
+
+
+
+		
+
+		$articles= $a->getOneBy(["id"=>$var]);		
+		$v->assign('articles',$articles);
+
+	
+
+		
+
+		// $membre= new membre();
+		// $tab = $membre->getOneBy(['mail'=>$args['email']]);
+
+		// $_SESSION['id'] = $tab['id'];
+		// $_SESSION['login'] = $tab['login'];
+		// $_SESSION['token'] = $tab['token'];
+		// $_SESSION['statut'] = $tab['statut'];
+
+		
+
+		$v->assign('createArticle',$article);
+		$v->assign('categorie',$categorie);
+	}else{
+		echo "Impossible d'accéder à cette page";
+	}
+		
+}/*exit*/
+
+
+
+
+
+	public function mesArticlesAction($args){
+
+		session_start();
+		if (isset($_SESSION['login'])&&($_SESSION['statut']==1)  )
+	                    { 
+			
+			$v = new view();
+			$v->setViewBo("admin/article/mesArticles");
+
+			$article = new article();
+	
+			$articles = $article->getAllBy(["id_user"=>$_SESSION['id']],['id'=>'DESC'],"");
+			
+			$v->assign("articles",$articles);
+		}
+		else{
+			echo"Impossible d'accéder à la page"; 
+		}
+			
+	}/*exit*/
+
 
 
 }
