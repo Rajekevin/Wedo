@@ -46,12 +46,15 @@ class adminController{
 
 
 		session_start();
-		echo"Vous n'avez pas accès à cette partie";
+		
+
+	 if (isset($_SESSION['login']))
+	            { 
 		
 		$v = new view();
 		$v -> setViewCo("admin/login");
 
-			var_dump($args);
+			
 
 	        $error = FALSE;
 			$msg_error= "Identifiants incorrects";
@@ -112,8 +115,16 @@ class adminController{
 			
 			}
 
-			/*exit*/
-		}
+			
+
+			}else{
+
+				echo "TATATA Tu n'est pas invité pour le moment, un jour peu-être ... qui sait ?";
+			}
+
+
+
+		}/*exit*/
 
 
 }
