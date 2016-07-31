@@ -131,9 +131,7 @@ class adminController{
 		         
 		        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
 
-		        }
-
-	            
+		        }         
 	          
 
 			
@@ -326,7 +324,7 @@ class adminController{
 
 
 
-		public function createCategorieAction($args){
+	public function createCategorieAction($args){
 		session_start();
 
 	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
@@ -346,6 +344,97 @@ class adminController{
 	else{echo"no no no"; }
 		
 	}/*exit*/
+
+
+
+
+	/*USER*/
+
+
+
+		public function userListAction($args){
+		session_start();
+	if (isset($_SESSION['login']) &&($_SESSION['statut'])==1)
+              { 
+		$v = new view();
+		$v->setViewBo("admin/user/userlist");
+
+		$membre = new membre();
+		$membre= $membre->getAllBy([],[],'');
+
+		$v->assign('userlist',$membre);
+		}else{
+			echo "Impossible d'accéder à cette page";
+		}
+	}
+
+	public function createUserAction($args){
+		session_start();
+
+
+
+	if (isset($_SESSION['login']) &&($_SESSION['statut'])==1)
+	         { 
+			$v = new view();
+			$v->setViewBo("admin/user/createUser");
+
+			$pays = ["fr"=>"France", "gb"=>"England", "es"=>"Spanish", "it"=>"Italy"];
+
+			 $sexe = [0=>"homme", 1=>"femme"];  
+		  
+
+			$membre = new membre();
+			$membre= $membre->getAllBy([],[],'');
+
+			$v->assign("pays",$pays);
+			$v->assign('createuser',$membre);
+			$v->assign("sexe",$sexe);
+
+			 
+		}else{
+			echo "Impossible d'accéder à cette page";
+		}		
+	}
+
+
+	public function removeUserAction($args){
+		session_start();
+
+	if (isset($_SESSION['login']) &&($_SESSION['statut'])==1)
+           { 
+		$v = new view();
+		$v->setViewBo("admin/user/removeuser");
+
+		$membre = new membre();
+		$membre= $membre->getAllBy([],[],'');
+
+		$v->assign('removeuser',$membre);
+	}else{
+		echo"Impossible d'accéder à la page";
+	}
+		
+}
+
+	public function updateUserAction($args){
+
+		session_start();
+	if (isset($_SESSION['login']  ) &&($_SESSION['statut'])==1    )
+                    { 
+		
+		$v = new view();
+		$v->setViewBo("admin/user/updateUser");
+
+		$membre = new membre();
+		$membre= $membre->getAllBy([],[],'');
+
+		$v->assign('updateuser',$membre);
+	}
+	else{
+		echo"Impossible d'accéder à la page"; 
+	}
+		
+}
+
 
 
 
