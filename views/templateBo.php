@@ -8,6 +8,8 @@
 		<link rel="icon" type="image/png" href="<?= WEBROOT; ?>/public/img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/admin.css">
 		<link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/menu_bo.css">
+
+		<script type="text/javascript" src="<?= WEBROOT; ?>/lib/ckeditor/ckeditor.js"></script>
 		
 
 	</head>
@@ -51,8 +53,18 @@
       		   	</li>
 			</ul>
 
-
 			<ul id="menu-accordeon2">          
+          		<li><a href=""><i class="fa fa-book fa-fw" aria-hidden="true"></i> Categorie</a>
+            		<ul>
+              			<li><a href="<?= LINK.'/admin/categorie/categorielist'; ?>"><i class="fa fa-book fa-fw" aria-hidden="true"></i> Tous les Categories</a></li>
+                    	<li><a href="<?= LINK.'/admin/categorie/createcategorie'; ?>"><i class="fa  fa-plus" aria-hidden="true"></i> Ajouter une categorie</a></li>
+
+            		</ul>
+         		</li>
+			</ul>
+
+
+			<ul id="menu-accordeon3">          
           		<li><a href=""><i class="fa fa-book fa-fw" aria-hidden="true"></i> Article</a>
             		<ul>
               			<li><a href="<?= LINK.'/admin/articlelist'; ?>"><i class="fa fa-book fa-fw" aria-hidden="true"></i> Tous les articles</a></li>
@@ -62,7 +74,7 @@
             		</ul>
          		</li>
 			</ul>
-			<ul id="menu-accordeon3">           
+			<ul id="menu-accordeon4">           
          		<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Utilisateurs</a>
             		<ul>
                		  	<li><a href="<?= LINK.'/admin/userlist'; ?>"><i class="fa fa-users" aria-hidden="true"></i> Liste des utilisateurs</a></li>
@@ -70,7 +82,7 @@
             		</ul>
          		</li>
 			</ul>
-			<ul id="menu-accordeon4">
+			<ul id="menu-accordeon5">
           		<li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> Commentaire</a>
             		<ul>
                		  <li><a href="<?= LINK.'/admin/commentairelist'; ?>"><i class="fa fa-comment-o" aria-hidden="true"></i> Liste des commentaires</a></li>
@@ -78,7 +90,7 @@
            			</ul>
          		</li>
 			</ul>
-			<ul id="menu-accordeon5">
+			<ul id="menu-accordeon6">
            		<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i> Options du site</a>
             		<ul>
                		  	<li><a href="<?= LINK.'/admin/themeCustom'; ?>"><i class="fa fa-eyedropper" aria-hidden="true"></i> Personnaliser votre site</a></li>

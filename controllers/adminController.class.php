@@ -296,4 +296,68 @@ class adminController{
 
 
 
+
+
+/*categorie*/
+
+
+
+		public function categorieAction($args){
+		session_start();
+
+	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
+	            { 
+		$v = new view();
+		$v->setViewBo("admin/categorie/categorielist");
+		
+		/* List of articles */
+		$c = new categorie();
+		$categorie = $c->getAllBy([],['id'=>'DESC'],'');
+
+
+		$v->assign('categorielist',$categorie);
+
+
+	}
+	else{echo"no no no"; }
+		
+	}/*exit*/
+
+
+
+
+		public function createCategorieAction($args){
+		session_start();
+
+	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
+	            { 
+		$v = new view();
+		$v->setViewBo("admin/categorie/createCategorie");
+		
+		/* List of articles */
+		$c = new categorie();
+		$categorie = $c->getAllBy([],['id'=>'DESC'],'');
+
+
+		$v->assign('categorielist',$categorie);
+
+
+	}
+	else{echo"no no no"; }
+		
+	}/*exit*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
