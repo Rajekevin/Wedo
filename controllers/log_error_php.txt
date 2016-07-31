@@ -1,0 +1,35 @@
+[31-Jul-2016 09:26:07 Europe/Paris] PHP Fatal error:  Cannot redeclare membre::setville() in C:\wamp\www\wedo\models\membre.class.php on line 38
+[31-Jul-2016 09:26:07 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 09:26:07 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 09:26:07 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 09:26:07 Europe/Paris] PHP   3. spl_autoload_call() C:\wamp\www\wedo\index.php:173
+[31-Jul-2016 09:26:07 Europe/Paris] PHP   4. autoloader() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 09:26:53 Europe/Paris] PHP Notice:  Undefined index: ville in C:\wamp\www\wedo\controllers\userController.class.php on line 177
+[31-Jul-2016 09:26:53 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 09:26:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 09:26:53 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:00:51 Europe/Paris] PHP Warning:  date_format() expects exactly 2 parameters, 1 given in C:\wamp\www\wedo\controllers\userController.class.php on line 177
+[31-Jul-2016 10:00:51 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 10:00:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 10:00:51 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:00:51 Europe/Paris] PHP   3. date_format() C:\wamp\www\wedo\controllers\userController.class.php:177
+[31-Jul-2016 10:02:27 Europe/Paris] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in C:\wamp\www\wedo\controllers\userController.class.php on line 177
+[31-Jul-2016 10:02:27 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 10:02:27 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 10:02:27 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:02:27 Europe/Paris] PHP   3. date_format() C:\wamp\www\wedo\controllers\userController.class.php:177
+[31-Jul-2016 10:05:25 Europe/Paris] PHP Fatal error:  Call to undefined function STR_TO_DATE() in C:\wamp\www\wedo\controllers\userController.class.php on line 179
+[31-Jul-2016 10:05:25 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 10:05:25 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 10:05:25 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:16:33 Europe/Paris] PHP Notice:  Undefined index: ville in C:\wamp\www\wedo\controllers\userController.class.php on line 197
+[31-Jul-2016 10:16:33 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 10:16:33 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 10:16:33 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:33:25 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\wedo\views\user\subscribe.php on line 28
+[31-Jul-2016 10:33:25 Europe/Paris] PHP Stack trace:
+[31-Jul-2016 10:33:25 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[31-Jul-2016 10:33:25 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:33:25 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[31-Jul-2016 10:33:25 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[31-Jul-2016 10:33:25 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:97
