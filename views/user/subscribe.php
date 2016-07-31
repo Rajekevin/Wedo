@@ -57,7 +57,7 @@
 
 
  
-   <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU) <input type="checkbox" id="agree" required /></a>.</p>
+   <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU) </a> <input type="checkbox" id="agree" required />.</p>
   <!--  <a href="#" class="button">Inscription</a> -->
 
    <input type="submit" value="Inscription"  >

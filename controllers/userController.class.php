@@ -15,11 +15,9 @@ class userController{
 	}
 
 
-
 	public function subscribeAction($args) {
 
 		session_start();
-
 
 		 // Afficher les erreurs à l'écran
 	    ini_set('display_errors', 1);
@@ -30,24 +28,17 @@ class userController{
 		$v = new view();
 		$v->setView("user/subscribe");
 		
-	
-
 	   	$pays = ["fr"=>"France", "gb"=>"England", "es"=>"Spanish", "it"=>"Italy"];
 	    $sexe = [0=>"homme", 1=>"femme"];
 	    $v->assign("pays",$pays);
 	    $v->assign("sexe",$sexe);
 
-	    
 	    $error = FALSE;
 	    $msg_error = "";
-
-
-
 
 	    if( isset($args['login']) &&  isset($args['pass1']) &&  isset($args['sexe'])&&
 		    isset($args['birth']) &&  isset($args['email']) &&    isset($args['pass2']) &&    isset($args['ville'])  )
 	    {
-
 	        $args['login'] = strtolower(trim($args['login']));
 	        $args['email'] = strtolower(trim($args['email']));
 	        $args['ville'] = strtolower(trim($args['ville']));
@@ -55,7 +46,6 @@ class userController{
 	        //$args['sexe'] = strtolower(trim($args['sexe']));
 
 	        
-
 	        if(strlen($args['login'])<2)
 	        {
 	            $error = TRUE;
@@ -88,12 +78,7 @@ class userController{
 	        {
 	            $error = TRUE;
 	            $msg_error .= "<li>Votre ville n'existe pas";
-	        }*/
-	        /*if(!in_array($this->sexe, $sexe))
-	        {
-	            $error = TRUE;
-	            $msg_error .= "<li>Le genre n'existe pas";
-	        }*/
+	        }*/       
 
 	        
 	        //gestion du captcha
@@ -103,14 +88,7 @@ class userController{
 	        {
 	           $error = TRUE;
 	           $msg_error .= "<li>Le code est incorrect";
-	        }*/
-
-
-	     
-
-
-
-	      
+	        }*/	      
 	        $now = new DateTime();
 
 
@@ -174,24 +152,13 @@ class userController{
 
 	       	$statut=2; 
 	       	$actif=0;
-	       		//$img="defaut.jpg";
-	   
+	       		//$img="defaut.jpg";	   
 
 			$membre = new membre(); 
-
-
-
 			if($membre->emailExist($args['email'])){
-				echo '<script type="text/javascript">window.alert("cette email existe déjà");</script>';
-
-				
+				echo '<script type="text/javascript">window.alert("cette email existe déjà");</script>';			
 
 				}else{
-
-				
-
-
-
 			$membre->setMail($args['email']);
 			$membre->setLogin($args['login']);
 			$membre->setSexe($args['sexe']);
@@ -208,11 +175,10 @@ class userController{
 			// $membre->setAvatar($img);
 			$membre->setToken();
 			$membre->save();
-			}
 
-		
 
-			//on récupère l'id de l'utilisateur
+
+				//on récupère l'id de l'utilisateur
 
          	$thisuser = new membre();
 			$tab = $thisuser->getOneBy(['mail'=>$args['email']]);
@@ -225,7 +191,7 @@ class userController{
 			Pour activer votre compte, veuillez cliquer sur le lien ci dessous ou bien copier celui-ci dans l'url de votre navigateur. 
 			<br />
 
-			".LINK."index/activerCompte?id=".$tab['id']."<br />
+			".LINK."user/activerCompte?id=".$tab['id']."&token=".$tab['token']."<br />
 
 			---------------<br />
 			Ceci est un mail automatique, Merci de ne pas y répondre");			
@@ -235,7 +201,145 @@ class userController{
         	var_dump($tab['id']);
 
 			}
+		}		
+	}
+}
+
+
+	public function activerCompteAction($args){
+		session_start();
+		$v = new view();
+		$v->setView("user/login");
+		//var_dump($args);
 		
+		if(isset($args['login'])){
+			$error = FALSE;
+			$msg_error = "Identifiants incorrects";
+
+			//Si les inputs email et password sont initialisé
+			if(isset($args['email']) AND isset($args['pass'])){
+				
+				//Demander au serveur SQL toutes les informations en fonction de l'email
+				$membre = new Membre();
+				$tab = $user->getOneBy(['email'=>$args['email']]);
+
+				//Si aucune information, identifiants not ok
+				if(empty($tab)){
+					$error = TRUE;
+				}else{
+
+					//Sinon on vérifie le mot de passe
+					$pwd = $tab['pass'];
+					
+					if (!password_verify($args['pass'], $pwd)) {
+					    $error = TRUE;
+					}
+				}
+
+				if($error == TRUE){
+		            echo "<ul>";
+		            echo $msg_error;
+		            echo "</ul>";
+		        }else{
+					//On renseigne la classe user
+					$membre->setId($tab['id']);
+		         	$membre->setToken();
+		         	//On active le compte
+		         	$membre->setActif(1);
+		         	$membre->save();
+
+		       
+
+					//on déclare les variables session avec l'id et le token de l'user
+		         	$_SESSION['id'] = $tab['id'];
+		         	$_SESSION['login'] = $tab['login'];
+					$_SESSION['token'] = $user->getToken();
+					$_SESSION['id'] = $tab['id'];
+					$_SESSION['avatar'] = $tab['avatar'];
+
+		        	// header('Location: '.LIEN_ABSOLU);
+		        }
+
+			}
+				
 		}
 	}
+	/*end*/
+
+
+
+
+
+		public function loginAction($args){
+		session_start();
+		$v = new view();
+		$v->setView("user/login");
+				
+		//var_dump($args);
+		
+		if(isset($args['login'])){
+			$error = FALSE;
+			$msg_error = "Identifiants incorrects";
+
+			//Si les inputs email et password sont initialisé
+			if(isset($args['email']) AND isset($args['pass'])){
+				
+				//Demander au serveur SQL toutes les informations en fonction de l'email
+				$membre = new membre();
+				$tab = $membre->getOneBy(['email'=>$args['email']]);
+
+				//Si aucune information, identifiants not ok
+				if(empty($tab)){
+					$error = TRUE;
+				}else{
+
+					//Sinon on vérifie le mot de passe
+					$pwd = $tab['pass'];
+					
+					if (!password_verify($args['pass'], $pwd)) {
+					    $error = TRUE;
+					}
+				}
+
+				//vérification actif
+				if ($tab['actif'] == 0) {
+					$error = TRUE;
+					$msg_error = "Votre compte n'est pas encore activé";
+				}
+
+				if($error == TRUE){
+		            echo "<ul>";
+		            echo $msg_error;
+		            echo "</ul>";
+		        }else{
+					//On renseigne la classe user
+					$membre->setId($tab['id']);
+		         	$membre->setToken();
+		         	$membre->save();
+
+		         	//setcookie("name",$user["name"]);
+					//setcookie("firstname",$user["firstname"]);
+
+					//on déclare les variables session avec l'id et le token de l'user
+		         	$_SESSION['id'] = $tab['id'];
+		         	$_SESSION['login'] = $tab['login'];
+					$_SESSION['token'] = $user->getToken();
+					$_SESSION['id'] = $tab['id'];
+					$_SESSION['avatar'] = $tab['avatar'];
+
+		        	// header('Location: '.LIEN_ABSOLU);
+		        }
+
+			}
+				
+		}
+	}
+	/*end*/
+
+
+
+
+	
+
+		
 }

@@ -65,7 +65,7 @@
                     <li><a href="">Evenements</a></li>
 
                     <li><a class="js-scrollTo" href="<?= WEBROOT; ?>user/subscribe">Inscription</a></li>
-                    <li><a href="">Connexion</a></li>
+                    <li><a href="<?= WEBROOT; ?>user/login">Connexion</a></li>
                     <li><a href="">Contact</a>
 
                     </li>
