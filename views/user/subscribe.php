@@ -13,15 +13,17 @@
 <div class="testbox">
   <h1>Inscription</h1>
 
-  <form action="/" id="subscribe">
+  <form  method="post" id="subscribe">
     <!--   <hr> -->
 
 
     <div class="gender">
-    <input type="radio" value="None" id="male" name="gender" checked/>
-    <label for="male" class="radio" chec>Homme</label>
-    <input type="radio" value="None" id="female" name="gender" />
-    <label for="female" class="radio">Femme</label>
+      <input type="radio" value="homme" id="male" name="sexe" checked/>
+      <label for="male" class="radio" >Homme</label>
+      <input type="radio" value="femme" id="female" name="sexe" />
+      <label for="female" class="radio">Femme</label>
+
+
    </div> 
  <!--    <div class="accounttype">
       <input type="radio" value="None" id="radioOne" name="account" checked/>
@@ -33,22 +35,32 @@
 
 
   <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="Email" required/><br/>
+  <input type="text" name="email" id="name" placeholder="Email" value="<?php if (isset($_POST['email'])) echo htmlentities(trim($_POST['email'])); ?>" required/><br/>
 
 
   <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="name" id="name" placeholder="Votre pseudo" required/><br/>
+  <input type="text" name="login" id="name" placeholder="Votre pseudo" required/><br/>
 
 
   <label id="icon" for="name"><i class="icon-shield"></i></label>
-  <input type="password" name="name" id="name" placeholder="Mot de passe" required/><br/>
+  <input type="password" name="pass1" id="name" placeholder="Mot de passe" required/><br/>
   
 
   <label id="icon" for="name"><i class="icon-shield"></i></label>
-  <input type="password" name="name" id="name" placeholder="Retapez votre mot de passe" required/><br/>
+  <input type="password" name="pass2"  id="name" placeholder="Retapez votre mot de passe" required/><br/>
+
+  <label id="icon" for="name"><i class="icon-calendar"></i></label>
+  <input type="date" name="birth" id="name" placeholder="Date de naissance" required/><br/>
+
+  <label id="icon" for="name"><i  class="icon-globe"></i></label>
+  <input type="text" name="ville" id="name" placeholder="Ville" required/><br/>
+
+
  
-   <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
-   <a href="#" class="button">Register</a>
+   <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU)</a>.</p>
+  <!--  <a href="#" class="button">Inscription</a> -->
+
+   <input type="submit" value="Inscription">
   </form>
 </div>
 
