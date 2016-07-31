@@ -164,7 +164,7 @@
 		else
 			return false;
 	}
-	function isPays ()
+	function isville ()
 	{
 		if ($_POST['ville'] == 'Parizis' || $_POST['ville'] == 'Lyon' || $_POST['ville'] == 'Marseille'|| $_POST['ville'] == 'Lille'|| $_POST['ville'] == 'Calais'|| $_POST['ville'] == 'Bordeaux'|| $_POST['ville'] == 'Reims')
 			return true;
