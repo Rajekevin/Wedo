@@ -55,12 +55,12 @@
   <label id="icon" for="name"><i  class="icon-globe"></i></label>
   <input type="text" name="ville" id="name" placeholder="Ville" required/><br/>
 
-  <input type="hidden" name="susbcribe" value="6se84f3" />
+
  
-   <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU)</a>.</p>
+   <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU) <input type="checkbox" id="agree" required /></a>.</p>
   <!--  <a href="#" class="button">Inscription</a> -->
 
-   <input type="submit" value="Inscription">
+   <input type="submit" value="Inscription"  >
   </form>
 </div>
 
@@ -75,3 +75,18 @@
 
 
 
+<script type="text/javascript">
+
+// $(document).ready(function(){
+//     $('#agree').change(function(){
+//         var checked = $(this).prop("checked");
+//         if(checked){
+//             $('#continue').removeAttr('disabled');
+//         }else{
+//             $('#continue').attr('disabled','disabled');
+//         }
+
+//     });
+// });
+
+</script>

@@ -192,39 +192,21 @@ class userController{
 
 
 
-				$membre->setMail($args['email']);
-		
-
-
+			$membre->setMail($args['email']);
 			$membre->setLogin($args['login']);
 			$membre->setSexe($args['sexe']);
-
-	
-
 			$date1 = strtr($args['birth'], '/', '-');
 			$date = date('Y-m-d', strtotime($date1));
-
-
-
-			$membre->setBirth($date);
-
-			
-
-	
-				
+			$membre->setBirth($date);				
 			$membre->setPass($pwd);
 			// $membre->setVille($args['ville']);
 			$membre->setDateInscription(date('Y-m-d H:i:s'));
 			$membre->setActif($actif);
 			// $membre->setMail($args['email']);
-
 			$membre->setVille($args['ville']);
-			$membre->setStatut($statut);
-
-			
+			$membre->setStatut($statut);			
 			// $membre->setAvatar($img);
 			$membre->setToken();
-
 			$membre->save();
 			}
 
@@ -232,25 +214,25 @@ class userController{
 
 			//on récupère l'id de l'utilisateur
 
-   //       	$thisuser = new membre();
-			// $tab = $thisuser->getOneBy(['mail'=>$args['email']]);
-   //       	//envoie de l'email de validation
-   //          $email = new email();			
-			// //On renseigne le sujet et le message de l'email
-			// $email->setSujet("Validation de votre inscription");
-			// $email->setDestinataires($args['email']);
-			// $email->setMessage("Bienvenue sur WEDO,<br />
-			// Pour activer votre compte, veuillez cliquer sur le lien ci dessous ou bien copier celui-ci dans l'url de votre navigateur. 
-			// <br />
+         	$thisuser = new membre();
+			$tab = $thisuser->getOneBy(['mail'=>$args['email']]);
+         	//envoie de l'email de validation
+            $email = new email();			
+			//On renseigne le sujet et le message de l'email
+			$email->setSujet("Validation de votre inscription");
+			$email->setDestinataires($args['email']);
+			$email->setMessage("Bienvenue sur WEDO,<br />
+			Pour activer votre compte, veuillez cliquer sur le lien ci dessous ou bien copier celui-ci dans l'url de votre navigateur. 
+			<br />
 
-			// ".LINK."index/activerCompte?id=".$tab['id']."<br />
+			".LINK."index/activerCompte?id=".$tab['id']."<br />
 
-			// ---------------<br />
-			// Ceci est un mail automatique, Merci de ne pas y répondre");			
-			// //envoie de l'email
-			// $email->envoieEmail();
-   //      	echo 'Bienvenue '.$args['login'].', vous allez recevoir un email pour valider votre compte';
-   //      	var_dump($tab['id']);
+			---------------<br />
+			Ceci est un mail automatique, Merci de ne pas y répondre");			
+			//envoie de l'email
+			$email->envoieEmail();
+        	echo 'Bienvenue '.$args['login'].', vous allez recevoir un email pour valider votre compte';
+        	var_dump($tab['id']);
 
 			}
 		
