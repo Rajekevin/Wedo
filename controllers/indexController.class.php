@@ -9,6 +9,7 @@ class indexController{
 	
 
 	public function indexAction($args){
+		session_start();
 		
     
 	    // Afficher les erreurs à l'écran

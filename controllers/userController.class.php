@@ -195,7 +195,7 @@ class userController{
 			//envoie de l'email
 			$email->envoieEmail();
         	echo 'Bienvenue '.$args['login'].', vous allez recevoir un email pour valider votre compte';
-        	var_dump($tab['id']);
+        	header('Location: '.WEBROOT);
 
 			}
 		}		
@@ -300,7 +300,6 @@ public function loginAction($args)
 
 
 
-
 		
 			$error = FALSE;
 			$msg_error= "Identifiants incorrects";
@@ -361,80 +360,14 @@ public function loginAction($args)
 
 	}
 
-
-	// 	public function loginAction($args){
-	// 	session_start();
-
-
-
+	public function deconnexionAction($args){
+		session_start();
+		unset($_SESSION['id']);
+		unset($_SESSION['login']);
+		unset($_SESSION['token']);
 		
-				
-	// var_dump($args);
-	// echo"cc";
-		
-		
-	
-	// 		//Si les inputs email et password sont initialisé
-	// 		if(isset($args['email']) AND isset($args['pass'])){
-	// 			echo"popo";
-	// 			//Demander au serveur SQL toutes les informations en fonction de l'email
-	// 			$membre = new membre();
-	// 			$tab = $membre->getOneBy(['email'=>$args['email']]);
-
-	// 			var_dump($tab);
-
-	// 			//Si aucune information, identifiants not ok
-	// 			if(empty($tab)){
-	// 				$error = TRUE;
-	// 			}else{
-
-	// 				//Sinon on vérifie le mot de passe
-	// 				$pwd = $tab['pass'];
-					
-	// 				if (!password_verify($args['pass'], $pwd)) {
-	// 				    $error = TRUE;
-	// 				}
-	// 			}
-
-	// 			var_dump($tab['actif']);
-
-	// 			//vérification actif
-	// 			if ($tab['actif'] == 0) {
-	// 				$error = TRUE;
-	// 				$msg_error = "Votre compte n'est pas encore activé";
-	// 			}
-
-	// 			if($error == TRUE){
-	// 	            echo "<ul>";
-	// 	            echo $msg_error;
-	// 	            echo "</ul>";
-	// 	        }else{
-	// 				//On renseigne la classe user
-	// 				// $membre->setId($tab['id']);
-	// 	   //       	$membre->setToken();
-	// 	   //       	$membre->save();
-
-	// 	   //       	//setcookie("name",$user["name"]);
-	// 				// //setcookie("firstname",$user["firstname"]);
-
-	// 				// //on déclare les variables session avec l'id et le token de l'user
-	// 	   //       	$_SESSION['id'] = $tab['id'];
-	// 	   //       	$_SESSION['login'] = $tab['login'];
-	// 				// $_SESSION['token'] = $user->getToken();
-	// 				// $_SESSION['id'] = $tab['id'];
-	// 				// $_SESSION['avatar'] = $tab['avatar'];
-
-	// 	        	header('Location: '.LINK);
-
-	// 	        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
-	// 	        }
-
-	// 		}
-				
-		
-	// }
-	/*end*/
-
+		header('Location: '.WEBROOT);
+	}
 
 
 

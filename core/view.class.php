@@ -68,7 +68,7 @@ class view{
 	}
 
 
-		public function setViewCo($view, $layout="CoTemplate"){
+		public function setViewCo($view, $layout="CoTemplateBo"){
 		$path_view = "views/".$view.".php";
 		$path_template = "views/".$layout.".php";
 		if (file_exists($path_view)) {

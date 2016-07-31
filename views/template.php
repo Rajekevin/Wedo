@@ -49,7 +49,13 @@
         <div class="content">
             <div class="logo"><a href="#banner" class="js-scrollTo"><img src="<?= WEBROOT; ?>/public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
             <nav>
-                <ul>
+                <ul>   <?php
+                            if (isset($_SESSION['login']))
+                            {
+                        ?>
+
+                    <li><a  class="js-scrollTo" href="<?= LINK; ?>index/profil">Bienvenue <?php echo $_SESSION['login'];?></a></li>
+                    <li><a class="js-scrollTo" href="<?= LINK; ?>user/deconnexion">Deconnexion</a></li>
                     <li><a class="js-scrollTo" href="#musculation">Musculation</a>
 
                     </li>
@@ -64,31 +70,30 @@
 
                     <li><a href="">Evenements</a></li>
 
+                    
+                         <?php
+                            }
+                            else
+                            {
+                                ?>    
+                                <li><a class="js-scrollTo" href="#musculation">Musculation</a>
+
+                    </li>
+                    <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>                   
+
                     <li><a class="js-scrollTo" href="<?= WEBROOT; ?>user/subscribe">Inscription</a></li>
                     <li><a href="<?= WEBROOT; ?>user/login">Connexion</a></li>
-                    <li><a href="">Contact</a>
+
+                        <?php
+                            }
+                        ?>
+                    <li><a class="js-scrollTo" href="#contact">Contact</a>
 
                     </li>
 
                 </ul>
             </nav>
-        <!--     <div class="account">
-                    <a class="callPopin" href="#connexion">Se connecter</a>
-                    <span class="separator">|</span>
-                    <a class="callPopin" href="#subscribe">Inscription</a>
-            </div> -->
-        <!--     <div class="mob_menu">
-                <div class="button"><img src="http://nightlives.fr/images/common/hamburger.png"></div>
-                <ul>
-                    <li><a href="http://nightlives.fr">Accueil</a></li>
-                    <li><a href="http://nightlives.fr/festivals">Festivals</a></li>
-                    <li><a href="http://nightlives.fr/soirees">Soirées</a></li>
-                    <li><a href="http://nightlives.fr/concerts">Concerts</a></li>
-                    <li><a href="http://nightlives.fr/sportifes">sportifes</a></li>
-                                            <li class="mob_account"><a class="callPopin" href="#connexion">Se connecter</a></li>
-                        <li class="mob_account"><a class="callPopin" href="#subscribe">S'inscrire</a></li>
-                                    </ul>
-            </div> -->
+    
         </div>
     </header>
 <br/><br/><br/> <br/><br/>
@@ -161,7 +166,7 @@
             <p>Contactez Nous</p>
 
 
-                <form id="contactForm contact" name="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
+                <form id="contactForm contact" name="contact" id="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
 
                      <div>
                         <input placeholder="Nom" type="text" name="name" id="name" required="" tabindex="2" />
