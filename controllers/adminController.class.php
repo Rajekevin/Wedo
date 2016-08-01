@@ -308,9 +308,11 @@ class adminController{
 		$v = new view();
 		$v->setViewBo("admin/categorie/categorielist");
 		
-		/* List of articles */
+		/* List of categorie */
 		$c = new categorie();
-		$categorie = $c->getAllBy([],['id'=>'DESC'],'');
+		$categorie = $c->getAllBy([],['id'=>'ASC'],'');
+
+
 
 
 		$v->assign('categorielist',$categorie);
@@ -340,6 +342,31 @@ class adminController{
 		$v->assign('categorielist',$categorie);
 
 
+
+
+
+	}
+	else{echo"no no no"; }
+		
+	}/*exit*/
+
+
+	public function updateCategorieAction($args){
+		session_start();
+
+	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
+	            { 
+		$v = new view();
+		$v->setViewBo("admin/categorie/updateCategorie");
+		
+		/* List of articles */
+		$c = new categorie();
+		$categorie = $c->getAllBy([],['id'=>'DESC'],'');
+
+
+		$v->assign('updatecategorie',$categorie);
+
+
 		  
 
 
@@ -347,6 +374,7 @@ class adminController{
 	else{echo"no no no"; }
 		
 	}/*exit*/
+
 
 
 

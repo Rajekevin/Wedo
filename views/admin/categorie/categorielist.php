@@ -8,8 +8,8 @@
       Liste catégorie
     </th>
   </tr>
-  <?php foreach ($categorielist as $key => $value): ?>
-  <tr>
+
+    <tr>
     <article>
       <td>Id</td>
       <td>Nom</td>
@@ -17,6 +17,8 @@
       <td>Description</td>
       <td>Action</td>
   </tr>
+  <?php foreach ($categorielist as $key => $value): ?>
+
   <tr>
       <td>
         <div>
@@ -46,7 +48,7 @@
             <?php
               /* demo */
               $id=$value['id']; 
-              echo '<a href="updateCategorie?id=' . $id .'" name="modifier">
+              echo '<a href="../updateCategorie?id=' . $id .'" name="modifier">
                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     </a>';
             ?>
