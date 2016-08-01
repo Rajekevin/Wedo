@@ -61,7 +61,7 @@ class article extends basesql{
 		return $this->$id_user;
 	}
 	public function getIdCategory(){
-		return $this->$id_category;
+		return $this->id_category;
 	}	
 	public function getUrl(){
 		return $this->url;

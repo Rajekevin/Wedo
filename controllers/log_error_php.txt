@@ -69,3 +69,583 @@
 [01-Aug-2016 18:16:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
 [01-Aug-2016 18:16:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
 [01-Aug-2016 18:16:21 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:06:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:06:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:07:20 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:07:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:08:10 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:08:10 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:08:10 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:08:10 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:10:53 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:10:53 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:10:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:10:53 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:10:55 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:10:55 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:10:55 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:10:55 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:11:06 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:11:06 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:11:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:11:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:11:07 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:11:07 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:11:07 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:11:07 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:11:25 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:11:25 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:11:25 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:11:25 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 41
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 41
+[01-Aug-2016 20:12:01 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:01 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 41
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 41
+[01-Aug-2016 20:12:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:12:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:13:29 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:13:29 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:13:29 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:13:29 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:13:58 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:13:58 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:13:58 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:13:58 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:13:58 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:13:58 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:13:58 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:13:58 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 41
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Notice:  Undefined variable: unArticle in C:\wamp\www\wedo\controllers\indexController.class.php on line 41
+[01-Aug-2016 20:14:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:14:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:15:23 Europe/Paris] PHP Fatal error:  Call to a member function igetIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:15:23 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:15:23 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:15:23 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:15:29 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:15:29 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:15:29 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:15:29 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:16:52 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:16:52 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:16:52 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:16:52 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:16:53 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:16:53 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:16:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:16:53 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:18:14 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:18:14 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:18:14 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:18:14 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:18:15 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:18:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:18:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:18:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:18:15 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:18:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:18:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:18:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:18:16 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:18:16 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:18:16 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:18:16 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:19:09 Europe/Paris] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:19:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:19:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:19:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:19:09 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:19:09 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:19:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:19:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:19:47 Europe/Paris] PHP Notice:  Undefined property: article::$getIdCategory in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:19:47 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:19:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:19:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:19:47 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:19:47 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:19:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:19:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Notice:  Undefined property: article::$getIdCategory in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Notice:  Undefined property: article::$getIdCategory in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:20:42 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:42 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:45 Europe/Paris] PHP Notice:  Undefined property: article::$getIdCategory in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:20:45 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:45 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:45 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:45 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:20:45 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:45 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:45 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:47 Europe/Paris] PHP Notice:  Undefined property: article::$getIdCategory in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:20:47 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:20:47 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:20:47 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:20:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:20:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:21:15 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:21:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:21:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:21:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:21:33 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:21:33 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:21:33 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:21:33 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:22:10 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:22:10 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:22:10 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:22:10 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:22:11 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 35
+[01-Aug-2016 20:22:11 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:22:11 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:22:11 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:22:17 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 39
+[01-Aug-2016 20:22:17 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:22:17 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:22:17 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:24:42 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 34
+[01-Aug-2016 20:24:42 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:24:42 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:24:42 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:24:43 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 34
+[01-Aug-2016 20:24:43 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:24:43 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:24:43 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:24:43 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 34
+[01-Aug-2016 20:24:43 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:24:43 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:24:43 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:26:36 Europe/Paris] PHP Notice:  Undefined variable: var in C:\wamp\www\wedo\controllers\indexController.class.php on line 38
+[01-Aug-2016 20:26:36 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:26:36 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:26:36 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:26:36 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 40
+[01-Aug-2016 20:26:36 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:26:36 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:26:36 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:27:05 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 47
+[01-Aug-2016 20:27:05 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:27:05 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:27:05 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:27:15 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 40
+[01-Aug-2016 20:27:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:27:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:27:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:27:50 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:27:50 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:27:50 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:27:50 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:28:42 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:28:42 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:28:42 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:28:42 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:28:44 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:28:44 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:28:44 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:28:44 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:28:59 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:28:59 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:28:59 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:28:59 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:30:15 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:30:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:30:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:30:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:31:27 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:31:27 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:31:27 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:31:27 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:31:35 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 44
+[01-Aug-2016 20:31:35 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:31:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:31:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 20:33:18 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 45
+[01-Aug-2016 20:33:18 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 20:33:18 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 20:33:18 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28

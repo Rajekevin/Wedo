@@ -27,14 +27,31 @@ class indexController{
 
 
 		$a = new article();
-		$article = $a->getAllBy(["id_category"=>1],["id"=>"DESC"],3);
+		// $article = $a->getAllBy(["id_category"=>1],["id"=>"DESC"],3);
 
-		$v->assign('articlelist',$article);
+		$article = $a->getAllBy(["id_category"==1],["id"=>"DESC"],3);
+
+		
+
+
+
+		// var_dump($article);
+		
+		// // var_dump($article->getId());
+
+		// foreach ($article as $unArticle) {
+
+			
+		// 	$tabArticles[$unArticle->getIdCategory()] = $unArticle;
+		// }
+
+		// var_dump($unArticle);
+		// $v->assign('articlelist',$tabArticles);
 
 
 		$c = new categorie;
 		$categories = $c->getAllBy([],	["id"=>"ASC"],	12);
-
+		$v->assign('articlelist',$article);
 
 		
 
