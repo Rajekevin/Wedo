@@ -24,7 +24,7 @@
       <td>
         <div>
           <?php if(!empty($value['img']));?> 
-          <img src="<?= WEBROOT; ?>img/article/<?= $value['img']; ?>" />     
+          <img src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />     
         </div>
       </td>
       <td>
