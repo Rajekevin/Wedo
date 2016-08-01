@@ -27,7 +27,7 @@ class indexController{
 
 
 		$a = new article();
-		$article = $a->getAllBy([],["id"=>"DESC"],3);
+		$article = $a->getAllBy(["id_category"=>1],["id"=>"DESC"],3);
 
 		$v->assign('articlelist',$article);
 

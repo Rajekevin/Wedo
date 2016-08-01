@@ -28,6 +28,7 @@ if( file_exists($path_controller) ){
 		$controller->$name_action($route["args"]);
 	}
 	else{
+		//header('Location: http://www.google.com/');
 		die("404, l'action n'existe pas");
 	}
 }

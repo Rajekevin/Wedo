@@ -25,8 +25,11 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 
 
 
+
 <div id="home" class="site-content">
-	
+
+<section class="articles white">
+	<div class="content">
 	<label>
 		<h5>Article : <?php echo $tab['title']; ?> de <?php echo $tab['auteur']; ?> le <?php echo $tab['date']; ?> </h5> 
 		
@@ -49,9 +52,9 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 		 
 		<p><?php echo $tab['contenu'];?></p>
 	</label>
+</div>
 
-
-
+</section>
 
 
 <!-- SECTION COMMENTAIRE -->
@@ -125,7 +128,7 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 
 
 	
-</div>
+<!-- </div> -->
 
 <!--  $test = $a->save(['id'=>$id]);
 

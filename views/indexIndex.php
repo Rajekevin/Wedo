@@ -74,7 +74,7 @@ function format_url($str)
 
             <?php foreach ($articlelist as $key => $value):
              $url=format_url($value['title']); ?>
-            <?php if($value['id_category']==1){ ?>
+           <!--  <?php if($value['id_category']==1){ ?> -->
             <?php if(!empty($value['img'])); ?>
                 <div class="article">
 
@@ -85,7 +85,7 @@ function format_url($str)
                     <h3></h3><p></p>
                     <a class="Wedo_Button" href="">Je commente</a>
                 </div>
-                          <?php } ?>                    
+                    <!--       <?php } ?>  -->                   
             <?php endforeach; ?>
 
 

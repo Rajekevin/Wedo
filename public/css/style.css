@@ -1119,3 +1119,8 @@ h1:before {
     transform: skew(-8deg);
     background-color:transparent;
 }
+
+.presenta {
+  color:white;
+  margin-bottom: 40px;
+}

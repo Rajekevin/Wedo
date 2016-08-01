@@ -16,7 +16,7 @@ class articleController{
 		
 
 		$var = implode ($args);
-		$v->setView("article/musculation");
+		$v->setView("article/article");
 
 
 		
@@ -32,26 +32,11 @@ class articleController{
 		$v->assign('thisArticle',$thisArticle);
 
 		
-		// var_dump($var);
-
+	
 		$a = new article();
 
 
-// $id= intval($idArticle);
-
-// $tab=$a->getOneBy(['id'=>$id]);
-
-
-
-
-		// $url = format_url($var);
-
-
-
-
 		$title = article::findBy("title", $var, "string");
-		// var_dump($title);
-
 		
 
 		if($title==false)
@@ -64,7 +49,7 @@ class articleController{
 		$idArticle = $title->getId();
 		
 		$v->assign('idArticle',$idArticle );
-		var_dump($idArticle);
+		
 
 
 
