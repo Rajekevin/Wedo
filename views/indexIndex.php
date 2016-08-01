@@ -1,6 +1,9 @@
 <section class="banner_container" id="banner">
 
-
+  
+     <center><span class="header-title border-full relative">It's time to be awesome !
+            
+    </span> </center>
 
 
 </section>

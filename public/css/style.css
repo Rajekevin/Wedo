@@ -73,6 +73,7 @@ body{
 	background-color: #DDD;
 	background-attachment: fixed;
 
+
 }
 header{
 	color: #FFF;
@@ -1092,5 +1093,29 @@ h1:before {
     margin: 1% 0 0 0%;
 }
 
-/*style form*/
+/*banner*/
 
+
+.header-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-right: 55px;
+    padding: 15px;
+    cursor: default;
+    text-align: center;
+
+    opacity: 0.9;
+}
+.header-title {
+    font-size: 45px;
+}
+
+.relative {
+    position: relative;
+}
+.border-full {
+    border: 9px solid #ffffff;
+    transform: skew(-8deg);
+    background-color:transparent;
+}

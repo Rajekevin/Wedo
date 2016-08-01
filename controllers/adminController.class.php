@@ -340,6 +340,9 @@ class adminController{
 		$v->assign('categorielist',$categorie);
 
 
+		  
+
+
 	}
 	else{echo"no no no"; }
 		

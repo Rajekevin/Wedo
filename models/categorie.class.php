@@ -3,7 +3,7 @@ class categorie extends basesql{
 	protected $id;
 	protected $name;
 	protected $description;
-	protected $image;
+	
 	//SETTERS
 	public function setId($id){
 		$this->id=$id;
@@ -14,9 +14,7 @@ class categorie extends basesql{
 	public function setDescription($description){
 		$this->description=trim($description);
 	}
-	public function setImage($image){
-		$this->image=$image;
-	}
+
 	//GETTERS
 	public function getId($id){
 		return $this->$id;
@@ -27,9 +25,7 @@ class categorie extends basesql{
 	public function getDescription($description){
 		return $this->description;
 	}
-	public function getImage($image){
-		return $this->$image;
-	}
+
 	public function getForm(){
 		return [	
 					"options" => [

@@ -57,7 +57,7 @@
           		<li><a href=""><i class="fa fa-book fa-fw" aria-hidden="true"></i> Categorie</a>
             		<ul>
               			<li><a href="<?= LINK.'/admin/categorie/categorielist'; ?>"><i class="fa fa-book fa-fw" aria-hidden="true"></i> Tous les Categories</a></li>
-                    	<li><a href="<?= LINK.'/admin/categorie/createcategorie'; ?>"><i class="fa  fa-plus" aria-hidden="true"></i> Ajouter une categorie</a></li>
+                    	<li><a href="<?= LINK.'/admin/createcategorie'; ?>"><i class="fa  fa-plus" aria-hidden="true"></i> Ajouter une categorie</a></li>
 
             		</ul>
          		</li>
