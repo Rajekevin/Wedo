@@ -24,9 +24,30 @@ class indexController{
 		$v->setView("indexIndex");
 
 
+
+
+		$a = new article();
+		$article = $a->getAllBy([],["id"=>"DESC"],3);
+
+		$v->assign('articlelist',$article);
+
+
+		$c = new categorie;
+		$categories = $c->getAllBy([],	["id"=>"ASC"],	12);
+
+
 		
 
 	}
+
+
+
+
+
+
+
+
+
 }
 
 	

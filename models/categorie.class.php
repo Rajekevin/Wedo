@@ -19,8 +19,8 @@ class categorie extends basesql{
 	public function getId(){
 		return $this->id;
 	}
-	public function getName($Name){
-		return $this->Name;
+	public function getName(){
+		return $this->name;
 	}
 	public function getDescription($description){
 		return $this->description;

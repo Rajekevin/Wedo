@@ -45,11 +45,25 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 	}
 
 
+
+function format_url($str)
+	{
+    $str = mb_strtolower($str);
+    $str = utf8_decode($str);
+    $str = strtr($str, utf8_decode('àâäãáåçéèêëíìîïñóòôöõøùúûüýÿ'), 'aaaaaaceeeeiiiinoooooouuuuyy');
+    $str = preg_replace('`[^a-z0-9]+`', '-', $str);
+    $str = trim($str, '-');
+    return $str;
+	}
+
+
+
+
 if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'])&&isset($_POST['contenu']) ){
  			
  			$a->setAuteur($_SESSION['login']);
 			$a->setDescription($_POST['description']);			
-			$a->setTitle($_POST['title']);
+			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
 
@@ -59,6 +73,12 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			// $a->setIdCategory(2);
 
 			// 	}
+
+
+			$title=format_url($_POST['title']);
+
+			$a->setTitle($title);
+	
 			$a->setContenu($_POST['contenu']);
 
 		

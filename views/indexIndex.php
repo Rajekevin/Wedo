@@ -46,15 +46,51 @@
 
 
 
-
 <section class="articles grey"  id="musculation">
     <div class="content">
        <!--  <h2>Musculation</h2> -->
        <h1 id="navbar2">Derniers articles<br><br></h1>
 
+ 
+
        <h2>Musculation</h2>
         <div class="article_list">
+
+            <?php
+
+function format_url($str)
+    {
+    $str = mb_strtolower($str);
+    $str = utf8_decode($str);
+    $str = strtr($str, utf8_decode('àâäãáåçéèêëíìîïñóòôöõøùúûüýÿ'), 'aaaaaaceeeeiiiinoooooouuuuyy');
+    $str = preg_replace('`[^a-z0-9]+`', '-', $str);
+    $str = trim($str, '-');
+    return $str;
+    }
+
+    // $url=format_url($value['title']);
+
+?>
+
+            <?php foreach ($articlelist as $key => $value):
+             $url=format_url($value['title']); ?>
+            <?php if($value['id_category']==1){ ?>
+            <?php if(!empty($value['img'])); ?>
                 <div class="article">
+
+                    <div class="logo_article"><img src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div>
+                    <a href="<?= ARTICLE.$url ?>">
+                    <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
+                    </a>
+                    <h3></h3><p></p>
+                    <a class="Wedo_Button" href="">Je commente</a>
+                </div>
+                          <?php } ?>                    
+            <?php endforeach; ?>
+
+
+
+           <!--      <div class="article">
                     <div class="logo_article"><img src=""></div>
                     <img class="top" src="">
                     <h3></h3><p></p>
@@ -65,13 +101,7 @@
                     <img class="top" src="">
                     <h3></h3><p></p>
                     <a class="Wedo_Button" href="">Je commente</a>
-                </div>
-                <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div>
+                </div> -->
                         <div class="lineclear"></div>
             <a class="Wedo_Button see_more white" href="">Voir tous les articles Musculation</a>
         </div>

@@ -55,7 +55,7 @@ class article extends basesql{
 
 	//GETTERS
 	public function getId(){
-		return $this->$id;
+		return $this->id;
 	}
 	public function getIdUser(){
 		return $this->$id_user;

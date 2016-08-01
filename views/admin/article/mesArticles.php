@@ -13,6 +13,7 @@
       <td>Image</td>
       <td>Titre</td>
       <td>Description</td>
+      <td>Categorie</td>
       <td>Action</td>
   </tr>
   <tr>
@@ -41,6 +42,26 @@
             ?>
         </div>
       </td>
+
+
+
+        <td>
+        <div>
+              <?php 
+              $idCategory = $value['id_category'];          
+
+              $idCategory = categorie::findById($idCategory);                
+              $CategoryName = $idCategory->getName();
+              echo $CategoryName;
+
+
+
+
+            ?>
+        </div>
+      </td>
+
+
       <td>
         <div>
           <div>

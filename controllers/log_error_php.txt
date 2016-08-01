@@ -50,3 +50,22 @@
 [31-Jul-2016 11:09:31 Europe/Paris] PHP Stack trace:
 [31-Jul-2016 11:09:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
 [31-Jul-2016 11:09:31 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 14:35:21 Europe/Paris] PHP Parse error:  syntax error, unexpected '}' in C:\wamp\www\wedo\views\indexIndex.php on line 77
+[01-Aug-2016 14:35:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 14:35:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 14:35:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 14:35:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 14:35:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[01-Aug-2016 16:47:15 Europe/Paris] PHP Parse error:  syntax error, unexpected '.' in C:\wamp\www\wedo\views\indexIndex.php on line 65
+[01-Aug-2016 16:47:15 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 16:47:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 16:47:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 16:47:15 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 16:47:15 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[01-Aug-2016 18:16:21 Europe/Paris] PHP Fatal error:  Cannot redeclare format_url() (previously declared in C:\wamp\www\wedo\views\indexIndex.php:65) in C:\wamp\www\wedo\views\indexIndex.php on line 65
+[01-Aug-2016 18:16:21 Europe/Paris] PHP Stack trace:
+[01-Aug-2016 18:16:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[01-Aug-2016 18:16:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 18:16:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[01-Aug-2016 18:16:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[01-Aug-2016 18:16:21 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
