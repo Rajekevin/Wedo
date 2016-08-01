@@ -1,7 +1,4 @@
-    <?php
-    // Tout début du code PHP. Situé en haut de la page web
-    ini_set("display_errors",0);error_reporting(0);
-    ?>
+
 <?php foreach ($createArticle as $key => $value): 
 	?>
 
@@ -12,7 +9,7 @@
 $a = new article();
 
 
-$id= intval($_GET["id"]);
+// $id= intval($_GET["id"]);
 
 $tab=$a->getOneBy(['id'=>$id]);
 
@@ -35,7 +32,7 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 		$dimension = getimagesize($_FILES[$index]['tmp_name']);
 		if ($dimension[0] > $size[0] || $dimension[1] >$size[1]) 
 		{
-			echo "Les dimensions sont trop élevées, ne donnez pas trop de lait à votre";
+			echo "Les dimensions sont trop élevées, ne donnez pas trop de lait à votre image";
 			return false;
 			# code...
 		}
@@ -48,7 +45,6 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 	}
 
 
-
 if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'])&&isset($_POST['contenu']) ){
  			
  			$a->setAuteur($_SESSION['login']);
@@ -57,17 +53,25 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
 
-			if($_POST['categorie']=="Musculation"){
-			$a->setIdCategory(1);
-				}else{
-			$a->setIdCategory(2);
+			// if($_POST['categorie']=="Musculation"){
+			// $a->setIdCategory(1);
+			// 	}else{
+			// $a->setIdCategory(2);
 
-				}
+			// 	}
 			$a->setContenu($_POST['contenu']);
+
 		
 
+			
+			/*on recherche l'id de la catégorie sélectionné par l'user */
+			$idCategory = categorie::findBy("name", $_POST['categorie'], "string");
+			$idCategory = $idCategory->getId();
+		
+		
+			$a->setIdCategory($idCategory);
 
-			if(upload("img","img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)
+			if(upload("img","public/img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)
 			{
 
 				echo "L'upload s'est bien passé !";
@@ -75,20 +79,22 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 			$a->setImg($_FILES['img']['name']);
 
-			
 			$a->save();
+
+			
+			
 
 
         	
 
-		foreach ($articles as $key => $value): 
-                    // if ($thisArticle['id'] != $value['id']):
-          var_dump($value['id']);
-          	endforeach;
+		// foreach ($articles as $key => $value): 
+  //                   // if ($thisArticle['id'] != $value['id']):
+  //         var_dump($value['id']);
+  //         	endforeach;
 
-          	$idArticle = $value['id'];
-          	$theArticle= $idArticle+1;
-		 echo "Votre article vient d'être publier rendez-vous sur  http://localhost/wedo/index/a?id=".$theArticle;
+  //         	$idArticle = $value['id'];
+  //         	$theArticle= $idArticle+1;
+		//  echo "Votre article vient d'être publier rendez-vous sur  http://localhost/wedo/index/a?id=".$theArticle;
 		}
 
 
@@ -150,14 +156,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 </form>
 
-
 <!--  $test = $a->save(['id'=>$id]);
 
  var_dump($a->save(['id'=>$id])); -->
-
-
-
-
-	
-
 

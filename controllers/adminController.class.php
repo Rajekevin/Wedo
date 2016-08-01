@@ -223,30 +223,25 @@ class adminController{
 		session_start();
 
 
-
+		
 	    
 		if (isset($_SESSION['login'])&&($_SESSION['statut']==1)   ){ 
 		$var = implode ($args);
+
+	
                             	
 		$v = new view();
 		$v->setViewBo("admin/article/createArticle");
-		/* List of articles */
+				/* List of articles */
 
 		$a = new article();
 		$article = $a->getAllBy([],[],'');
 
 		$c = new categorie();
-		$categorie = $c->getAllBy([],[],'');
-
-
-
-		
+		$categorie = $c->getAllBy([],[],'');		
 
 		$articles= $a->getOneBy(["id"=>$var]);		
 		$v->assign('articles',$articles);
-
-	
-
 		
 
 		// $membre= new membre();
@@ -261,6 +256,21 @@ class adminController{
 
 		$v->assign('createArticle',$article);
 		$v->assign('categorie',$categorie);
+
+
+
+
+
+	
+
+
+
+		
+
+	
+
+		
+		
 	}else{
 		echo "Impossible d'accéder à cette page";
 	}

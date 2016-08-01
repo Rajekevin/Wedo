@@ -219,6 +219,8 @@ public static function findBy($column, $value, $valueType, $fetch=true, $Orderby
 			}
 			$query = $instance->pdo->prepare($sql);
 			$query->execute();
+
+			
 		}else{ //Sinon on fait une simple requete sur une colonne
 			$sql = "SELECT * FROM "
 			.$instance->table." WHERE "
@@ -239,6 +241,8 @@ public static function findBy($column, $value, $valueType, $fetch=true, $Orderby
 			}
 			$query = $instance->pdo->prepare($sql);
 			$query->execute();
+
+
 		}
 	
 		if($fetch == true){
