@@ -378,6 +378,37 @@ class adminController{
 
 
 
+		public function removeCategorieAction($args){
+		session_start();
+
+	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
+	            { 
+		$v = new view();
+		$v->setViewBo("admin/categorie/removeCategorie");
+		
+		/* List of categorie */
+		$c = new categorie();
+		$categorie = $c->getAllBy([],[],'');
+
+
+		$v->assign('removeCategorie',$categorie);
+
+
+
+
+
+		  
+
+
+	}
+	else{echo"no no no"; }
+		
+	}/*exit*/
+
+
+
+
+
 
 	/*USER*/
 

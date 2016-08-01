@@ -52,7 +52,7 @@
                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     </a>';
             ?>
-            <a href="removeCategorie?id=<?php echo $id; ?>" 
+            <a href="../removeCategorie?id=<?php echo $id; ?>" 
               onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée?'));">
               <i class="fa fa-trash" aria-hidden="true"></i>
             </a>
