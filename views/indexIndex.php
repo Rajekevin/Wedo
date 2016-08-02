@@ -232,13 +232,15 @@ function format_url($str)
         $idCategorie = Article::findBy("id_category",$value['id'],"int");
        
         //on récupère tous les 3 derniers articles en fonction de chaque catégorie
-        $articles = $a->getAllBy(['id_category' => $value['id']], ['id' => 'DESC'] ,3);
+        $articles = $a->getAllBy(['id_category' => $value['id']], ['id' => 'DESC'] ,'');
 
         ?>
 
          
-        <?php foreach ($articles as $key => $value): ?>
-         
+      <?php foreach ($articles as $key => $value): ?>
+
+
+
             <div class="article_list"> 
 
                 <div class="article">
@@ -251,7 +253,11 @@ function format_url($str)
                     <h3></h3><p></p>
                     <a class="Wedo_Button" href="">Je commente</a>
           </div>
+
+
          </div>
+
+
          <?php endforeach; ?>
 
 
