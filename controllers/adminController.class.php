@@ -310,7 +310,7 @@ class adminController{
 
 
 
-		public function categorieAction($args){
+	public function categorieAction($args){
 		session_start();
 
 	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)

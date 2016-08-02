@@ -194,6 +194,7 @@
                     </div>
                 </form>
         </footer>
+        </body>
 
 
 <!--END WEDO FOOTER-->
@@ -225,5 +226,5 @@
     var isMobile = 0;
     var isTablet = 0;
     </script>
-</body>
+
 </html>

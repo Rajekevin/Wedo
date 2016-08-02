@@ -649,3 +649,752 @@
 [01-Aug-2016 20:33:18 Europe/Paris] PHP Stack trace:
 [01-Aug-2016 20:33:18 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
 [01-Aug-2016 20:33:18 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 08:06:54 Europe/Paris] PHP Notice:  Undefined variable: categorielist in C:\wamp\www\wedo\views\indexIndex.php on line 215
+[02-Aug-2016 08:06:54 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 08:06:54 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\wedo\views\indexIndex.php on line 215
+[02-Aug-2016 08:06:54 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 08:06:54 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 08:50:45 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 08:50:45 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 08:50:45 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 08:50:45 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:01:29 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:01:29 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:01:29 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:01:29 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:02:33 Europe/Paris] PHP Notice:  Undefined variable: category_id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:02:33 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:02:33 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:02:33 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:02:33 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:02:33 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:02:33 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:02:33 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:02:34 Europe/Paris] PHP Notice:  Undefined variable: category_id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:02:34 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:02:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:02:34 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:02:34 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:02:34 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:02:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:02:34 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:03 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:03 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:03 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:03 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:03 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:03 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:03 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:03 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:04 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:04 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:04 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:04 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:04 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:04 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:04 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:04 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:16 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:16 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:16 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:16 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:16 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:16 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:16 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:16 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:29 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 58
+[02-Aug-2016 09:03:29 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:29 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:29 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:29 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:29 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:29 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:29 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:29 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:03:29 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:29 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:29 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:03:51 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 58
+[02-Aug-2016 09:03:51 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:03:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:03:51 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:09 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 58
+[02-Aug-2016 09:04:09 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Notice:  Undefined index: id in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:04:35 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:43 Europe/Paris] PHP Fatal error:  Cannot use object of type categorie as array in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:04:43 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:43 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:43 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:44 Europe/Paris] PHP Fatal error:  Cannot use object of type categorie as array in C:\wamp\www\wedo\controllers\indexController.class.php on line 60
+[02-Aug-2016 09:04:44 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:44 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:44 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:51 Europe/Paris] PHP Warning:  Missing argument 3 for basesql::getAllBy(), called in C:\wamp\www\wedo\controllers\indexController.class.php on line 60 and defined in C:\wamp\www\wedo\core\basesql.class.php on line 140
+[02-Aug-2016 09:04:51 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:51 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:51 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:04:51 Europe/Paris] PHP Warning:  Missing argument 3 for basesql::getAllBy(), called in C:\wamp\www\wedo\controllers\indexController.class.php on line 60 and defined in C:\wamp\www\wedo\core\basesql.class.php on line 140
+[02-Aug-2016 09:04:51 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:04:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:04:51 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:04:51 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:05:35 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:05:35 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:05:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:05:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:05:35 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:05:35 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:05:35 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:05:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:05:35 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:05:35 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:06:49 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:06:49 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:06:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:06:49 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:06:49 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:06:49 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:06:49 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:06:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:06:49 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:06:49 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:06:50 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:06:50 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:06:50 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:06:50 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:06:50 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:06:50 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:06:50 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:06:50 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:06:50 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:06:50 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:60
+[02-Aug-2016 09:26:15 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:15 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:15 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:15 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:15 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:15 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:15 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:15 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:17 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:17 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:17 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:17 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:17 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:17 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:17 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:17 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:17 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:17 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:18 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:18 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:18 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:18 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:18 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:18 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:18 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:18 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:18 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:18 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:24 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:24 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:24 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:24 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:24 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:24 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:24 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:24 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:24 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:24 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:25 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:25 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:25 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:25 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:25 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:26:25 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:26:25 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:26:25 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:26:25 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:26:25 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:07 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:07 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:07 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:07 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:07 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:07 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:07 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:07 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:07 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:07 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:08 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:08 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:08 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:08 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:08 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:08 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:08 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:08 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:08 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:08 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:10 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:10 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:10 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:10 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:10 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:10 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:10 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:10 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:10 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:10 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:14 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:14 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:14 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:14 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:14 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:14 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:14 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:14 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:14 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:14 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:20 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:20 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:20 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:20 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:21 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:21 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:36:21 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:36:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:36:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:36:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:36:21 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:57:40 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:57:40 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:57:40 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:57:40 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:57:40 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 09:57:40 Europe/Paris] PHP Notice:  Array to string conversion in C:\wamp\www\wedo\core\basesql.class.php on line 158
+[02-Aug-2016 09:57:40 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 09:57:40 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 09:57:40 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 09:57:40 Europe/Paris] PHP   3. basesql->getAllBy() C:\wamp\www\wedo\controllers\indexController.class.php:63
+[02-Aug-2016 10:06:31 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:06:31 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:06:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:06:31 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:12:02 Europe/Paris] PHP Fatal error:  Cannot access protected property article::$id in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:12:02 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:12:02 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:12:02 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:12:51 Europe/Paris] PHP Fatal error:  Cannot access protected property article::$id_category in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:12:51 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:12:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:12:51 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:15:24 Europe/Paris] PHP Fatal error:  Call to undefined method article::id_category() in C:\wamp\www\wedo\controllers\indexController.class.php on line 63
+[02-Aug-2016 10:15:24 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:15:24 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:15:24 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:15:25 Europe/Paris] PHP Fatal error:  Call to undefined method article::id_category() in C:\wamp\www\wedo\controllers\indexController.class.php on line 63
+[02-Aug-2016 10:15:25 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:15:25 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:15:25 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:16:04 Europe/Paris] PHP Fatal error:  Cannot use object of type article as array in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:16:04 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:16:04 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:16:04 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:16:06 Europe/Paris] PHP Fatal error:  Cannot use object of type article as array in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:16:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:16:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:16:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:16:45 Europe/Paris] PHP Fatal error:  Cannot access protected property article::$id_category in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:16:45 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:16:45 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:16:45 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:16:46 Europe/Paris] PHP Fatal error:  Cannot access protected property article::$id_category in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:16:46 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:16:46 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:16:46 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:22:21 Europe/Paris] PHP Fatal error:  Call to undefined method categorie::getIdCategory() in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:22:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:22:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:22:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:22:22 Europe/Paris] PHP Fatal error:  Call to undefined method categorie::getIdCategory() in C:\wamp\www\wedo\controllers\indexController.class.php on line 59
+[02-Aug-2016 10:22:22 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:22:22 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:22:22 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:36:09 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 61
+[02-Aug-2016 10:36:09 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:36:09 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:36:09 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:36:11 Europe/Paris] PHP Fatal error:  Call to a member function getId() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 61
+[02-Aug-2016 10:36:11 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:36:11 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:36:11 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:36:23 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\controllers\indexController.class.php on line 61
+[02-Aug-2016 10:36:23 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:36:23 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:36:23 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:08 Europe/Paris] PHP Parse error:  syntax error, unexpected ';' in C:\wamp\www\wedo\views\indexIndex.php on line 233
+[02-Aug-2016 10:41:08 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:41:08 Europe/Paris] PHP Parse error:  syntax error, unexpected ';' in C:\wamp\www\wedo\views\indexIndex.php on line 233
+[02-Aug-2016 10:41:08 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:08 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Notice:  Undefined variable: a in C:\wamp\www\wedo\views\indexIndex.php on line 236
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Fatal error:  Call to a member function getAllBy() on a non-object in C:\wamp\www\wedo\views\indexIndex.php on line 236
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Notice:  Undefined variable: a in C:\wamp\www\wedo\views\indexIndex.php on line 236
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Fatal error:  Call to a member function getAllBy() on a non-object in C:\wamp\www\wedo\views\indexIndex.php on line 236
+[02-Aug-2016 10:41:31 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:41:31 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 222
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined index: img in C:\wamp\www\wedo\views\indexIndex.php on line 224
+[02-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Notice:  Undefined variable: articles in C:\wamp\www\wedo\views\indexIndex.php on line 219
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\wedo\views\indexIndex.php on line 219
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Notice:  Undefined variable: articles in C:\wamp\www\wedo\views\indexIndex.php on line 219
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\wedo\views\indexIndex.php on line 219
+[02-Aug-2016 10:48:21 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 10:48:21 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 237
+[02-Aug-2016 11:01:06 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:01:06 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Notice:  Undefined index: name in C:\wamp\www\wedo\views\indexIndex.php on line 244
+[02-Aug-2016 11:04:47 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 11:04:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102

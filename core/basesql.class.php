@@ -161,8 +161,10 @@ class basesql{
 		$query = $this->pdo->prepare($sql);
 		$query->execute($condition);
 
-
+		// var_dump($query);
 		return $query->fetchAll();
+
+		// var_dump($query);
 	}
 
 

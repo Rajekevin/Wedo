@@ -29,7 +29,7 @@ class indexController{
 		$a = new article();
 		// $article = $a->getAllBy(["id_category"=>1],["id"=>"DESC"],3);
 
-		$article = $a->getAllBy(["id_category"==1],["id"=>"DESC"],3);
+		$article = $a->getAllBy([],["id"=>"DESC"],3);
 
 		
 
@@ -49,11 +49,25 @@ class indexController{
 		// $v->assign('articlelist',$tabArticles);
 
 
-		$c = new categorie;
-		$categories = $c->getAllBy([],	["id"=>"ASC"],	12);
+	
 		$v->assign('articlelist',$article);
 
+		$c = new categorie();
+		//On cherche tous les catégories
+		$categorie = $c->getAllBy([],['id'=>'ASC'],'');
+
 		
+
+		$idCategorie = Article::findBy("id_category",$a->getIdCategory(),"int");
+		
+		//on récupère tous les 4 derniers articles en fonction de chaque catégorie
+		$articles = $a->getAllBy(['id_category' => $c->getId()], ['id' => 'DESC'] ,'');
+
+		// $articles = $a->getAllBy(['id_category' => 1], ['id' => 'DESC', 'LIMIT' => '4'] ,'');
+	
+
+		$v->assign('categorielist',$categorie);
+		// $v->assign('articles',$articles);
 
 	}
 
