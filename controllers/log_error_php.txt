@@ -1430,3 +1430,10 @@
 [02-Aug-2016 12:10:31 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
 [02-Aug-2016 12:10:31 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102
 [02-Aug-2016 12:10:31 Europe/Paris] PHP   6. basesql->getAllBy() C:\wamp\www\wedo\views\indexIndex.php:235
+[02-Aug-2016 14:01:08 Europe/Paris] PHP Notice:  Undefined variable: title in C:\wamp\www\wedo\views\indexIndex.php on line 217
+[02-Aug-2016 14:01:08 Europe/Paris] PHP Stack trace:
+[02-Aug-2016 14:01:08 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[02-Aug-2016 14:01:08 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 14:01:08 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[02-Aug-2016 14:01:08 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:94
+[02-Aug-2016 14:01:08 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:102

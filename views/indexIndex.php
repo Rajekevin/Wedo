@@ -213,13 +213,13 @@ function format_url($str)
 
   <section class="articles homepage_articles">
 <?php foreach ($categorielist as $key => $value): ?>
-    
-  
+  <?php $title = $value['name'];  ?>   
+  <i><h1 id="navbar2"><?= $title; ?><br/></h1></i>
 
      <div class="content">
-    
 
-<?php $title = $value['name'];  ?>
+
+
 
      <?php
     $c = new categorie();
@@ -232,7 +232,7 @@ function format_url($str)
         $idCategorie = Article::findBy("id_category",$value['id'],"int");
        
         //on récupère tous les 3 derniers articles en fonction de chaque catégorie
-        $articles = $a->getAllBy(['id_category' => $value['id']], ['id' => 'DESC'] ,'');
+        $articles = $a->getAllBy(['id_category' => $value['id']], ['id' => 'DESC'] ,3);
 
         ?>
 
@@ -244,13 +244,13 @@ function format_url($str)
             <div class="article_list"> 
 
                 <div class="article">
-                    <center><i><h2><?= $title; ?></h2></i> </center> 
+                    <center><i><h2><?= $value['title']; ?></h2></i> </center> 
 
                     <div class="logo_article"><img src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div> 
                     <a href="<?= ARTICLE.$value['title'] ?>">
                     <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
                     </a>
-                    <h3></h3><p></p>
+                    <h5></h5><p> <?= $value['title']; ?></p>
                     <a class="Wedo_Button" href="">Je commente</a>
           </div>
 
@@ -261,7 +261,11 @@ function format_url($str)
          <?php endforeach; ?>
 
 
-     
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+     <br/> <br/> <br/> <br/> <br/> <br/> 
+
+
+      
      </div> 
      
  <?php endforeach; ?>
