@@ -98,6 +98,10 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			}
 
 			$a->setImg($_FILES['img']['name']);
+			
+			$value=0;
+			$a->setInterest($value);
+			// var_dump($a);
 
 			$a->save();
 

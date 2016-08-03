@@ -53,9 +53,47 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 		<p><?php echo $tab['contenu'];?></p>
 	</label>
 </div>
-
+<div class="s-c-like" state="false" id="like" alt="like"> </div>
 </section>
 
+
+<div class="vote_btn">
+				<!-- <a class="bouton_like"><i class="fa fa-heart"></i></a> -->
+				<?php 
+				//formUnlike
+					if(isset($_SESSION['id']) && isset($_SESSION['token'])  && isset($_SESSION['login'])){
+						$this->createForm($formLike, $errorLike);
+						echo "<p>".$nbOfLikes."</p>";
+					}else{
+						echo "You must log to like.";
+					}
+				?>
+</div>
+
+
+<a href="like?id=<?php echo $tab['id']; ?>"  id="<?php echo $tab['id']; ?>" > Like<i class="fa fa-heart-o" aria-hidden="true"></i>
+</a>
+
+
+
+
+
+<script>
+function cwRating(id,type,target){
+	$.ajax({
+		type:'POST',
+		url:'rating.php',
+		data:'id='+id+'&type='+type,
+		success:function(msg){
+			if(msg == 'err'){
+				alert('Some problem occured, please try again.');
+			}else{
+				$('#'+target).html(msg);
+			}
+		}
+	});
+}
+</script>
 
 <!-- SECTION COMMENTAIRE -->
 <!-- 	<section id="com">

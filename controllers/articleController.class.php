@@ -49,6 +49,33 @@ class articleController{
 		$idArticle = $title->getId();
 		
 		$v->assign('idArticle',$idArticle );
+
+/*like*/
+		$interest = new interest();		
+		$theseLikes = $interest->getAllBy(['id_article'=>$idArticle],['id'=>'DESC'],'');
+
+		/*nbre de j'aime*/
+
+
+		$nbOfLikes = count($theseLikes);		
+		$v->assign('theseLikes',$theseLikes);	
+		$v->assign('nbOfLikes',$nbOfLikes);
+
+
+
+		//like Form
+		//Unlike Form
+		if(isset($_SESSION['id']) && isset($_SESSION['token'])  && isset($_SESSION['login'])){
+			$didHeLike = $interest->getOneBy(['id_user'=>$_SESSION['id'],'id_article'=>$idArticle]);
+			//if($didHeLike == false){
+				$formLike = $interest->getLikeForm();
+			//}else{
+			//	$formLike = $likes->getUnlikeForm();
+			//}
+			$errorLike = [];
+			$v->assign("formLike",$formLike);
+			$v->assign("errorLike",$errorLike);
+		}
 		
 
 

@@ -1124,3 +1124,8 @@ h1:before {
   color:white;
   margin-bottom: 40px;
 }
+
+
+ #like{
+    background-image: url("../img/article/like/LikeOff.png");
+}

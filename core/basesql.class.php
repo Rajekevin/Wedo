@@ -55,6 +55,8 @@ class basesql{
 			return $query->fetch();
 
 
+
+
 		}
 
 
@@ -83,6 +85,8 @@ class basesql{
 				$data[$column] = $this->$column;
 			}
 			$query->execute($data);
+
+			var_dump($query);
 
 		}
 	}

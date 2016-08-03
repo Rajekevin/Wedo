@@ -11,6 +11,7 @@ class article extends basesql{
 	protected $img;
 	protected $url;
 	protected $date;
+	protected $interest;
 	
 
 	public function __construct(){
@@ -53,6 +54,10 @@ class article extends basesql{
 		$this->date=trim($date);
 	}
 
+
+	public function setInterest($interest){
+		$this->interest=$interest;
+	}
 	//GETTERS
 	public function getId(){
 		return $this->id;
@@ -84,6 +89,10 @@ class article extends basesql{
 	}
 	public function getDate(){
 		return $this->date;
+	}
+
+	public function getInterest(){
+		return $this->interest;
 	}
 
 

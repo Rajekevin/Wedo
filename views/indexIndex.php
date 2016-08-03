@@ -46,7 +46,7 @@
 
 
 
-<section class="articles grey"  id="musculation">
+<section class="articles grey"  >
     <div class="content">
        <!--  <h2>Musculation</h2> -->
        <h1 id="navbar2">Derniers articles<br><br></h1>
@@ -111,7 +111,7 @@ function format_url($str)
 
 
 
-<section class="articles grey" id="Fitness">
+<section class="articles grey">
     <div class="content">
         <h2>Fitness</h2>
         <div class="article_list">
@@ -211,12 +211,13 @@ function format_url($str)
 </section>
 
 
-  <section class="articles homepage_articles">
+  <section class="articles homepage_articles" >
 <?php foreach ($categorielist as $key => $value): ?>
   <?php $title = $value['name'];  ?>   
-  <i><h1 id="navbar2"><?= $title; ?><br/></h1></i>
+ 
 
-     <div class="content">
+     <div class="content"  id="<?php echo $title; ?>">
+         <i><h1 id="navbar2"><?= $title; ?><br/></h1></i>
 
 
 

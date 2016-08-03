@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/style.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/footer.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/form.css" />
+        <link rel="stylesheet" href="<?= WEBROOT; ?>/public/css/font-awesome/css/font-awesome.min.css" > 
 
 
 
@@ -55,8 +56,13 @@
                         ?>
 
                     <li><a  class="js-scrollTo" href="<?= LINK; ?>index/profil">Bienvenue <?php echo $_SESSION['login'];?></a></li>
+
+
+
                     <li><a class="js-scrollTo" href="<?= LINK; ?>user/deconnexion">Deconnexion</a></li>
-                    <li><a class="js-scrollTo" href="#musculation">Musculation</a>
+                    <li>
+                    <a class="js-scrollTo" href="<?= LINK; ?>/index#Musculation">Musculation</a>
+                      
 
                     </li>
                     <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>
@@ -67,7 +73,7 @@
 
                         </ul>
                     </li> -->
-
+                    <li><a class="js-scrollTo" href="<?= LINK; ?>article/all">Article</a></li>
                     <li><a href="">Evenements</a></li>
 
                     
@@ -76,7 +82,8 @@
                             else
                             {
                                 ?>    
-                                <li><a class="js-scrollTo" href="#musculation">Musculation</a>
+                                <li>
+                                <a class="js-scrollTo" href="<?= LINK.'index#Musculation'; ?>">Musculation</a>
 
                     </li>
                     <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>                   
