@@ -15,18 +15,59 @@ function cwRating(id,type,target){
 		success:function(msg){
 			if(msg == 'err'){
 				alert('Some problem occured, please try again.');
+			
+
+
 			}else{
 				$('#'+target).html(msg);
-				var $idArticle =$('#idArticle'); //id que je souhaite envoyé vers mon script php
+				
 			}
 		}
 	});
+
+
 }
 
 
 
 
 </script>
+
+
+
+	<script>
+	$(document).ready(function()
+	{
+    
+	$('body').on("click",'.heart',function()
+    {
+    	
+    	var A=$(this).attr("id");
+    	var B=A.split("like");
+        var messageID=B[1];
+        var C=parseInt($("#likeCount"+messageID).html());
+    	$(this).css("background-position","")
+        var D=$(this).attr("rel");
+       
+        if(D === 'like') 
+        {      
+        $("#likeCount"+messageID).html(C+1);
+        $(this).addClass("heartAnimation").attr("rel","unlike");
+        
+        }
+        else
+        {
+        $("#likeCount"+messageID).html(C-1);
+        $(this).removeClass("heartAnimation").attr("rel","like");
+        $(this).css("background-position","left");
+        }
+
+
+    });
+
+
+	});
+	</script>
 
 
 
@@ -43,19 +84,90 @@ function cwRating(id,type,target){
     color: #d17581;
 }
 
-.thumbnail {
-    padding: 0;
-}
 
-.thumbnail .caption-full {
-    padding: 9px;
-    color: #333;
-}
-.glyphicon-thumbs-up:hover{ color:#008000; cursor:pointer;}
-.glyphicon-thumbs-down:hover{ color: #E10000; cursor:pointer;}
-.counter{ color:#333333;}
-.thumbnail img{height:200px;}
+	.heart_icon {
+		background: url("../../public/img/article/like/twitter-heart-button.png");
+		background-size: 2900px;
+		background-repeat: no-repeat;
+		height: 100px;
+		width: 100px;
+		cursor: pointer;
+		position: relative;
+	}
+ 
+	.heart {
+		background: url(../../public/img/article/like/twitter-heart-button.png);
+		background-position: left;
+		background-repeat: no-repeat;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		position: absolute;
+		left:-14px;
+		background-size:1450px; //actual background size 2900px
+		}
+		body{color: #333333}
+    #container{
+    	margin:0 auto;
+    	width: 900px;
+    	font-family: arial;
+    }
+    .heart {
+	    background: url(../../public/img/article/like/twitter-heart-button.png);
+	    background-position: left;
+	    background-repeat: no-repeat;
+	    height: 50px;
+	    width: 50px;
+	    cursor: pointer;
+	    position: absolute;
+	    left:-14px;
+        background-size:2900%
+    }
+    .heart:hover, .heart:focus{
+    background-position: right;
+	}
+
+    @-webkit-keyframes heartBlast {
+    0% {
+	    background-position: left;
+	}
+	100% {
+	    background-position: right;
+	}
+	}
+
+	@keyframes heartBlast {
+	    0% {
+	    background-position: left;
+	}
+	100% {
+	    background-position: right;
+	}
+	}
+
+	.heartAnimation {
+    display: inline-block;
+    -webkit-animation-name: heartBlast;
+    animation-name: heartBlast;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: steps(28);
+    animation-timing-function: steps(28);
+    background-position: right;
+    }
+    .feed p{font-family: 'Georgia', Times, Times New Roman, serif; font-size: 25px}
+    .feed{clear: both; margin-bottom: :20px; height: 100px; position: relative;}
+    a{color: #7ac9ed}
+    p{margin: 0px; padding: 0px}
+    .likeCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 13px;margin-left: 28px;font-size: 16px;color: #999999}
+    
+	
 </style>
+
+
+
 	
 
 <?php
@@ -127,6 +239,26 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
                 <span class="counter" id="dislike_count<?php echo $tab['interest']; ?>"><?php echo $tab['interest']; ?></span>
             </p>
         </div>
+
+
+
+
+<h3>Click on heart button</h3>
+
+<div class="feed" id="feed1">
+<p>The Social Network Script <a href="http://www.thewallscript.com" target="_blank">http://thewallscript.com</a></p>
+<div class="heart " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">14</div>
+</div>
+
+<div class="feed" id="feed2">
+<p>OAuth Login <a href="http://www.oauthlogin.com" target="_blank">http://oauthlogin.com</a></p>
+<div class="heart" id="like2" rel="like"></div> <div class="likeCount" id="likeCount2">10</div>
+</div>
+
+<div class="feed" id="feed2">
+<p>9lessons Programming Blog <a href="http://www.9lessons.info" target="_blank">http://9lessons.info</a></p>
+<div class="heart" id="like3" rel="like"></div> <div class="likeCount" id="likeCount3">24</div>
+</div>
 
 
 <!-- SECTION COMMENTAIRE -->
