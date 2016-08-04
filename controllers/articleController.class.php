@@ -65,17 +65,17 @@ class articleController{
 
 		//like Form
 		//Unlike Form
-		if(isset($_SESSION['id']) && isset($_SESSION['token'])  && isset($_SESSION['login'])){
-			$didHeLike = $interest->getOneBy(['id_user'=>$_SESSION['id'],'id_article'=>$idArticle]);
-			//if($didHeLike == false){
-				$formLike = $interest->getLikeForm();
-			//}else{
-			//	$formLike = $likes->getUnlikeForm();
-			//}
-			$errorLike = [];
-			$v->assign("formLike",$formLike);
-			$v->assign("errorLike",$errorLike);
-		}
+		// if(isset($_SESSION['id']) && isset($_SESSION['token'])  && isset($_SESSION['login'])){
+		// 	$didHeLike = $interest->getOneBy(['id_user'=>$_SESSION['id'],'id_article'=>$idArticle]);
+		// 	//if($didHeLike == false){
+		// 		$formLike = $interest->getLikeForm();
+		// 	//}else{
+		// 	//	$formLike = $likes->getUnlikeForm();
+		// 	//}
+		// 	$errorLike = [];
+		// 	$v->assign("formLike",$formLike);
+		// 	$v->assign("errorLike",$errorLike);
+		// }
 		
 
 
@@ -180,6 +180,37 @@ class articleController{
 
 	}
 
+
+
+	public function ratingAction($args){
+
+		session_start();
+		$v = new view();
+
+		
+
+		
+		$v->setView("article/rating");
+
+		$var = implode ($args);
+
+
+
+
+		$a = new article();
+
+
+		$title = article::findBy("title", $var, "string");
+		
+
+
+
+		// $idArticle = $title->getId();
+		
+		// $v->assign('idArticle',$idArticle );
+
+	
+
 	
 
 		
@@ -187,7 +218,6 @@ class articleController{
 	
 
 
-
-
+}
 
 }

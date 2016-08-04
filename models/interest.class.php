@@ -29,11 +29,11 @@ class Interest extends basesql{
 	}
 
 	public function getIdUser(){
-		return $this->$id_user;
+		return $this->id_user;
 	}
 
 	public function getIdArticle(){
-		return $this->$id_article;
+		return $this->id_article;
 	}
 	public function getDate(){
 		return $this->date;
@@ -67,5 +67,14 @@ class Interest extends basesql{
 		];
 
 	}
+
+
+		    public static function articleExist($idArticle) {
+            return (Interest::findBy("id_article",$idArticle,"int"));
+            }
+
+     public static function userExist($id_user) {
+            return (Interest::findBy("id_user",$id_user,"int"));
+       }
 
 }

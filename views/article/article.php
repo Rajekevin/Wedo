@@ -2,7 +2,60 @@
 <?php foreach ($article as $key => $value): 
 	?>
 <?php endforeach; ?>
+<script>
+function cwRating(id,type,target){
 
+
+
+	$.ajax({
+		type:'POST',
+		url:'../rating',
+		data:'id='+id+'&type='+type,
+
+		success:function(msg){
+			if(msg == 'err'){
+				alert('Some problem occured, please try again.');
+			}else{
+				$('#'+target).html(msg);
+				var $idArticle =$('#idArticle'); //id que je souhaite envoyé vers mon script php
+			}
+		}
+	});
+}
+
+
+
+
+</script>
+
+
+
+<style type="text/css">
+.row{ margin:20px 20px 20px 20px;}
+.ratings{ font-size:25px !important;}
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+.glyphicon-thumbs-up:hover{ color:#008000; cursor:pointer;}
+.glyphicon-thumbs-down:hover{ color: #E10000; cursor:pointer;}
+.counter{ color:#333333;}
+.thumbnail img{height:200px;}
+</style>
 	
 
 <?php
@@ -50,50 +103,31 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 
 	<label>
 		 
-		<p><?php echo $tab['contenu'];?></p>
+		<p name="content"><?php echo $tab['contenu'];?></p>
+		<input id="idArticle" type="hidden" value="<?php echo $idArticle;?>">  </input>
 	</label>
 </div>
-<div class="s-c-like" state="false" id="like" alt="like"> </div>
+
 </section>
 
 
-<div class="vote_btn">
-				<!-- <a class="bouton_like"><i class="fa fa-heart"></i></a> -->
-				<?php 
-				//formUnlike
-					if(isset($_SESSION['id']) && isset($_SESSION['token'])  && isset($_SESSION['login'])){
-						$this->createForm($formLike, $errorLike);
-						echo "<p>".$nbOfLikes."</p>";
-					}else{
-						echo "You must log to like.";
-					}
-				?>
-</div>
 
 
-<a href="like?id=<?php echo $tab['id']; ?>"  id="<?php echo $tab['id']; ?>" > Like<i class="fa fa-heart-o" aria-hidden="true"></i>
-</a>
+    <div class="ratings">
+            <p class="pull-right"></p>
+            <p>
+                <!-- Like Icon HTML -->
+                <span class="fa fa-heart" onClick="cwRating(<?php echo $tab['id']; ?>,1,'like_count<?php echo $tab['interest']; ?>')"></span>&nbsp;
+                <!-- Like Counter -->
+                <span class="counter" id="like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?></span>&nbsp;&nbsp;&nbsp;
+                
+                <!-- Dislike Icon HTML -->
+                <span class="fa fa-heart-o" onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></span>&nbsp;
+                <!-- Dislike Counter -->
+                <span class="counter" id="dislike_count<?php echo $tab['interest']; ?>"><?php echo $tab['interest']; ?></span>
+            </p>
+        </div>
 
-
-
-
-
-<script>
-function cwRating(id,type,target){
-	$.ajax({
-		type:'POST',
-		url:'rating.php',
-		data:'id='+id+'&type='+type,
-		success:function(msg){
-			if(msg == 'err'){
-				alert('Some problem occured, please try again.');
-			}else{
-				$('#'+target).html(msg);
-			}
-		}
-	});
-}
-</script>
 
 <!-- SECTION COMMENTAIRE -->
 <!-- 	<section id="com">

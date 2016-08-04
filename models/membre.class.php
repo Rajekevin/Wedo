@@ -65,6 +65,40 @@ class membre extends basesql{
         $this->date_inscription=trim($date_inscription);
     }
 
+
+    
+    //GETTERS
+
+    public function getid(){
+        return $this->id;
+    }
+    public function getPseudo(){
+        return $this->pseudo;
+    }
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getPassword(){
+        return $this->password;
+    }
+
+    public function getToken(){
+        return $this->token;
+    }
+
+    public function getActif(){
+        return $this->actif;
+    }
+
+    public function getProfilId(){
+        return $this->profilId;
+    }
+
+    public function getAvatar(){
+        return $this->avatar;
+    }
+
+
     public function getForm($login, $mail, $avatar){
         return [
                     "options" => [
