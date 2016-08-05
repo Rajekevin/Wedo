@@ -1,0 +1,31 @@
+a{
+
+	color:slategrey;
+}
+.button{
+
+
+	background:#ccc;
+	color:#333;
+	text-decoration: none;
+	padding:5px 10px;
+	border-radius: 3px;
+	display:inline-block;
+}
+.cookie-banner{
+
+	background: #333;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+}
+
+
+.cookie-banner .container{
+
+	margin: 0 auto;
+	width: 70%;
+	color:#f0f0f0;
+	padding:15px;
+}

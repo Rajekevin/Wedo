@@ -1,3 +1,18 @@
+<?php
+
+if (isset($_GET['accept-cookies'])) {
+    # code...
+
+    setcookie('accept-cookies', 'true',time()+31556925);
+
+    header('Location: ./');
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,6 +26,7 @@
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/style.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/footer.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/form.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/cookie.css" />
         <link rel="stylesheet" href="<?= WEBROOT; ?>/public/css/font-awesome/css/font-awesome.min.css" > 
 
 
@@ -206,32 +222,24 @@
 
 <!--END WEDO FOOTER-->
 
-    <div class="cookie_container">
-        <div id="cookiebar" style="display:none;">
-            <div class="message"><p>Pour proposer un contenu en correspondance avec vos centres d’intérêt, ce site utilise des cookies.<br>
-    En poursuivant votre navigation, vous acceptez cet usage.</p></div>
-            <div class="close">Fermer</div>
-        </div>
+ <script src="../public/js/cookie.js"></script>
+  <script src="../public/js/jQuery.js"></script>
+<?php 
+
+if (!isset($_COOKIE['accept-cookies'])) {
+    # code...
+
+?>
+<div class="cookie-banner">
+    <div class="container">
+    Nous utilisons des cookies
+    <a href="?accept-cookies" class="button">Ok, continue</a>
     </div>
 
-    <script type="text/javascript">
+</div>
 
-
-    jQuery(document).ready(function($) {
-        console.log(jQuery.cookie('cookiebar'));
-        if (jQuery.cookie && jQuery.cookie('cookiebar') != 'true')
-        {
-            jQuery.cookie('cookiebar', 'true', {expires: 365});
-            jQuery("#cookiebar").show();
-        }
-    });
-
-    jQuery(document).on( 'click', '#cookiebar .close', function() {
-        jQuery('#cookiebar').css('display', 'none');
-    });
-
-    var isMobile = 0;
-    var isTablet = 0;
-    </script>
+<?php
+}
+?>
 
 </html>
