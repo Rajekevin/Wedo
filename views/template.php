@@ -48,7 +48,7 @@
 <body>
     <header class="scroll">
         <div class="content">
-            <div class="logo"><a href="#banner" class="js-scrollTo"><img src="<?= WEBROOT; ?>/public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
+            <div class="logo"><a href="/wedo/index" class="js-scrollTo"><img src="<?= WEBROOT; ?>/public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
             <nav>
                 <ul>   <?php
                             if (isset($_SESSION['login']))

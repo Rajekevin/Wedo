@@ -35,12 +35,21 @@ function cwRating(id,type,target){
 
 
 
+
+
+
+
+
 	<script>
 	$(document).ready(function()
 	{
     
 	$('body').on("click",'.heart',function()
     {
+
+
+
+
     	
     	var A=$(this).attr("id");
     	var B=A.split("like");
@@ -53,6 +62,7 @@ function cwRating(id,type,target){
         {      
         $("#likeCount"+messageID).html(C+1);
         $(this).addClass("heartAnimation").attr("rel","unlike");
+
         
         }
         else
@@ -68,6 +78,8 @@ function cwRating(id,type,target){
 
 	});
 	</script>
+
+
 
 
 
@@ -159,8 +171,7 @@ function cwRating(id,type,target){
     }
     .feed p{font-family: 'Georgia', Times, Times New Roman, serif; font-size: 25px}
     .feed{clear: both; margin-bottom: :20px; height: 100px; position: relative;}
-    a{color: #7ac9ed}
-    p{margin: 0px; padding: 0px}
+  
     .likeCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 13px;margin-left: 28px;font-size: 16px;color: #999999}
     
 	
@@ -220,45 +231,35 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 	</label>
 </div>
 
-</section>
 
 
 
 
     <div class="ratings">
-            <p class="pull-right"></p>
-            <p>
-                <!-- Like Icon HTML -->
-                <span class="fa fa-heart" onClick="cwRating(<?php echo $tab['id']; ?>,1,'like_count<?php echo $tab['interest']; ?>')"></span>&nbsp;
-                <!-- Like Counter -->
-                <span class="counter" id="like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?></span>&nbsp;&nbsp;&nbsp;
-                
-                <!-- Dislike Icon HTML -->
-                <span class="fa fa-heart-o" onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></span>&nbsp;
-                <!-- Dislike Counter -->
-                <span class="counter" id="dislike_count<?php echo $tab['interest']; ?>"><?php echo $tab['interest']; ?></span>
-            </p>
-        </div>
+           
+      
+      
 
 
 
 
-<h3>Click on heart button</h3>
+
 
 <div class="feed" id="feed1">
-<p>The Social Network Script <a href="http://www.thewallscript.com" target="_blank">http://thewallscript.com</a></p>
-<div class="heart " id="like1" rel="like"></div> <div class="likeCount" id="likeCount1">14</div>
+
+<div class="heart " id="like1" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
+
+
+<div class="likeCount counter" id="likeCount1 like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?></div>
 </div>
 
 <div class="feed" id="feed2">
-<p>OAuth Login <a href="http://www.oauthlogin.com" target="_blank">http://oauthlogin.com</a></p>
+
 <div class="heart" id="like2" rel="like"></div> <div class="likeCount" id="likeCount2">10</div>
 </div>
+  </div>
+</section>
 
-<div class="feed" id="feed2">
-<p>9lessons Programming Blog <a href="http://www.9lessons.info" target="_blank">http://9lessons.info</a></p>
-<div class="heart" id="like3" rel="like"></div> <div class="likeCount" id="likeCount3">24</div>
-</div>
 
 
 <!-- SECTION COMMENTAIRE -->

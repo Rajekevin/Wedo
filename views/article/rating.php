@@ -1,3 +1,5 @@
+
+
 <?php
 
 
@@ -55,7 +57,13 @@ if($_POST['id']){
 					$interest->setIdArticle($idArticle);	
 					$interest->setDate(date("Y-m-d H:i:s"));	
 					$interest->save();
-			}
+					?>
+
+					<script>
+					  $("#likeCount"+messageID).html(C+1);
+      				  $(this).addClass("heartAnimation").attr("rel","unlike");
+      				</script>
+			<?php }
 
 
 /*###################END TEST ###################################### */
