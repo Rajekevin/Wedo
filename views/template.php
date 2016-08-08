@@ -26,6 +26,7 @@ if (isset($_GET['accept-cookies'])) {
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/style.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/footer.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/form.css" />
+         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/membre.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/cookie.css" />
         <link rel="stylesheet" href="<?= WEBROOT; ?>/public/css/font-awesome/css/font-awesome.min.css" > 
 
@@ -72,6 +73,7 @@ if (isset($_GET['accept-cookies'])) {
                         ?>
 
                     <li><a  class="js-scrollTo" href="<?= LINK; ?>index/profil">Bienvenue <?php echo $_SESSION['login'];?></a></li>
+                     <li><a  class="js-scrollTo" href="<?= LINK; ?>user/profil?name=<?php echo  $_SESSION['login']; ?>">Mon Profil</a></li>
 
 
 

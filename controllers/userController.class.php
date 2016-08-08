@@ -371,6 +371,87 @@ public function loginAction($args)
 
 
 
+	public function profilAction($args)
+	{
+		session_start();
+		$v = new view();
+		$v->setView("user/profil");
+
+			var_dump($args);
+
+		$var = implode ($args);
+
+		$thisuser = new membre();
+	    $tab= $thisuser->getOneBy(['id'=>$_SESSION['id']]);
+
+	    $_SESSION['avatar'] = $tab['avatar'];
+		$_SESSION['login'] = $tab['login'];
+		$_SESSION['token'] = $tab['token'];
+		$_SESSION['statut'] = $tab['statut'];
+		$_SESSION['mail'] = $tab['mail'];
+		$_SESSION['date_inscription'] = $tab['date_inscription'];
+		$_SESSION['ville'] = $tab['ville'];
+
+
+		$user = membre::findBy("login", $var, "string");
+		
+
+		if($user==false)
+		{
+			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
+			//$v->setView("user/login");
+		}else{
+
+
+			$idUser = $user->getId();
+			$Login = $user->getLogin();
+			$ville = $user->getVille();
+			$date = $user->getDateInscription();
+		
+			$v->assign('idUser',$idUser);
+			$v->assign('login',$Login);
+			$v->assign('ville',$ville);
+			$v->assign('date',$date);
+
+
+
+		}
+
+
+
+
+		
+
+	}
+
+	public function uploadAction($args)
+	{
+		session_start();
+		$v = new view();
+		$v->setView("user/upload");
+
+
+
+		
+
+	}
+
+
+
+public function dropAction($args)
+	{
+		session_start();
+		$v = new view();
+		$v->setView("user/drop");
+
+
+
+		
+
+	}
+
+
+
 	
 
 		

@@ -1129,3 +1129,43 @@ h1:before {
  #like{
     background-image: url("../img/article/like/LikeOff.png");
 }
+
+
+
+.divImageZoom{
+	/* on définit la taille du div et on empêche les débordements */
+/*	width:300px;
+	height:225px;*/
+	overflow:hidden;
+	/* on ajoute une ombre à notre div */
+	-webkit-box-shadow: 5px 5px 5px #111;
+	/*box-shadow: 5px 5px 5px #111;  */
+}
+
+.divImageZoom img{
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+	-moz-transition: all 1s ease; /* Firefox */
+	-o-transition: all 1s ease; /* IE 9 */
+	-ms-transition: all 1s ease; /* Opera */
+	transition: all 1s ease;
+	/*max-width: 100%;*/
+}
+			
+.divImageZoom img:hover{
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+	-moz-transform:scale(1.25); /* Firefox */
+	-ms-transform:scale(1.25); /* IE 9 */
+	-o-transform:scale(1.25); /* Opera */
+	transform:scale(1.25);
+}
+
+
+.drop {
+  background: magenta;
+  height: 200px;
+  width: 200px;
+}
+
+.onenter {
+  background: red;
+}

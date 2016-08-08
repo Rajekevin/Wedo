@@ -72,8 +72,8 @@ class membre extends basesql{
     public function getid(){
         return $this->id;
     }
-    public function getPseudo(){
-        return $this->pseudo;
+    public function getLogin(){
+        return $this->login;
     }
     public function getEmail(){
         return $this->email;
@@ -90,8 +90,12 @@ class membre extends basesql{
         return $this->actif;
     }
 
-    public function getProfilId(){
-        return $this->profilId;
+    public function getVille(){
+        return $this->ville;
+    }
+
+     public function getDateInscription(){
+        return $this->date_inscription;
     }
 
     public function getAvatar(){
