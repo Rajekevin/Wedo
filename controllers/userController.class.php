@@ -45,7 +45,8 @@ class userController{
 
 	        //$args['sexe'] = strtolower(trim($args['sexe']));
 
-	        
+
+	
 	        if(strlen($args['login'])<2)
 	        {
 	            $error = TRUE;
@@ -144,6 +145,11 @@ class userController{
 	      	{
 	            echo "<ul>";
 	            echo '<script type="text/javascript">window.alert("'.$msg_error.'");</script>';
+
+	              
+	        
+
+	            
 	            echo "</ul>";
 	        }
 		    else
@@ -302,7 +308,7 @@ public function loginAction($args)
 
 		
 			$error = FALSE;
-			$msg_error= "Identifiants incorrects";
+			$msg_error= "<div class='content'>Identifiants incorrects</div>";
 
 			//Si les inputs email et password sont initialisé
 			if(isset($args['email']) AND isset($args['pass'])){
@@ -327,7 +333,7 @@ public function loginAction($args)
 						//vérification actif
 				if ($tab['actif'] == 0) {
 					$error = TRUE;
-					$msg_error = "Votre compte n'est pas encore activé";
+					$msg_error = "<div class='container'>Votre compte n'est pas encore activé</div>";
 					}
 					
 				}
@@ -336,9 +342,11 @@ public function loginAction($args)
 
 
 				if($error == TRUE){
-		            echo "<ul>";
+		            echo "<div class='container'>";
 		            echo $msg_error;
-		            echo "</ul>";
+		           echo "</div>";
+
+
 		        }else{
 		         	
 		         	//On renseigne la classe user
@@ -355,6 +363,10 @@ public function loginAction($args)
 					//on déclare les variables session avec l'id et le token de l'user		         
 		        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
 		        }
+		        $v->assign('msg_error',$msg_error);
+		        var_dump($msg_error);
+		       
+
 
 			}
 
@@ -412,6 +424,64 @@ public function loginAction($args)
 			$v->assign('login',$Login);
 			$v->assign('ville',$ville);
 			$v->assign('date',$date);
+
+
+
+		}
+
+
+
+
+		
+
+	}
+
+
+	public function updateProfilAction($args)
+	{
+		session_start();
+		$v = new view();
+		$v->setView("user/updateProfil");
+
+			var_dump($args);
+
+		$var = implode ($args);
+
+		$thisuser = new membre();
+	    $tab= $thisuser->getOneBy(['id'=>$_SESSION['id']]);
+
+	    $_SESSION['avatar'] = $tab['avatar'];
+		$_SESSION['login'] = $tab['login'];
+		$_SESSION['token'] = $tab['token'];
+		$_SESSION['statut'] = $tab['statut'];
+		$_SESSION['mail'] = $tab['mail'];
+		$_SESSION['date_inscription'] = $tab['date_inscription'];
+		$_SESSION['ville'] = $tab['ville'];
+
+
+		$user = membre::findBy("login", $var, "string");
+		
+
+		if($user==false)
+		{
+			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
+			//$v->setView("user/login");
+		}else{
+
+
+			$idUser = $user->getId();
+			$Login = $user->getLogin();
+			$ville = $user->getVille();
+			$date = $user->getDateInscription();
+			$mail = $user->getMail();
+			$photo = $user->getAvatar();
+		
+			$v->assign('idUser',$idUser);
+			$v->assign('login',$Login);
+			$v->assign('ville',$ville);
+			$v->assign('date',$date);
+			$v->assign('mail',$mail);
+			$v->assign('photo',$photo);
 
 
 

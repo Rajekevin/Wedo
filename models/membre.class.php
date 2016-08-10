@@ -94,6 +94,11 @@ class membre extends basesql{
         return $this->ville;
     }
 
+
+      public function getMail(){
+        return $this->mail;
+    }
+
      public function getDateInscription(){
         return $this->date_inscription;
     }

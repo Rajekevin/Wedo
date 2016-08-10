@@ -1,4 +1,90 @@
 
+  <!--       <script type="text/javascript">
+
+         
+          
+
+            
+
+            // $('#subscribe').on('submit',function(){
+
+            //    alert('ou sont les putains');
+            //   var login = $('#login').val();
+
+            //    if(login=='')
+            //     {
+            //       $("#erreur").html('Le login doit faire plus dun caractère !');
+                  
+            //   }
+
+            //   alert("ok");
+
+
+            //   return false;
+            // });
+
+
+            $(function() { //shorthand document.ready function
+                alert('ok');
+              });
+          });
+          
+
+          </script> -->
+
+
+<script>
+alert('ok');
+
+$(document).ready(function(){
+
+
+    $("#subscribe").click(function{
+
+
+     
+
+
+            function(data){
+
+
+                if(data == 'Success'){
+
+                     // Le membre est connecté. Ajoutons lui un message dans la page HTML.
+
+
+                     $("#erreur").html("<p>Vous avez été connecté avec succès !</p>");
+
+                }
+
+                else{
+
+                     // Le membre n'a pas été connecté. (data vaut ici "failed")
+
+
+                     $("#erreur").html("<h1>Erreur lors de la connexion...</h1>");
+
+                }
+
+        
+
+            },
+
+
+            'text'
+
+         );
+
+
+    });
+
+
+});
+
+
+</script>
+
+
 <section class="articles grey"  id="musculation">
     <div class="content">
        <!--  <h2>Musculation</h2> -->
@@ -15,7 +101,8 @@
 
   <form  method="post" id="subscribe">
     <!--   <hr> -->
-
+<div id="erreur">
+</div>
 
     <div class="gender">
       <input type="radio" value="homme" id="male" name="sexe" checked/>
@@ -39,7 +126,7 @@
 
 
   <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="login" id="name" placeholder="Votre pseudo" required/><br/>
+  <input type="text" name="login" id="login" placeholder="Votre pseudo" required/><br/>
 
 
   <label id="icon" for="name"><i class="icon-shield"></i></label>
@@ -60,7 +147,7 @@
    <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU) </a> <input type="checkbox" id="agree" required />.</p>
  <!--   <a href="#"  class="button">Inscription</a> -->
 
-   <input type="submit" value="Inscription"  >
+   <input id="subscribe" type="submit" value="Inscription"  >
   </form>
 </div>
 

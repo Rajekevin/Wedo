@@ -3,10 +3,13 @@
     <div class="wrapper">
       <form class="login" method="POST">
 
-
+      <div class="erreurs">
+      </div>
+             <p><?php echo $msg_error; ?></p>
         <p class="title">Connexion</p>
            
-            
+
+
             
             <input type="text" id="email" name="email" placeholder="Votre email" autofocus>
             <i class="fa fa-user"></i>
@@ -16,6 +19,10 @@
             <input type="password" id="pass" name="pass"  placeholder="Password"  required />
             <i class="fa fa-key"></i>
             <a href="#">Mot de passe oublié ?</a>
+
+
+         
+
 
 <!-- 
           <button>
