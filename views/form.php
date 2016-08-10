@@ -1,17 +1,19 @@
-<!--<?php foreach($errors as $error):?>-->
+<?php foreach($errors as $error):?>
+	<?php echo "<li>".$errors_msg[$error];?>
+<?php endforeach;?>
 
-	<!--<?php echo "<li>".$errors_msg[$error];?>-->
-
-<!-- <?php endforeach;?> -->
 <?php
 	if(isset($_POST))
 		$data = $_POST;
-	elseif(isset($_GET)){
+	elseif(isset($_GET))
+	{
 		$data = $_GET;
 	}
+	//var_dump($select);
 ?>
 
 <form id="<?= $form["options"]["id"] ?>" action="<?php echo $form["options"]["action"]?>" method="<?php echo $form["options"]["method"]?>">
+<?php //var_dump($form);?>
 	<?php foreach ($form["struct"] as $name => $option) :?>
 
 		<?php if($option["type"] == "text"|| $option["type"]=="password"):?>
@@ -55,11 +57,11 @@
 			</select>
 		<?php endif;?>
 
-		<br>
+		<br/>
 
 	<?php endforeach;?>
 
 
-	<input type="submit" name="<?= $form["options"]["id"] ?>" value="<?php echo $form["options"]["submit"]?>">
+	<input type="submit" value="<?php echo $form["options"]["submit"]?>">
 
 </form>

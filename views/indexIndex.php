@@ -16,7 +16,7 @@
 
         <h1 id="navbar1">A PROPOS<br><br></h1>
         <h2>A propos</h2>
-        <div class="container">
+        <div class="content">
                 WEDO
 
 
@@ -25,18 +25,15 @@
                         test
                         Voyez comme il bouge notre mascotte Wedo, pour prouvez que vous l'aimez utilisez #WeLoveWedo !
                             <br/>Né en Septembre 2015 sous l’impulsion de quatre passionnés qui souhaitaient partagés leurs passions sportives. <br/>Wedo a pour objectif de devenir la référence de la Musculation/Fitness.
-                             Dès ses débuts, le groupe s’est attaché à rassembler touts les passionés sportives autour d'un seul et même Hashtag #Wedo.
-                             Ce Hashtag est la base de notre concept. A chaque que vous dépensez physiquement, ou  que vous faites tout un autre sport, dégainez votre smartphone et
+                             Dès ses débuts, Wedo  s’est attaché à rassembler tous les passionés sportives autour d'un seul et même Hashtag #Wedo.
+                             Ce Hashtag est la base de notre concept. A chaque fois que vous dépensez physiquement, ou  que vous faites tout un autre sport, dégainez votre smartphone et
                             et utilisez le #Wedo sur les Réseaux sociaux.
 
 
-                            <h4 class="article2b">Passion</h4>
-                        <p class="article1"><br><br>Avant tout la musculation et fitness reste notre passion et j'espère que pour vous aussi, sinon on est pour vous le faire
-                            partager<br><br></p>
+                       
 
                         <h4 class="article3">Nos Competences</h4>
-                        <p class="article1"><br><br>L'équipe est composés de quatres rédacteurs qui publieront les derniers articles concernant
-                            la Musculation et Fitness pour ne rien rater de votre Passion</p>
+                        <p class="article1"><br><br>L'équipe est composés de quatres rédacteurs qui publieront les derniers articles concernant la Musculation et Fitness pour ne rien rater de votre Passion</p>
 
 
 

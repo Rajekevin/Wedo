@@ -3,9 +3,7 @@
     <div class="wrapper">
       <form class="login" method="POST">
 
-      <div class="erreurs">
-      </div>
-             <p><?php echo $msg_error; ?></p>
+    
         <p class="title">Connexion</p>
            
 

@@ -261,9 +261,8 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 </section>
 
 
-
 <!-- SECTION COMMENTAIRE -->
-<!-- 	<section id="com">
+	<section id="com">
 		<div class='container'>
 			<div class='commentaire'>
 				<h2>Commentaires</h2>
@@ -304,14 +303,14 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 							<?php 					
 
 								foreach ($commentaires as $key => $value): 
-									if($thisArticle['id'] == $value['id_article'] ): 
+									if($thisArticle['id'] == $idArticle ): 
 
 										// AND $value['approuver'] == 1
 							?>	
 							<div class='comment-body'>
 								<div class='auteur-post'>
 									<img class='avatar' src='../../public/img/' alt='photo_user'/>
-									<img class="avatar" src="<?= WEBROOT; ?>membres/avatar/<?= $photo; ?>" alt="photo utilisateur"/> 	
+									<!-- <img class="avatar" src="<?= WEBROOT; ?>membres/avatar/<?= $photo; ?>" alt="photo utilisateur"/> -->	
 									<span class='comment-author'><?= $value['nom_user']; ?></span> <span class='comment-date'>le 
 									<?=  date("d/m/Y", strtotime($value['date'])); ?></span>
 									<p>
@@ -328,7 +327,7 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 	<!-- END SECTION COMMENTAIRE -->
 
 

@@ -21,3 +21,5 @@
     $lienbase = $protocol . $_SERVER['HTTP_HOST'] . str_replace(end($explode), '', $_SERVER['SCRIPT_NAME']);
     define('WEBROOT', $lienbase);
     date_default_timezone_set('Europe/Paris');
+
+

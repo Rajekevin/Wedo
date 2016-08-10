@@ -17,41 +17,7 @@
 </style>
 
 
-<?php
 
-
-function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
-  {
-    if(empty($_FILES[$index]) || $_FILES[$index]["error"]>0)
-    {
-      echo "Hum...c'est embarrassant une erreur est survenue durant l'upload";
-      return false;
-    }
-
-    if($maxsize != false && $_FILES[$index]["size"]>$maxsize)
-    {
-      echo "Le poids du fichier est trop lourd, faites lui faire du sport :x";
-      return false;
-    }
-
-
-    $dimension = getimagesize($_FILES[$index]['tmp_name']);
-    if ($dimension[0] > $size[0] || $dimension[1] >$size[1]) 
-    {
-      echo "Les dimensions sont trop élevées, ne donnez pas trop de lait à votre Image";
-      return false;
-      # code...
-    }
-
-
-    return move_uploaded_file($_FILES[$index] ['tmp_name'], $destination.$_FILES[$index]['name']);
-    // return move_uploaded_file($_FILES[$index] ['tmp_name'], $destination.mt_rand(0,1000)."-".$_FILES[$index]['name']);
-
-
-  }
-
-
-?>
 
            
                 <ul class="listing">
@@ -63,20 +29,23 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
        
                 <h2>Mes informations</h2>
                 <hr>
-             
-                <p><?php echo $login; ?></p>
-                <p class="location"><?php echo $ville; ?></p>
-                <p>Inscrit(e) depuis le <?php echo $date; ?></p>
+                <p><img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>" width="90px" height="90px" ></p>
+                <p>Pseudo : <?php echo $login; ?> </p>
+                <p class="location">Location : <?php echo $ville; ?></p>
+                <p>Inscrit(e) depuis le : <?php echo $date; ?></p>
                 <br>     <div class="infos">
                     
                     
                      
                     <h4>DJKev</h4>
                     <hr>
-                  <div class="img">
                  
-                      <img src="#">
-                  </div>
+                 
+                  
+
+
+                    
+                  
                     <p class="mini_bio"></p>
 
           <?php if ($login == $_SESSION['login']): ?>

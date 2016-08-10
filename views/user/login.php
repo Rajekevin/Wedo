@@ -1,5 +1,12 @@
 <div class="login-page">
   <div class="form">
+
+ <?php 
+
+if(isset($msg_error)){
+ echo $msg_error;
+}
+ ?>
    
     <form method="POST"  class="login-form" >
       <input type="text" id="email" name="email" placeholder="Email"/>

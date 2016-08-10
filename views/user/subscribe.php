@@ -33,56 +33,7 @@
           </script> -->
 
 
-<script>
-alert('ok');
 
-$(document).ready(function(){
-
-
-    $("#subscribe").click(function{
-
-
-     
-
-
-            function(data){
-
-
-                if(data == 'Success'){
-
-                     // Le membre est connecté. Ajoutons lui un message dans la page HTML.
-
-
-                     $("#erreur").html("<p>Vous avez été connecté avec succès !</p>");
-
-                }
-
-                else{
-
-                     // Le membre n'a pas été connecté. (data vaut ici "failed")
-
-
-                     $("#erreur").html("<h1>Erreur lors de la connexion...</h1>");
-
-                }
-
-        
-
-            },
-
-
-            'text'
-
-         );
-
-
-    });
-
-
-});
-
-
-</script>
 
 
 <section class="articles grey"  id="musculation">
@@ -98,7 +49,12 @@ $(document).ready(function(){
 
 <div class="testbox">
   <h1>Inscription</h1>
+ <?php 
 
+if(isset($msg_error)){
+ echo $msg_error;
+}
+ ?>
   <form  method="post" id="subscribe">
     <!--   <hr> -->
 <div id="erreur">

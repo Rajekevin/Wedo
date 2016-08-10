@@ -143,14 +143,8 @@ class userController{
 
 	      	if($error)
 	      	{
-	            echo "<ul>";
-	            echo '<script type="text/javascript">window.alert("'.$msg_error.'");</script>';
-
-	              
-	        
-
-	            
-	            echo "</ul>";
+	           $v->assign('error',$error);
+		       $v->assign('msg_error',$msg_error);
 	        }
 		    else
 		    {
@@ -308,7 +302,9 @@ public function loginAction($args)
 
 		
 			$error = FALSE;
-			$msg_error= "<div class='content'>Identifiants incorrects</div>";
+			$msg_error= "Identifiants incorrects";
+
+
 
 			//Si les inputs email et password sont initialisé
 			if(isset($args['email']) AND isset($args['pass'])){
@@ -333,7 +329,7 @@ public function loginAction($args)
 						//vérification actif
 				if ($tab['actif'] == 0) {
 					$error = TRUE;
-					$msg_error = "<div class='container'>Votre compte n'est pas encore activé</div>";
+					$msg_error = "Votre compte n'est pas encore activé";
 					}
 					
 				}
@@ -342,9 +338,11 @@ public function loginAction($args)
 
 
 				if($error == TRUE){
-		            echo "<div class='container'>";
-		            echo $msg_error;
-		           echo "</div>";
+		        
+
+
+		           $v->assign('error',$error);
+		            $v->assign('msg_error',$msg_error);
 
 
 		        }else{
@@ -363,8 +361,7 @@ public function loginAction($args)
 					//on déclare les variables session avec l'id et le token de l'user		         
 		        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
 		        }
-		        $v->assign('msg_error',$msg_error);
-		        var_dump($msg_error);
+		       
 		       
 
 
@@ -416,6 +413,7 @@ public function loginAction($args)
 
 
 			$idUser = $user->getId();
+			$avatar = $user->getAvatar();
 			$Login = $user->getLogin();
 			$ville = $user->getVille();
 			$date = $user->getDateInscription();
@@ -424,6 +422,7 @@ public function loginAction($args)
 			$v->assign('login',$Login);
 			$v->assign('ville',$ville);
 			$v->assign('date',$date);
+			$v->assign('avatar',$avatar);
 
 
 

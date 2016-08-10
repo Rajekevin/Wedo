@@ -4,6 +4,25 @@ class Validator extends basesql{
 
 	}
 
+		public static function koko($struct, $data){
+		$listErrors = [];
+		foreach ($struct as $name => $options) {
+
+			if($options["required"] && self::isEmpty($data[$name])){
+				$listErrors[]=$options["msgerror"];
+			}
+			elseif($options["type"]=="password" && !self::passwordCorrect($data[$name])) {
+				$listErrors[]=$options["msgerror"];
+			}
+			
+		}
+
+		return $listErrors;
+	}
+
+
+
+
 	public static function check($struct, $data){
 		$listErrors = [];
 		foreach ($struct as $name => $options) {
@@ -125,17 +144,6 @@ class Validator extends basesql{
 
 
 
-	public static function existTeamName($var){
-		return !((strlen($var)<4 || strlen($var)>30) || (Team::findBy("teamName",$var,"string")));
-	}
-
-	public static function notChangingTeamName($var){
-		$nameTeam = Team::findById($_SESSION['temp_idTeam']);
-		//Si l'utilisateur ne change pas son nom d'equipe on update tout de meme les autres champs
-		if(strcmp($nameTeam->teamName, $var) != 0){
-			return !strcmp($nameTeam->teamName, $var);
-		}
-	}
 }
 
 
