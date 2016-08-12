@@ -24,8 +24,8 @@ if( isset($_POST['valider'])&&isset($_POST['cat'])&&isset($_POST['description'])
  			
  			
 			    	
-					$c->setName($_POST['cat']);
-					$c->setDescription($_POST['description']);			
+					$c->setName(strip_tags($_POST['cat']));
+					$c->setDescription(strip_tags($_POST['description']));			
 					
 
 					$c->save();

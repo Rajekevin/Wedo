@@ -1109,6 +1109,9 @@ h1:before {
 }
 .header-title {
     font-size: 45px;
+    line-height: 260px;
+    font-weight:700;
+    font-size:75px;
 }
 
 .relative {

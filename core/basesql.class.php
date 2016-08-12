@@ -51,8 +51,12 @@ class basesql{
 			//var_dump($sql);
 			$query = $this->pdo->prepare($sql);
 			$query->execute($data);
+
+
 			//var_dump($data); test update
 			return $query->fetch();
+
+			var_dump($query);
 
 
 

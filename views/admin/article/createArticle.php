@@ -61,8 +61,8 @@ function format_url($str)
 
 if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'])&&isset($_POST['contenu']) ){
  			
- 			$a->setAuteur($_SESSION['login']);
-			$a->setDescription($_POST['description']);			
+ 			$a->setAuteur(strip_tags($_SESSION['login']));
+			$a->setDescription(strip_tags($_POST['description']));			
 			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
@@ -77,7 +77,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 			$title=format_url($_POST['title']);
 
-			$a->setTitle($title);
+			$a->setTitle(strip_tags($title));
 	
 			$a->setContenu($_POST['contenu']);
 

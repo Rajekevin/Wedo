@@ -207,7 +207,8 @@ class articleController{
 		if(isset($_POST['comm'])){
 
 
-		
+
+
 		$errors = validator::check($form["struct"], $args);
 		$commentaire = new commentaire();
 		$commentaire->envoieCommentaire($idArticle);

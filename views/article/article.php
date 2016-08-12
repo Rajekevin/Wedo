@@ -194,7 +194,7 @@ $a = new article();
 $tab=$a->getOneBy(['id'=>$idArticle]);
 
 
-
+var_dump($tab['id']);
 
 ?>
 
@@ -274,20 +274,16 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 							{
 								// $this->createForm($form, $errors);
 
-					echo"<form id='comm' name='comm'  action='' method='post'>";
-                    
+					echo"<form id='comm' name='comm'  action='' method='post'>";                    
                      // echo"<textarea  type='text' name='t' id='t' required='' tabindex='2' />";
-                        echo "<textarea form='comm' name='content' id='content'> </textarea> ";
-                    
+                    echo "<textarea form='comm' name='content' id='content'> </textarea> ";                  
 
- 							echo"<input type='hidden' name='comm' value='ddjodj' />";
-
-                
+ 					echo"<input type='hidden' name='comm' value='ddjodj' />";               
                     
                
-                       echo"  <input type='submit' value='Je commente !' id='comm' name='comm' tabindex='2'>";
+                    echo"  <input type='submit' value='Je commente !' id='comm' name='comm' tabindex='2'>";
                     
-                echo"</form>";
+               		echo"</form>";
 
                 
                     
@@ -303,10 +299,12 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 							<?php 					
 
 								foreach ($commentaires as $key => $value): 
-									if($thisArticle['id'] == $idArticle ): 
+									if($thisArticle['id'] == $tab['id']): 
 
 										// AND $value['approuver'] == 1
-							?>	
+							?>
+
+							<?php var_dump($commentaires); ?>	
 							<div class='comment-body'>
 								<div class='auteur-post'>
 									<img class='avatar' src='../../public/img/' alt='photo_user'/>
