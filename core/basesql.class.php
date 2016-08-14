@@ -91,6 +91,7 @@ class basesql{
 			$query->execute($data);
 
 			var_dump($query);
+			var_dump($sql);
 
 		}
 	}

@@ -97,6 +97,8 @@ function cwRating(id,type,target){
 }
 
 
+
+
 	.heart_icon {
 		background: url("../../public/img/article/like/twitter-heart-button.png");
 		background-size: 2900px;
@@ -105,6 +107,8 @@ function cwRating(id,type,target){
 		width: 100px;
 		cursor: pointer;
 		position: relative;
+		text-align: center;
+
 	}
  
 	.heart {
@@ -112,11 +116,13 @@ function cwRating(id,type,target){
 		background-position: left;
 		background-repeat: no-repeat;
 		height: 50px;
-		width: 50px;
+		width: 68px;
 		cursor: pointer;
 		position: absolute;
 		left:-14px;
 		background-size:1450px; //actual background size 2900px
+
+
 		}
 		body{color: #333333}
     #container{
@@ -129,10 +135,11 @@ function cwRating(id,type,target){
 	    background-position: left;
 	    background-repeat: no-repeat;
 	    height: 50px;
-	    width: 50px;
+	    width: 68px;
+	    text-align:center;
 	    cursor: pointer;
 	    position: absolute;
-	    left:-14px;
+	    left:75%;
         background-size:2900%
     }
     .heart:hover, .heart:focus{
@@ -169,10 +176,10 @@ function cwRating(id,type,target){
     animation-timing-function: steps(28);
     background-position: right;
     }
-    .feed p{font-family: 'Georgia', Times, Times New Roman, serif; font-size: 25px}
+    .feed p{font-family: 'Georgia', Times, Times New Roman, serif; font-size: 25px;}
     .feed{clear: both; margin-bottom: :20px; height: 100px; position: relative;}
   
-    .likeCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 13px;margin-left: 28px;font-size: 16px;color: #999999}
+    .likeCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 13px;margin-left: 80%;font-size: 16px;color: #999999}
     
 	
 </style>
@@ -194,7 +201,8 @@ $a = new article();
 $tab=$a->getOneBy(['id'=>$idArticle]);
 
 
-var_dump($tab['id']);
+$idArticle=$tab['id'];
+var_dump($idArticle);
 
 ?>
 
@@ -207,6 +215,7 @@ var_dump($tab['id']);
 <section class="articles white">
 	<div class="content">
 	<label>
+	
 		<h5>Article : <?php echo $tab['title']; ?> de <?php echo $tab['auteur']; ?> le <?php echo $tab['date']; ?> </h5> 
 		
 	</label>
@@ -215,7 +224,7 @@ var_dump($tab['id']);
 
 		<?php if(!empty($tab['img'])); ?>
 			
-				<img src="<?= WEBROOT; ?>public/img/article/<?= $tab['img']; ?>" />
+				<img class="illusArticle" src="<?= WEBROOT; ?>public/img/article/<?= $tab['img']; ?>" />
 
 
 	</p>
@@ -223,41 +232,39 @@ var_dump($tab['id']);
 
 	
 
+	<div class="articleContenu">
+	
 
-	<label>
-		 
 		<p name="content"><?php echo $tab['contenu'];?></p>
 		<input id="idArticle" type="hidden" value="<?php echo $idArticle;?>">  </input>
-	</label>
-</div>
+	
 
-
-
-
-
-    <div class="ratings">
-           
-      
-      
-
-
-
-
-
-
-<div class="feed" id="feed1">
-
-<div class="heart " id="like1" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
-
-
-<div class="likeCount counter" id="likeCount1 like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?></div>
+	</div>
 </div>
 
 <div class="feed" id="feed2">
 
-<div class="heart" id="like2" rel="like"></div> <div class="likeCount" id="likeCount2">10</div>
-</div>
+	<div class="ratings">      
+      
+
+		<div class="feed" id="feed1">
+
+			<div class="heart " id="like1" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
+
+
+			<div class="likeCount counter" id="likeCount1 like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?>
+			
+			</div>
+		</div>
+
+	
+			<div class="heart" id="like2" rel="like"></div> <div class="likeCount" id="likeCount2">10</div>
+		</div>
   </div>
+
+
+
+
 </section>
 
 
@@ -278,7 +285,11 @@ var_dump($tab['id']);
                      // echo"<textarea  type='text' name='t' id='t' required='' tabindex='2' />";
                     echo "<textarea form='comm' name='content' id='content'> </textarea> ";                  
 
- 					echo"<input type='hidden' name='comm' value='ddjodj' />";               
+ 					echo"<input type='hidden' name='comm' value='ddjodj' />"; 
+
+ 					   
+
+ 					echo"<input type='hidden' name='idArticle' value=$idArticle  />";           
                     
                
                     echo"  <input type='submit' value='Je commente !' id='comm' name='comm' tabindex='2'>";
@@ -296,18 +307,27 @@ var_dump($tab['id']);
 					</div>
 					<div id='comments'>
 						<div class='col-m-12'>
-							<?php 					
+							<?php 	
+
+											
 
 								foreach ($commentaires as $key => $value): 
-									if($thisArticle['id'] == $tab['id']): 
+									if($thisArticle['id'] == $value['id_article']): 
+
+										// var_dump($commentaires);
 
 										// AND $value['approuver'] == 1
 							?>
 
-							<?php var_dump($commentaires); ?>	
+							<?php
+
+							   $idUser= Membre::findById($value['id_user']);                
+				              $avatar = $idUser->getAvatar();
+				             ?>	
 							<div class='comment-body'>
 								<div class='auteur-post'>
-									<img class='avatar' src='../../public/img/' alt='photo_user'/>
+									<!-- <img class='avatar' src='../../public/img/' alt='photo_user'/> -->
+									<img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>" width="90px" height="90px" >
 									<!-- <img class="avatar" src="<?= WEBROOT; ?>membres/avatar/<?= $photo; ?>" alt="photo utilisateur"/> -->	
 									<span class='comment-author'><?= $value['nom_user']; ?></span> <span class='comment-date'>le 
 									<?=  date("d/m/Y", strtotime($value['date'])); ?></span>

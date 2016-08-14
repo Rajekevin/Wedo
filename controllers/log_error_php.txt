@@ -1479,3 +1479,76 @@
 [10-Aug-2016 10:10:40 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
 [10-Aug-2016 10:10:40 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
 [10-Aug-2016 10:10:40 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[13-Aug-2016 10:04:37 Europe/Paris] PHP Warning:  include(views/template.php): failed to open stream: No such file or directory in C:\wamp\www\wedo\core\view.class.php on line 94
+[13-Aug-2016 10:04:38 Europe/Paris] PHP Stack trace:
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[13-Aug-2016 10:04:38 Europe/Paris] PHP Warning:  include(): Failed opening 'views/template.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\wedo\core\view.class.php on line 94
+[13-Aug-2016 10:04:38 Europe/Paris] PHP Stack trace:
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
+[13-Aug-2016 10:04:38 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[13-Aug-2016 10:04:53 Europe/Paris] PHP Warning:  include(views/template.php): failed to open stream: No such file or directory in C:\wamp\www\wedo\core\view.class.php on line 94
+[13-Aug-2016 10:04:53 Europe/Paris] PHP Stack trace:
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[13-Aug-2016 10:04:53 Europe/Paris] PHP Warning:  include(): Failed opening 'views/template.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\wedo\core\view.class.php on line 94
+[13-Aug-2016 10:04:53 Europe/Paris] PHP Stack trace:
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
+[13-Aug-2016 10:04:53 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Notice:  Undefined variable: form in C:\wamp\www\wedo\core\view.class.php on line 66
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Notice:  Undefined variable: errors in C:\wamp\www\wedo\core\view.class.php on line 67
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Notice:  Undefined variable: form in C:\wamp\www\wedo\core\view.class.php on line 66
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Notice:  Undefined variable: errors in C:\wamp\www\wedo\core\view.class.php on line 67
+[14-Aug-2016 08:52:34 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 08:52:34 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 09:05:30 Europe/Paris] PHP Notice:  Undefined variable: msg_send in C:\wamp\www\wedo\core\view.class.php on line 62
+[14-Aug-2016 09:05:30 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 09:05:30 Europe/Paris] PHP Notice:  Undefined variable: v in C:\wamp\www\wedo\core\view.class.php on line 65
+[14-Aug-2016 09:05:30 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 09:05:30 Europe/Paris] PHP Fatal error:  Call to a member function assign() on a non-object in C:\wamp\www\wedo\core\view.class.php on line 65
+[14-Aug-2016 09:05:30 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 09:05:30 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 09:06:32 Europe/Paris] PHP Notice:  Undefined variable: msg_send in C:\wamp\www\wedo\core\view.class.php on line 62
+[14-Aug-2016 09:06:32 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 09:06:32 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 09:06:32 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 09:06:32 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\indexController.class.php:24
+[14-Aug-2016 09:08:49 Europe/Paris] PHP Notice:  Undefined variable: msg_error in C:\wamp\www\wedo\core\view.class.php on line 54
+[14-Aug-2016 09:08:49 Europe/Paris] PHP Stack trace:
+[14-Aug-2016 09:08:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[14-Aug-2016 09:08:49 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[14-Aug-2016 09:08:49 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\userController.class.php:29

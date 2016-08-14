@@ -54,17 +54,19 @@ class commentaire extends basesql{
 
 	public function envoieCommentaire($idArticle){
 
-
+		var_dump($idArticle);
 		$id_user = $_SESSION['id'];
 		$commentaire = $_POST["content"];
 		$date = date("Y-m-d H:i:s");
 		$comment = new commentaire();
+
+		$comment-> setid_User($id_user);
 	
      	$comment->setNom_User($_SESSION['login']);
-     	$comment->setCommentaire($commentaire);
+     	$comment->setCommentaire(strip_tags($commentaire));
      	$comment->setDate($date);
      	//A remplacer par l'id de l'article - dynamiquement
-     	$comment->setId_Article($idArticle);
+     	$comment->setID_Article($idArticle);
      	$comment->save();
 
      			$login = $_SESSION['login'];

@@ -190,6 +190,20 @@ if (isset($_GET['accept-cookies'])) {
 
             <p>Contactez Nous</p>
 
+                <?php 
+
+                if(isset($msg_error)){
+                 echo $msg_error;
+                }
+                 ?>
+
+                   <?php 
+
+                if(isset($msg_send)){
+                 echo $msg_send;
+                }
+                 ?>
+
 
                 <form id="contactForm contact" name="contact" id="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
 

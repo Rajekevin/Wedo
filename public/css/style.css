@@ -1172,3 +1172,18 @@ h1:before {
 .onenter {
   background: red;
 }
+
+.articlecontenu{
+	text-align:center;
+}
+
+.illusArticle{
+	
+	margin-bottom: 14px;
+	width: 49%;
+	height: 290px;
+	float: left;
+	margin-right: 100px;
+	min-width: 50%;
+}
+
