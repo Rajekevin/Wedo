@@ -202,7 +202,7 @@ $tab=$a->getOneBy(['id'=>$idArticle]);
 
 
 $idArticle=$tab['id'];
-var_dump($idArticle);
+
 
 ?>
 
@@ -234,7 +234,7 @@ var_dump($idArticle);
 
 	<div class="articleContenu">
 	
-
+	<?php $title =$tab['title']; ?>
 		<p name="content"><?php echo $tab['contenu'];?></p>
 		<input id="idArticle" type="hidden" value="<?php echo $idArticle;?>">  </input>
 	
@@ -269,10 +269,11 @@ var_dump($idArticle);
 
 
 <!-- SECTION COMMENTAIRE -->
-	<section id="com">
+<section class="commentaires">
 		<div class='container'>
 			<div class='commentaire'>
-				<h2>Commentaires</h2>
+				<!-- <h2>Commentaires</h2> -->
+				<p> Laissez un commentaire ici </p>
 				<hr class="sep-foot">
 				<div class='col-m-12'>
 					<div class="col-12">
@@ -280,6 +281,14 @@ var_dump($idArticle);
 							if(isset($_SESSION['id']) && isset($_SESSION['token']) && isset($_SESSION['statut']) && isset($_SESSION['login']))
 							{
 								// $this->createForm($form, $errors);
+
+				
+
+						if(isset($sendCommentaire)){
+						 echo $sendCommentaire;
+						   echo" <meta http-equiv='refresh' content='2;$title' />";
+						}
+
 
 					echo"<form id='comm' name='comm'  action='' method='post'>";                    
                      // echo"<textarea  type='text' name='t' id='t' required='' tabindex='2' />";
@@ -292,11 +301,11 @@ var_dump($idArticle);
  					echo"<input type='hidden' name='idArticle' value=$idArticle  />";           
                     
                
-                    echo"  <input type='submit' value='Je commente !' id='comm' name='comm' tabindex='2'>";
-                    
+                    echo" <div class='call_to_long'> <input type='submit' value='Je commente !'   id='comm' name='comm' tabindex='2'></div>";
+                   
                		echo"</form>";
 
-                
+             
                     
 							}
 							else
@@ -305,18 +314,16 @@ var_dump($idArticle);
 							}
 						?>
 					</div>
+					
 					<div id='comments'>
 						<div class='col-m-12'>
-							<?php 	
-
-											
+							 <h3>Commentaires</h3>
+							<?php 										
 
 								foreach ($commentaires as $key => $value): 
 									if($thisArticle['id'] == $value['id_article']): 
 
-										// var_dump($commentaires);
-
-										// AND $value['approuver'] == 1
+									
 							?>
 
 							<?php
@@ -324,18 +331,28 @@ var_dump($idArticle);
 							   $idUser= Membre::findById($value['id_user']);                
 				              $avatar = $idUser->getAvatar();
 				             ?>	
-							<div class='comment-body'>
-								<div class='auteur-post'>
-									<!-- <img class='avatar' src='../../public/img/' alt='photo_user'/> -->
-									<img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>" width="90px" height="90px" >
-									<!-- <img class="avatar" src="<?= WEBROOT; ?>membres/avatar/<?= $photo; ?>" alt="photo utilisateur"/> -->	
-									<span class='comment-author'><?= $value['nom_user']; ?></span> <span class='comment-date'>le 
-									<?=  date("d/m/Y", strtotime($value['date'])); ?></span>
-									<p>
-										<?= $value['commentaire']; ?>
-									</p>
-								</div>
-							</div>			
+						
+
+							
+							   
+							        <article>
+							          <div>
+							            <img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>"  width="90px" height="90px" >
+							          </div>
+							          <div class="blocCommentaire">
+							              <p class="login"><?= $value['nom_user']; ?></p>
+							           
+							            <p class="timeComment"> <span class='comment-date'>le 
+									<?=  date("d/m/Y", strtotime($value['date'])); ?></span></p>
+							             
+							            <p><?= $value['commentaire']; ?> </p>
+							          </div>
+							        </article>
+							          
+							    <hr>
+							  
+
+							 			
 							<?php 
 									 endif;
 								endforeach;
@@ -346,7 +363,11 @@ var_dump($idArticle);
 			</div>
 		</div>
 	</section>
+	
 	<!-- END SECTION COMMENTAIRE -->
+
+
+
 
 
 	

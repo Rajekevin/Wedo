@@ -56,7 +56,6 @@ class basesql{
 			//var_dump($data); test update
 			return $query->fetch();
 
-			var_dump($query);
 
 
 
@@ -90,8 +89,7 @@ class basesql{
 			}
 			$query->execute($data);
 
-			var_dump($query);
-			var_dump($sql);
+			
 
 		}
 	}

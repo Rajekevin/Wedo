@@ -54,7 +54,7 @@ class commentaire extends basesql{
 
 	public function envoieCommentaire($idArticle){
 
-		var_dump($idArticle);
+		
 		$id_user = $_SESSION['id'];
 		$commentaire = $_POST["content"];
 		$date = date("Y-m-d H:i:s");
@@ -69,7 +69,7 @@ class commentaire extends basesql{
      	$comment->setID_Article($idArticle);
      	$comment->save();
 
-     			$login = $_SESSION['login'];
+     		$login = $_SESSION['login'];
 
      			
      		$email = new email();		
@@ -86,8 +86,7 @@ class commentaire extends basesql{
 
 
 
-		echo "Votre commentaire vient d'être envoyé. Rappelez-vous que tous commentaires ne respectant pas la chartre du site pourra faire
-		l'objet d'une sanction ;(";
+	
 
 
 

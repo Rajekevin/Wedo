@@ -134,6 +134,9 @@ class articleController
 		$errors = validator::check($form["struct"], $args);
 		$commentaire = new commentaire();
 		$commentaire->envoieCommentaire($_POST['idArticle']);
+			$sendCommentaire= "Votre commentaire vient d'être envoyé. Rappelez-vous que tous commentaires ne respectant pas la chartre du site pourra faire
+		l'objet d'une sanction ;(";
+		$v->assign ("sendCommentaire", $sendCommentaire);
 	
 		}
 	
