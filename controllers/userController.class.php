@@ -423,12 +423,14 @@ public function loginAction($args)
 			$Login = $user->getLogin();
 			$ville = $user->getVille();
 			$date = $user->getDateInscription();
+			$statut = $user->getStatut();
 		
 			$v->assign('idUser',$idUser);
 			$v->assign('login',$Login);
 			$v->assign('ville',$ville);
 			$v->assign('date',$date);
 			$v->assign('avatar',$avatar);
+			$v->assign('statut',$statut);
 
 
 		  $userCom = commentaire::findBy("nom_user", $var, "string");

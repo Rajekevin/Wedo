@@ -289,6 +289,11 @@ $idArticle=$tab['id'];
 						   echo" <meta http-equiv='refresh' content='2;$title' />";
 						}
 
+					if(isset($msg)){
+						 echo $msg;
+						   
+						}
+
 
 					echo"<form id='comm' name='comm'  action='' method='post'>";                    
                      // echo"<textarea  type='text' name='t' id='t' required='' tabindex='2' />";

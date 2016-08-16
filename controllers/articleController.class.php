@@ -129,16 +129,36 @@ class articleController
 	//Formulaire de commentaire
 		$form = $com->getCommentaireForm();
 		$errors = [];
+
 	
-		if(isset($_POST['comm'])){
+	
+
+		if(isset($_POST['comm']) ) {
+			$trimmed = trim($_POST['content']);
+
+			if ($trimmed==true){
+				# code...
+			
+			
+
+			var_dump($_POST['content']);
 		$errors = validator::check($form["struct"], $args);
 		$commentaire = new commentaire();
 		$commentaire->envoieCommentaire($_POST['idArticle']);
 			$sendCommentaire= "Votre commentaire vient d'être envoyé. Rappelez-vous que tous commentaires ne respectant pas la chartre du site pourra faire
 		l'objet d'une sanction ;(";
 		$v->assign ("sendCommentaire", $sendCommentaire);
+
+	}else{
+
+		$msg = 'HOP HOP.....Nourrisez-moi, je suis en période de prise de masse :(';
+		$v->assign ("msg", $msg);
+	}
 	
 		}
+
+
+	
 	
 		
 		$v->assign("form", $form);

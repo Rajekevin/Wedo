@@ -35,6 +35,12 @@
                 <p class="location">Location : <?php echo $ville; ?></p>
                 <p>Inscrit(e) depuis le : <?php echo $date; ?></p>
                 <br>     <div class="infos">
+
+                <?php if($statut==1){
+                  echo "<p>Admin</p>";
+                  }else{
+                    echo "<p>membre</p>";
+                    } ?>
                     
                     
                      

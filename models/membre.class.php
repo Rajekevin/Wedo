@@ -107,6 +107,11 @@ class membre extends basesql{
         return $this->avatar;
     }
 
+       public function getStatut(){
+        return $this->statut;
+    }
+
+
 
     public function getForm($login, $mail, $avatar){
         return [
