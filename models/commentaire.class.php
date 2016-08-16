@@ -29,23 +29,23 @@ class commentaire extends basesql{
 		$this->id_article=$id_article;
 	}
 	//GETTERS
-	public function getId($id){
-		return $this->$id;
+	public function getId(){
+		return $this->id;
 	}
 
-	public function getNom_User($nom_user){
+	public function getNom_User(){
 		return $this->nom_user;
 	}
-	public function getCommentaire($commentaire){
+	public function getCommentaire(){
 		return $this->commentaire;
 	}
-	public function getDate($date){
-		return $this->$date;
+	public function getDate(){
+		return $this->date;
 	}
-	public function getId_Article($id_article){
+	public function getId_Article(){
 		return $this->id_article;
 	}
-		public function getId_user($id_user){
+		public function getId_user(){
 		return $this->id_user;
 	}
 

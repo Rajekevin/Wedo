@@ -25,9 +25,10 @@
                     
                 </ul>
             </div>
-           
+        
        
                 <h2>Mes informations</h2>
+              
                 <hr>
                 <p><img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>" width="90px" height="90px" ></p>
                 <p>Pseudo : <?php echo $login; ?> </p>
@@ -99,6 +100,30 @@
                     <p></p>
                     <a class="call_to" href=""></a></div>                   
                     <div class="lineclear"></div>
+
+
+ 
+      <?php foreach ($coms as $key => $value):   ?>
+      <?php 
+     $idArt = $value['id_article']; 
+
+       $idArticle = article::findById($idArt);                
+              $Title = $idArticle->getTitle();
+
+              echo "Titre de l'article : ".$Title;
+
+              ?>
+        <span>
+          <br/>
+            <?= "Mon commentaire : ".$value['commentaire']; ?> <br/>
+            <a href="<?= ARTICLE.$value['id_article'] ?>">Cliquez-ici pour retrouver l'article</a><br/>
+          </span>
+
+
+      <?php endforeach; ?>
+
+
+    
             </div>
 
                <div class="membre_info" id="next_events">

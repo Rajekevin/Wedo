@@ -337,7 +337,7 @@ $idArticle=$tab['id'];
 							   
 							        <article>
 							          <div>
-							            <img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>"  width="90px" height="90px" >
+							           <a href="<?= WEBROOT; ?>user/profil?name=<?= $value['nom_user']; ?>"> <img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>"  width="90px" height="90px" ></a>
 							          </div>
 							          <div class="blocCommentaire">
 							              <p class="login"><?= $value['nom_user']; ?></p>

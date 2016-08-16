@@ -213,7 +213,7 @@ class userController{
 		
 
 		$id = $_GET['id'];
-		var_dump($id);
+		
 	
 					//On renseigne la classe user
 
@@ -386,7 +386,8 @@ public function loginAction($args)
 		$v = new view();
 		$v->setView("user/profil");
 
-			var_dump($args);
+
+			
 
 		$var = implode ($args);
 
@@ -402,7 +403,12 @@ public function loginAction($args)
 		$_SESSION['ville'] = $tab['ville'];
 
 
+		
+		
+		
 		$user = membre::findBy("login", $var, "string");
+		 
+
 		
 
 		if($user==false)
@@ -425,9 +431,61 @@ public function loginAction($args)
 			$v->assign('avatar',$avatar);
 
 
+		  $userCom = commentaire::findBy("nom_user", $var, "string");
+		         
+          $userCom = $userCom->getId_Article();
+         
+         
+          $v->assign('userCom',$userCom);
+          
+
+         
+
+
+
+
+        $commentaire = new commentaire();
+	
+		$commentaires = $commentaire->getAllBy(["nom_user"=>$var],['id_article'=>'DESC'],"4");
+		 $commentaires =  $commentaire->getId_Article();
+		
+	
+		$v->assign("commentaires",$commentaires);
+
+		
+
+		
+
+		$commentaires = $commentaire->getAllBy(["nom_user"=>$var],['id_article'=>'DESC'],"4");
+
+	
+		// var_dump($commentaires->getId());
+
+
+		
+
+
+		 $articles = commentaire::findBy("nom_user", $var, "string");	
+		$v->assign('articles',$articles);
+		
+		
+
+
+
+		$commentaire = new commentaire();
+	
+		$coms = $commentaire->getAllBy(["nom_user"=>$var],['id'=>'DESC'],"4");
+	
+		$v->assign("coms",$coms);
+
+
+
+	
 
 		}
 
+	
+           
 
 
 
