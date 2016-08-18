@@ -14,6 +14,9 @@ $a = new article();
 $tab=$a->getOneBy(['id'=>$id]);
 
 
+
+
+
 function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 	{
 		if(empty($_FILES[$index]) || $_FILES[$index]["error"]>0)
@@ -60,6 +63,13 @@ function format_url($str)
 
 
 if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'])&&isset($_POST['contenu']) ){
+
+
+
+			if($a->titleExist($_POST['title'])) {
+				echo '<script type="text/javascript">window.alert("Le titre existe déjà");</script>';			
+
+				}else{
  			
  			$a->setAuteur(strip_tags($_SESSION['login']));
 			$a->setDescription(strip_tags($_POST['description']));			
@@ -106,7 +116,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			$a->save();
 
 			
-			
+			}
 
 
         	

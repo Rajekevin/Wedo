@@ -139,7 +139,7 @@ class membre extends basesql{
                         "submit"=>"Valider"
                         ],
                     "struct" => [
-                        "email"=>[ "label"=>"Votre email", "type"=>"text", "id"=>"email", "required"=>1, "msgerror"=>"email" ]
+                        "email"=>[ "label"=>"Votre email : ", "type"=>"text", "id"=>"email", "required"=>1, "msgerror"=>"email","name"=>"ok" ]
                     ]
         ];
     }

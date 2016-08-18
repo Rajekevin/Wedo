@@ -44,7 +44,7 @@
                     
                     
                      
-                    <h4>DJKev</h4>
+                  
                     <hr>
                  
                  
@@ -85,16 +85,7 @@
             </div>
 
 
-            <div class="membre_info" id="next_events">
-                <h2>Mes prochains évènements</h2>
-                <hr>
-                <div class="list_events">
-                    <div class="event">
-                   </div>
-                    <h3></h3>
-                    <p></p><a class="call_to" href=""></a></div>  
-                    <div class="lineclear"></div>
-            </div>
+       
 
               <div class="membre_info" id="next_events">
                 <h2>Mes dernières participations</h2>
@@ -109,7 +100,9 @@
 
 
  
-      <?php foreach ($coms as $key => $value):   ?>
+      <?php if ($userCom==true) {
+        # code...
+      foreach ($coms as $key => $value):   ?>
       <?php 
      $idArt = $value['id_article']; 
 
@@ -126,17 +119,166 @@
           </span>
 
 
-      <?php endforeach; ?>
+      <?php endforeach;  }?>
 
 
     
             </div>
 
-               <div class="membre_info" id="next_events">
-                <h2>Mes sportifs préféres</h2>
+
+
+
+
+
+<!--sportif-->
+
+<div class="membre_info" id="next_events">
+
+
+                <h2>Mes sportifs préférés</h2>
+                <hr>
+                <div class="list_events">
+                    <div class="event">
+                   </div>
+                    <h3></h3>
+                    <p></p>
+                    <a class="call_to" href=""></a></div>                   
+                    <div class="lineclear"></div>
+ <?php if (isset($_SESSION['login'])){ ?>
+
+  
+  <?php foreach($interest as $key => $toto):   ?>
+      <?php 
+
+
+     $idArt = $toto['id_article']; 
+
+       $idArticle = article::findById($idArt);                
+              $Title = $idArticle->getTitle();
+              $Img = $idArticle->getImg();
+
+              
+
+
+              $CategorieArticle = $idArticle->getIdCategory();
+              
+
+        
+         $categorieName = Categorie::findBy("id",$CategorieArticle,"int"); 
+
+         
+   if($categorieName==true){
+        $categorieName= $categorieName->getName();
+
+     
+     if ($categorieName!="Sportif") {
+      echo "";}else{
+        ?>
+
+       <div class="membre_info" id="next_events">
+            <h2></h2>     
+              
+             <?php  echo "Sportif : ".$Title; ?>
+             <div class="sportifs_list">
+             <div class="sportif">
+            <div class="logo_sportif">
+             <center>  <img  src="<?= WEBROOT; ?>public/img/article/<?= $Img; ?>" /></center>
+
+             </div>
+             </div>
+             </div>
+              </div>
+ <?php } }?>
+
+  
+
+   
+
+
+      <?php endforeach; ?>
+
+</div>
+
+
+<div class="membre_info" id="next_events">
+
+
+                <h2>Mes Articles préférés</h2>
+                <hr>
+                <div class="list_events">
+                    <div class="event">
+                   </div>
+                    <h3></h3>
+                    <p></p>
+                    <a class="call_to" href=""></a></div>                   
+                    <div class="lineclear"></div>
+
+ <?php if (isset($interest)){ ?>
+       <?php foreach($interest as $key => $toto):   ?>
+      <?php 
+     $idArt = $toto['id_article']; 
+
+       $idArticle = article::findById($idArt);                
+              $Title = $idArticle->getTitle();
+              $Img = $idArticle->getImg();           
+
+
+              $CategorieArticle = $idArticle->getIdCategory();
+              
+
+
+         $categorieName = Categorie::findBy("id",$CategorieArticle,"int");
+
+
+         if ($categorieName==true) { 
+   
+        $categorieName= $categorieName->getName();
+
+     
+
+        if ($categorieName!="Sportif") {?>
+
+
+
+       
+           
+
+
+
+        
+<div class="membre_info" id="next_events">
+            <h2></h2>     
+                
+             <?php  echo "Titre de l'article : ".$Title; ?>
+             <div class="sportifs_list">
+             <div class="sportif">
+            <div class="logo_sportif">
+             <img  src="<?= WEBROOT; ?>public/img/article/<?= $Img; ?>" />
+             </div>
+             </div>
+             </div>
+              </div>
+
+
 
              
-            </div>
+      <?php  } } ?>     
+
+   
+
+
+      <?php endforeach; ?>
+
+</div>
+
+
+<?php } }else{
+  echo "";}?>
+
+
+
+
+
             <div class="image"></div>
                 <hr>
                 <div class="list_events">
@@ -152,7 +294,7 @@
             <div class="lineclear"></div>
         </div>
 
-        
+       
   <script src="script.js"></script>
   <script src="drop.js"></script>
 

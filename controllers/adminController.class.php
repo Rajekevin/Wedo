@@ -24,12 +24,18 @@ class adminController{
 
 		 		$v = new view();
 				$v -> setViewBo("admin/admin");	
-				// $a = new commentaire();
-				// $commentaire = $a->getAllBy([],['id'=>'DESC'], 1);
-				// $v->assign('commentaire',$commentaire);
+
+				
+				$a = new commentaire();
+				$commentaire = $a->getAllBy([],['id'=>'DESC'], 1);
+				$v->assign('commentaire',$commentaire);
 				// //Compteur commentaire pour Stat BO
-				// $commentaires = $a->getAllBy([],[], '');
-				// $v->assign('commentaires',$commentaires);
+				$commentaires = $a->getAllBy([],[], '');
+				$v->assign('commentaires',$commentaires);
+
+
+
+
 				//Compteur d'articles pour stat BO
 				$a = new article();
 				$articles = $a->getAllBy([],[],'');
@@ -504,11 +510,72 @@ class adminController{
 	else{
 		echo"Impossible d'accéder à la page"; 
 	}
+
+
+
+
+
+
 		
 }
 
 
+public function commentaireListAction($args){
+		session_start();
 
+	 if (isset($_SESSION['login']))
+	            { 
+		$v = new view();
+		$v->setViewBo("admin/commentaire/commentairelist");
+		
+		/* List of comment */
+		$a = new commentaire();
+		
+		$commentaire = $a->getAllBy([],['id'=>'DESC'],'');
+		$v->assign('commentairelist',$commentaire);
+	}
+	else{echo"no no no"; }
+		
+	}
+
+
+	public function removeCommentaireAction($args){
+	 
+	session_start();
+	 if (isset($_SESSION['login']))
+                            { 
+		
+		$v = new view();
+		$v->setViewBo("admin/commentaire/removecommentaire");
+		/* List of articles */
+		$a = new commentaire();
+		$commentaire = $a->getAllBy([],[],'');
+		$v->assign('removeCommentaire',$commentaire);
+	}else{
+		echo "Impossible d'accéder à cette page :(";
+	}
+}
+
+
+public function updateReglementAction($args){
+
+		session_start();
+		if (isset($_SESSION['login']))
+	                    { 
+			
+			$v = new view();
+			$v->setViewBo("admin/options/updateReglement");
+
+			$page= new page();
+			$pages= $page->getAllBy([],[],'');
+
+			$v->assign('updateReglement',$pages);
+		}
+		else{
+			echo"Impossible d'accéder à la page"; 
+		}
+			
+	}
 
 
 

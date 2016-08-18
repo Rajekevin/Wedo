@@ -171,6 +171,7 @@ class userController{
 			$membre->setVille($args['ville']);
 			$membre->setStatut($statut);			
 			$membre->setToken();
+			$membre->setAvatar("default_user.jpg");
 			$membre->save();
 
 
@@ -387,7 +388,7 @@ public function loginAction($args)
 		$v->setView("user/profil");
 
 
-			
+		
 
 		$var = implode ($args);
 
@@ -406,7 +407,7 @@ public function loginAction($args)
 		
 		
 		
-		$user = membre::findBy("login", $var, "string");
+		$user = membre::findBy("login", $args['login'], "string");
 		 
 
 		
@@ -433,8 +434,13 @@ public function loginAction($args)
 			$v->assign('statut',$statut);
 
 
-		  $userCom = commentaire::findBy("nom_user", $var, "string");
+		  $userCom = commentaire::findBy("nom_user", $args['login'], "string");
+
+		  
+		   $v->assign('userCom',$userCom);
 		         
+         if ($userCom==true){
+
           $userCom = $userCom->getId_Article();
          
          
@@ -448,7 +454,7 @@ public function loginAction($args)
 
         $commentaire = new commentaire();
 	
-		$commentaires = $commentaire->getAllBy(["nom_user"=>$var],['id_article'=>'DESC'],"4");
+		$commentaires = $commentaire->getAllBy(["nom_user"=>$args['login']],['id_article'=>'DESC'],"4");
 		 $commentaires =  $commentaire->getId_Article();
 		
 	
@@ -458,7 +464,7 @@ public function loginAction($args)
 
 		
 
-		$commentaires = $commentaire->getAllBy(["nom_user"=>$var],['id_article'=>'DESC'],"4");
+		$commentaires = $commentaire->getAllBy(["nom_user"=>$args['login']],['id_article'=>'DESC'],"4");
 
 	
 		// var_dump($commentaires->getId());
@@ -467,8 +473,9 @@ public function loginAction($args)
 		
 
 
-		 $articles = commentaire::findBy("nom_user", $var, "string");	
+		 $articles = commentaire::findBy("nom_user", $args['login'], "string");	
 		$v->assign('articles',$articles);
+		
 		
 		
 
@@ -476,9 +483,26 @@ public function loginAction($args)
 
 		$commentaire = new commentaire();
 	
-		$coms = $commentaire->getAllBy(["nom_user"=>$var],['id'=>'DESC'],"4");
+		$coms = $commentaire->getAllBy(["nom_user"=>$args['login']],['id'=>'DESC'],"4");
 	
 		$v->assign("coms",$coms);
+
+			}
+
+
+
+/*récupère lobjet membre en fonction du login*/
+		$membre = membre::findBy("login", $args['login'], "string");		
+		$idMembre= $membre->getId();
+
+		$i = new interest();
+	
+		$interest = $i->getAllBy(["id_user"=>$idMembre],['id'=>'DESC'],"4");
+
+
+	
+		$v->assign("interest",$interest);
+		
 
 
 
@@ -578,6 +602,96 @@ public function dropAction($args)
 		
 
 	}
+
+
+
+
+		public function resetPassAction($args)
+ 	{
+		//session_start();
+		//Nouvelle vue
+		$v = new view();
+ 		$v->setView("user/resetPass");
+
+ 		$membre = new membre();
+ 
+ 		//Formulaire de commentaire
+ 		$form = $membre->getFormResetPass();
+ 		$error = [];
+ 
+ 		if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 			$errors = validator::check($form["struct"], $args);
+ 
+ 			if(!filter_var($args['email'], FILTER_VALIDATE_EMAIL)){
+ 	            $error = TRUE;
+ 	            $msg_error .= "<li>Email invalide</li>";
+ 	        }
+ 
+         	//Demander au serveur SQL toutes les informations en fonction de l'email
+ 			$membre = new membre();
+ 			$tab = $membre->getOneBy(['mail'=>$args['email']]);
+ 
+ 			//Si aucune information, identifiants not ok
+ 			if(empty($tab)){
+ 				$error = TRUE;
+ 				$msg_error .= "<li>Il n'existe aucun compte avec cet email</li>";
+ 			}else{
+ 				//création d'un mot de passe aléatoire
+ 				$chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
+ 				$pwd = '';
+ 				for ($i=0; $i<8; $i++) {
+ 					$pwd .= $chars{ mt_rand( 0, strlen($chars) - 1 ) };
+ 				}
+ 
+ 				//hashage du mot de passe
+ 				$pwdHash = password_hash($pwd, PASSWORD_DEFAULT);
+ 
+ 				//var_dump($pwd);
+ 				//var_dump($pwdHash);die();
+ 
+ 				//on enregistre le nouveau mdp
+ 				$thisMembre = new membre();
+ 	         	$thisMembre->setId($tab['id']);
+ 	         	$thisMembre->setPass($pwdHash);
+ 	         	$thisMembre->save();
+ 
+ 				//envoie de remise à zéro du mot de passe
+ 	         	$email = new email();
+ 
+ 				//On renseigne le sujet et le message de l'email
+ 				$email->setSujet("Réinitialisation de votre mot de passe");
+ 				$email->setDestinataires($args['email']);
+ 				$email->setMessage("Bonjour ".$tab['login'].",<br />
+ 				Votre mot de passe a été réinitialisé.<br />
+ 				Voici votre nouveau mot de passe : ".$pwd."<br />
+ 				Vous pouvez ensuite le modifier en vous connectant et en accédant à votre espace utilisateur<br />
+ 				---------------<br />
+ 				Ceci est un mail automatique, Merci de ne pas y répondre");			
+ 				//envoie de l'email
+ 				$email->envoieEmail();
+ 			}
+ 
+ 			if($error == TRUE){
+ 	            echo "<ul>";
+ 	            echo $msg_error;
+ 	            echo "</ul>";
+
+
+ 		$v->assign("msg_error", $msg_error);
+ 	        }else{
+
+ 				$msg = 'Bonjour '.$tab['login'].', vous allé recevoir un email avec votre nouveau mot de passe';
+ 				$v->assign("msg", $msg);
+
+ 	        }
+ 
+ 		}
+ 
+ 		$v->assign("form", $form);
+ 		$v->assign("error", $error);
+ 		
+ 		
+ 	}
 
 
 

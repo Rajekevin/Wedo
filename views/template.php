@@ -73,7 +73,7 @@ if (isset($_GET['accept-cookies'])) {
                         ?>
 
                     <li><a  class="js-scrollTo" href="<?= LINK; ?>index/profil">Bienvenue <?php echo $_SESSION['login'];?></a></li>
-                     <li><a  class="js-scrollTo" href="<?= LINK; ?>user/profil?name=<?php echo  $_SESSION['login']; ?>">Mon Profil</a></li>
+                     <li><a  class="js-scrollTo" href="<?= LINK; ?>user/profil?login=<?php echo  $_SESSION['login']; ?>">Mon Profil</a></li>
 
 
 
@@ -92,7 +92,7 @@ if (isset($_GET['accept-cookies'])) {
                         </ul>
                     </li> -->
                     <li><a class="js-scrollTo" href="<?= LINK; ?>article/all">Article</a></li>
-                    <li><a href="">Evenements</a></li>
+                    
 
                     
                          <?php

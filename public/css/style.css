@@ -887,6 +887,20 @@ header nav ul li:hover .sous_menu{
 
 }
 
+
+@media only screen and (max-width: 479px) {
+
+	#contact .footer-distributed {
+		max-width: 960px;
+		height: 384px;
+	}
+
+
+
+}
+
+
+
 .lineclear{
   clear: both;
   display: block;
@@ -1214,4 +1228,11 @@ h1:before {
 .commentaires textarea {
     width: 100%;
     height: 100px;
+}
+
+#comments {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: #EEE;
+    border: 1px solid #2e9afe;
 }

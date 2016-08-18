@@ -43,15 +43,10 @@
 
 
 
-<section class="articles grey"  >
+<!-- <section class="articles grey"  >
     <div class="content">
        <!--  <h2>Musculation</h2> -->
-       <h1 id="navbar2">Derniers articles<br><br></h1>
-
- 
-
-       <h2>Musculation</h2>
-        <div class="article_list">
+    
 
             <?php
 
@@ -69,107 +64,24 @@ function format_url($str)
 
 ?>
 
-            <?php foreach ($articlelist as $key => $value):
-             $url=format_url($value['title']); ?>
-           <!--  <?php if($value['id_category']==1){ ?> -->
-            <?php if(!empty($value['img'])); ?>
-                <div class="article">
-
-                    <div class="logo_article"><img src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div>
-                    <a href="<?= ARTICLE.$url ?>">
-                    <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
-                    </a>
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div>
-                    <!--       <?php } ?>  -->                   
-            <?php endforeach; ?>
-
-
-
-           <!--      <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div>
-                <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div> -->
-                        <div class="lineclear"></div>
+          
+<!--                         <div class="lineclear"></div>
             <a class="Wedo_Button see_more white" href="">Voir tous les articles Musculation</a>
         </div>
     </div>
-</section>
+</section> -->
 
 
 
 
-<section class="articles grey">
-    <div class="content">
-        <h2>Fitness</h2>
-        <div class="article_list">
-                            <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div>
-                <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div>
-                <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3></h3><p></p>
-                    <a class="Wedo_Button" href="">Je commente</a>
-                </div>
-                        <div class="lineclear"></div>
-            <a class="Wedo_Button see_more white" href="">Voir tous les articles Fitness</a>
-        </div>
-    </div>
-</section>
-
-
-<section class="articles homepage_articles">
-    <div class="content">
-        <h1 id="navbar2">EVENEMENTS A VENIR<br><br></h1>
-        <h2></h2>
-        <div class="article_list">
-                 <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3>Color Run</h3><p>Du 29/07/2016 au 31/07/2016</p>
-                    <a class="Wedo_Button" href="">Je Participe</a>
-                </div>
-                            <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3>Marathon Paris</h3><p>Du 29/07/2016 au 31/07/2016</p>
-                    <a class="Wedo_Button" href="">Je Participe</a>
-                </div>
-                <div class="article">
-                    <div class="logo_article"><img src=""></div>
-                    <img class="top" src="">
-                    <h3>Tour de France</h3><p>Du 19/08/2016 au 21/08/2016</p>
-                    <a class="Wedo_Button" href="">Je Participe</a>
-                </div>
-                        <div class="lineclear"></div>
-            <a class="Wedo_Button see_more" href="">Voir tous les évenements</a>
-        </div>
-    </div>
-</section>
 
 
 
 
-<section class="articles sportifs">
+
+
+
+<!-- <section class="articles sportifs">
     <div class="content">
         <h2>Sportifs</h2>
         <div class="sportifs_list">
@@ -206,7 +118,7 @@ function format_url($str)
         </div>
     </div>
 </section>
-
+ -->
 
   <section class="articles homepage_articles" >
 <?php foreach ($categorielist as $key => $value): ?>
@@ -237,7 +149,39 @@ function format_url($str)
          
       <?php foreach ($articles as $key => $value): ?>
 
+     <?php   
 
+     $categorieName = Categorie::findBy("id",$value['id_category'],"int"); 
+   
+     $categorieName= $categorieName->getName();
+
+     ?>
+
+
+    <?php if ($categorieName=="Sportif"){ ?>
+        
+   <div class="content">
+      
+        <div class="sportifs_list">
+
+                <div class="sportif">
+
+                    
+                  <div class="intern_sportif">
+                    <div class="logo_sportif"><img  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div>
+                    <h3><a href="<?= ARTICLE.$value['title'] ?>"><?= $value['title']; ?></a></h3>
+                    <a class="Wedo_Button" href="">J'aime</a>
+                  </div>
+                </div>        
+             
+                        
+          </div>
+
+</div>
+
+       
+   
+     <?php }else{ ?>
 
             <div class="article_list"> 
 
@@ -257,6 +201,12 @@ function format_url($str)
 
          </div>
 
+<?php } ?>
+
+
+
+
+    
 
          <?php endforeach; ?>
 

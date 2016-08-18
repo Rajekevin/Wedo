@@ -320,7 +320,7 @@ $idArticle=$tab['id'];
 						?>
 					</div>
 					
-					<div id='comments'>
+					<div id='#'>
 						<div class='col-m-12'>
 							 <h3>Commentaires</h3>
 							<?php 										
@@ -349,10 +349,15 @@ $idArticle=$tab['id'];
 							           
 							            <p class="timeComment"> <span class='comment-date'>le 
 									<?=  date("d/m/Y", strtotime($value['date'])); ?></span></p>
-							             
-							            <p><?= $value['commentaire']; ?> </p>
+							        
+							            
+							           
 							          </div>
+
+
 							        </article>
+
+							         <p id="comments"><?= $value['commentaire']; ?> </p>
 							          
 							    <hr>
 							  

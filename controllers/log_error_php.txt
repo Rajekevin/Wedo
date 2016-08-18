@@ -1552,3 +1552,21 @@
 [14-Aug-2016 09:08:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
 [14-Aug-2016 09:08:49 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
 [14-Aug-2016 09:08:49 Europe/Paris] PHP   3. view->setView() C:\wamp\www\wedo\controllers\userController.class.php:29
+[18-Aug-2016 14:11:50 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\views\indexIndex.php on line 185
+[18-Aug-2016 14:11:51 Europe/Paris] PHP Stack trace:
+[18-Aug-2016 14:11:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[18-Aug-2016 14:11:51 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[18-Aug-2016 14:11:51 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[18-Aug-2016 14:11:51 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[18-Aug-2016 14:11:51 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[18-Aug-2016 14:12:30 Europe/Paris] PHP Fatal error:  Call to a member function getIdCategory() on a non-object in C:\wamp\www\wedo\views\indexIndex.php on line 185
+[18-Aug-2016 14:12:30 Europe/Paris] PHP Stack trace:
+[18-Aug-2016 14:12:30 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[18-Aug-2016 14:12:30 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[18-Aug-2016 14:12:30 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[18-Aug-2016 14:12:30 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[18-Aug-2016 14:12:30 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[18-Aug-2016 17:03:40 Europe/Paris] PHP Fatal error:  Call to undefined method membre::setImg() in C:\wamp\www\wedo\controllers\userController.class.php on line 174
+[18-Aug-2016 17:03:40 Europe/Paris] PHP Stack trace:
+[18-Aug-2016 17:03:40 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[18-Aug-2016 17:03:40 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28

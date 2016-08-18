@@ -99,11 +99,16 @@
 <table border="1" cellpadding="10" cellspacing="1" width="100%">
   <tr>
     <th colspan="4">Activite - Dernier commentaire</th>
-    <?php foreach ($commentaire as $key => $value): ?>
+    <?php foreach ($commentaire as $key => $value): 
+
+
+  $idUser= Membre::findById($value['id_user']);                
+  $avatar = $idUser->getAvatar();   
+?>
   </tr>
   <tr>
     <td>
-      <img src="../img/W.png" class="imgTB2">
+           <div class="logo_article"><a class="article" href="<?= WEBROOT; ?>user/profil?name=<?= $value['nom_user']; ?>"> <img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>"  ></a></div> 
       
     </td>
     <td>

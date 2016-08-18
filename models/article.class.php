@@ -85,7 +85,7 @@ class article extends basesql{
 		$this->contenu=trim($contenu);
 	}
 	public function getImg(){
-		return $this->$img;
+		return $this->img;
 	}
 	public function getDate(){
 		return $this->date;
@@ -94,6 +94,11 @@ class article extends basesql{
 	public function getInterest(){
 		return $this->interest;
 	}
+
+
+	 public static function titleExist($title) {
+            return (Article::findBy("title", $title, "string"));
+            }
 
 
 
