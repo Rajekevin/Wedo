@@ -10,10 +10,10 @@ function cwRating(id,type,target){
 
 	$.ajax({
 		type:'POST',
-		url:'../rating',
+		url:'rating',
 		data:'id='+id+'&type='+type,
 
-		
+
 
 		success:function(msg){
 
