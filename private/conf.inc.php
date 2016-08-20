@@ -1,10 +1,13 @@
 <?php
 
+
+
+
     define("BDD_DRIVER", "mysql");
-    define("BDD_HOST", "localhost");
-    define("BDD_DBNAME", "wedo");
-    define("BDD_USER", "root");
-    define("BDD_PWD", "");
+    define("BDD_HOST", "eu-cdbr-west-01.cleardb.com");
+    define("BDD_DBNAME", "heroku_ed738c1d37eed3e");
+    define("BDD_USER", "bc47686cf08767");
+    define("BDD_PWD", "ca8b4fd0");
     define("LINK", "http://localhost/wedo/");
     define("IMG", "http://localhost/wedo/img/");
     define("ARTICLES", "http://localhost/wedo/article/");
