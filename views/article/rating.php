@@ -26,7 +26,7 @@ var_dump($prev_like);
 			$test = new interest();
 
 			var_dump($test);
-			
+			die();
 	
 			$interests = $test->getAllBy(["id_user"=>$_SESSION['id']],['id'=>'DESC'],"");
 			//si l'user à déjà voté 
@@ -68,7 +68,7 @@ var_dump($prev_like);
 					  $("#likeCount"+messageID).html(C+1);
       				  $(this).addClass("heartAnimation").attr("rel","unlike");
       				</script>
-			<?php die(); }
+			<?php  }
 
 
 /*###################END TEST ###################################### */
