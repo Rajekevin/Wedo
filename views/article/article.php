@@ -13,7 +13,7 @@ function cwRating(id,type,target){
 		url:'../rating',
 		data:'id='+id+'&type='+type,
 
-
+		
 
 		success:function(msg){
 

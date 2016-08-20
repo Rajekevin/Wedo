@@ -1,7 +1,7 @@
 
 
 <?php
-
+echo "mdr";
 
 $idArticle=$_POST['id']; //id de l'article
 
