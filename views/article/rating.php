@@ -1,19 +1,20 @@
 
 
 <?php
-echo "mdr";
+echo "koko";
 
 $idArticle=$_POST['id']; //id de l'article
 
 $article = new article();
 if($_POST['id']){
-	echo "kk";
+	
     $articles = article::findById($idArticle);  //récupère l'objet article en fonction de l'id         
               
 	$prev_like = $articles->getInterest(); //récupère le nombre de like de l'article
 
 
-
+var_dump($prev_like);
+die();
 		
 		$idUser = Membre::findBy("login",$_SESSION['login'],"string");
 		$idLogin=$idUser->getId();	//id_USER 
