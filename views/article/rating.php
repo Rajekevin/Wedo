@@ -18,7 +18,7 @@ if($_POST['id']){
 		$idUser = Membre::findBy("login",$_SESSION['login'],"string");
 		$idLogin=$idUser->getId();	//id_USER 
 
-	
+	var_dump($idLogin);
 
 /*###################TEST POUR SAVOIR SI L'USER A DEJA VOTE ###################################### */
 			$test = new interest();
