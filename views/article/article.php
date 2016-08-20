@@ -18,7 +18,7 @@ function cwRating(id,type,target){
 		success:function(msg){
 
 
-			alert(data);
+			
 			if(msg == 'err'){
 				alert('Some problem occured, please try again.');
 			
