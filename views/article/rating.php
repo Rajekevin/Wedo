@@ -14,7 +14,7 @@ if($_POST['id']){
 
 
 var_dump($prev_like);
-die();
+
 
 		
 		$idUser = Membre::findBy("login",$_SESSION['login'],"string");
@@ -68,7 +68,7 @@ die();
 					  $("#likeCount"+messageID).html(C+1);
       				  $(this).addClass("heartAnimation").attr("rel","unlike");
       				</script>
-			<?php }
+			<?php die(); }
 
 
 /*###################END TEST ###################################### */
