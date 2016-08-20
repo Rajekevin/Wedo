@@ -1570,3 +1570,17 @@
 [18-Aug-2016 17:03:40 Europe/Paris] PHP Stack trace:
 [18-Aug-2016 17:03:40 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
 [18-Aug-2016 17:03:40 Europe/Paris] PHP   2. userController->subscribeAction() C:\wamp\www\wedo\index.php:28
+[19-Aug-2016 19:28:17 Europe/Paris] PHP Warning:  include(views/template.php): failed to open stream: No such file or directory in C:\wamp\www\wedo\core\view.class.php on line 151
+[19-Aug-2016 19:28:17 Europe/Paris] PHP Stack trace:
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[19-Aug-2016 19:28:17 Europe/Paris] PHP Warning:  include(): Failed opening 'views/template.php' for inclusion (include_path='.;C:\php\pear') in C:\wamp\www\wedo\core\view.class.php on line 151
+[19-Aug-2016 19:28:17 Europe/Paris] PHP Stack trace:
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   2. indexController->indexAction() C:\wamp\www\wedo\index.php:28
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
+[19-Aug-2016 19:28:17 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0

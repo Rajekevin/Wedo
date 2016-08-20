@@ -78,48 +78,6 @@ function format_url($str)
 
 
 
-
-
-
-<!-- <section class="articles sportifs">
-    <div class="content">
-        <h2>Sportifs</h2>
-        <div class="sportifs_list">
-                <div class="sportif">
-                  <div class="intern_sportif">
-                    <div class="logo_sportif"><a href=""><img src=""></a></div>
-                    <h3><a href="">Teddy Rinner</a></h3>
-                    <a class="Wedo_Button" href="">Événements à venir</a>
-                  </div>
-                </div>
-                            <div class="sportif">
-                  <div class="intern_sportif">
-                    <div class="logo_sportif"><a href="#"><img src=""></a></div>
-                    <h3><a href="">Martial</a></h3>
-                    <a class="Wedo_Button" href="">Événements à venir</a>
-                  </div>
-                </div>
-                            <div class="sportif">
-                  <div class="intern_sportif">
-                    <div class="logo_sportif"><a href=""><img src=""></a></div>
-                    <h3><a href="">Usain Bolt</a></h3>
-                    <a class="Wedo_Button" href="/sportife/slipknot">Événements à venir</a>
-                  </div>
-                </div>
-                            <div class="sportif">
-                  <div class="intern_sportif">
-                    <div class="logo_sportif"><a href=""><img src=""></a></div>
-                    <h3><a href="">Zidane</a></h3>
-                    <a class="Wedo_Button" href="">cc</a>
-                  </div>
-                </div>
-                        <div class="lineclear"></div>
-            <a class="Wedo_Button see_more" href="">Voir tous les sportifs</a>
-        </div>
-    </div>
-</section>
- -->
-
   <section class="articles homepage_articles" >
 <?php foreach ($categorielist as $key => $value): ?>
   <?php $title = $value['name'];  ?>   

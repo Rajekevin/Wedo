@@ -1,8 +1,4 @@
-/** APP: Ajax Image uploader with progress bar
-    Website:packetcode.com
-    Author: Krishna TEja G S
-    Date: 29th April 2014
-***/
+
 
 $(function(){
 	 

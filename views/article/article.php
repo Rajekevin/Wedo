@@ -31,11 +31,40 @@ function cwRating(id,type,target){
 
 
 
+
+
 </script>
 
+<script>
+function clo(){
 
 
+	$.ajax({
+		type:'POST',
+	
 
+		success:function(msg){
+			if(msg == 'err'){
+				alert('Some problem occured, please try again.');
+			
+
+
+			}else{
+				alert('Some problem occured, please try again.');
+				
+			}
+		}
+	});
+	
+	
+			
+
+
+	
+
+
+}
+</script>
 
 
 
@@ -249,16 +278,33 @@ $idArticle=$tab['id'];
 
 		<div class="feed" id="feed1">
 
-			<div class="heart " id="like1" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
+
+		<?php
+
+		if (isset($_SESSION['login'])) { ?>
+			
+		
+				<div class="heart " id="like1" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
 
 
 			<div class="likeCount counter" id="likeCount1 like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?>
 			
 			</div>
+
+		<?php }else{ ?>
+
+
+		
+
+				<div class="heart"  rel="like"></div> <div class="likeCount" onClick="clo();" id="likeCount2"><?php echo $tab['interest']; ?></div>
+
+		
+<?php } ?>
+		
 		</div>
 
 	
-			<div class="heart" id="like2" rel="like"></div> <div class="likeCount" id="likeCount2">10</div>
+			
 		</div>
   </div>
 
