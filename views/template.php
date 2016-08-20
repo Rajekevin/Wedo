@@ -65,8 +65,8 @@ if (isset($_GET['accept-cookies'])) {
 <body>
     <header class="scroll">
         <div class="content">
-           <a href="/wedo/index" class="js-scrollTo">
-            <img src="<?= WEBROOT; ?>public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a>
+            <div class="logo">
+            <img src="<?= WEBROOT; ?>public/img/wedo/wedo.png"><p>It's time to be awesome !</p></div>
             <nav>
                 <ul>   <?php
                             if (isset($_SESSION['login']))
