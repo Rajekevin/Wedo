@@ -184,8 +184,8 @@ function cwRating(id,type,target){
 
 
 
-	
-<?php phpinfo(); ?>
+<!-- 	
+<?php phpinfo(); ?> -->
 <?php
 $a = new article();
 
