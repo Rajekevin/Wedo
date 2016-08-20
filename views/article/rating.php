@@ -23,6 +23,9 @@ die();
 
 /*###################TEST POUR SAVOIR SI L'USER A DEJA VOTE ###################################### */
 			$test = new interest();
+
+			var_dump($test);
+			die();
 	
 			$interests = $test->getAllBy(["id_user"=>$_SESSION['id']],['id'=>'DESC'],"");
 			//si l'user à déjà voté 
