@@ -39,12 +39,6 @@ function cwRating(id,type,target){
 
 
 
-</script>
-
-
-
-
-	<script>
 	$(document).ready(function()
 	{
     
@@ -81,7 +75,7 @@ function cwRating(id,type,target){
 
 
 	});
-	</script>
+</script>
 
 
 
