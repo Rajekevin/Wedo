@@ -14,6 +14,7 @@ if($_POST['id']){
 
 
 var_dump($prev_like);
+die();
 
 		
 		$idUser = Membre::findBy("login",$_SESSION['login'],"string");
