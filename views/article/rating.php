@@ -17,10 +17,10 @@ var_dump($prev_like);
 
 
 		
-		$idUser = Membre::findBy("login",$_SESSION['login'],"string");
-		$idLogin=$idUser->getId();	//id_USER 
+	// 	$idUser = Membre::findBy("login",$_SESSION['login'],"string");
+	// 	$idLogin=$idUser->getId();	//id_USER 
 
-	echo $idLogin;
+	// echo $idLogin;
 
 /*###################TEST POUR SAVOIR SI L'USER A DEJA VOTE ###################################### */
 			$test = new interest();
@@ -140,6 +140,6 @@ if($i->articleExist($idArticle)){// Verif : Si l'article existe dans la table in
 }
 
 
-die();
+
 
 ?>
