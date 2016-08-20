@@ -6,6 +6,8 @@
 function cwRating(id,type,target){
 
 
+alert('ok');
+
 
 	$.ajax({
 		type:'POST',
