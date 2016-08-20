@@ -2,14 +2,14 @@
 
     define("BDD_DRIVER", "mysql");
     define("BDD_HOST", "localhost");
-    define("BDD_DBNAME", "mydb");
+    define("BDD_DBNAME", "wedo");
     define("BDD_USER", "root");
     define("BDD_PWD", "");
-    define("LINK", "http://localhost/wedOld/");
-    define("IMG", "http://localhost/wedOld/img/");
-    define("ARTICLES", "http://localhost/wedOld/article/");
-    define("ARTICLE", "http://localhost/wedOld/index/a?id=");
-    define("PAGE", "http://localhost/wedOld/index/p?id=");
+    define("LINK", "http://localhost/wedo/");
+    define("IMG", "http://localhost/wedo/img/");
+    define("ARTICLES", "http://localhost/wedo/article/");
+    define("ARTICLE", "http://localhost/wedo/article/musculation/");
+    define("PAGE", "http://localhost/wedo/index/p?id=");
     define("SALT", "GFDSgfdsgf34543");
 
     /* SMTP */
@@ -21,3 +21,5 @@
     $lienbase = $protocol . $_SERVER['HTTP_HOST'] . str_replace(end($explode), '', $_SERVER['SCRIPT_NAME']);
     define('WEBROOT', $lienbase);
     date_default_timezone_set('Europe/Paris');
+
+

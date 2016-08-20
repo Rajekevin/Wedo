@@ -1,13 +1,36 @@
+<?php
+
+if (isset($_GET['accept-cookies'])) {
+    # code...
+
+    setcookie('accept-cookies', 'true',time()+31556925);
+
+    header('Location: ./');
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
+
+
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="It's time to be awesome !" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta property="og:image" content="public/img/wedo.png" />
-        <link rel="stylesheet" href="public/css/style.css" />
-        <link rel="stylesheet" href="public/css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/form.css" />
+         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/membre.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/cookie.css" />
+        <link rel="stylesheet" href="<?= WEBROOT; ?>/public/css/font-awesome/css/font-awesome.min.css" > 
+
+
 
         <title>Wedo</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -34,6 +57,7 @@
                 });
             });
         </script>
+      <!--END SMOOTHSCROLL -->
 
     </head>
 </head>
@@ -41,10 +65,22 @@
 <body>
     <header class="scroll">
         <div class="content">
-            <div class="logo"><a href="#banner" class="js-scrollTo"><img src="public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
+            <div class="logo"><a href="/wedo/index" class="js-scrollTo"><img src="<?= WEBROOT; ?>/public/img/wedo/wedo.png"><p>It's time to be awesome !</p></a></div>
             <nav>
-                <ul>
-                    <li><a class="js-scrollTo" href="#musculation">Musculation</a>
+                <ul>   <?php
+                            if (isset($_SESSION['login']))
+                            {
+                        ?>
+
+                    <li><a  class="js-scrollTo" href="<?= LINK; ?>index/profil">Bienvenue <?php echo $_SESSION['login'];?></a></li>
+                     <li><a  class="js-scrollTo" href="<?= LINK; ?>user/profil?login=<?php echo  $_SESSION['login']; ?>">Mon Profil</a></li>
+
+
+
+                    <li><a class="js-scrollTo" href="<?= LINK; ?>user/deconnexion">Deconnexion</a></li>
+                    <li>
+                    <a class="js-scrollTo" href="<?= LINK; ?>/index#Musculation">Musculation</a>
+                      
 
                     </li>
                     <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>
@@ -55,37 +91,37 @@
 
                         </ul>
                     </li> -->
+                    <li><a class="js-scrollTo" href="<?= LINK; ?>article/all">Article</a></li>
+                    
 
-                    <li><a href="">Evenements</a></li>
+                    
+                         <?php
+                            }
+                            else
+                            {
+                                ?>    
+                                <li>
+                                <a class="js-scrollTo" href="<?= LINK.'index#Musculation'; ?>">Musculation</a>
 
-                    <li><a href="">Inscription</a></li>
-                    <li><a href="">Connexion</a></li>
-                    <li><a href="">Contact</a>
+                    </li>
+                    <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>                   
+
+                    <li><a class="js-scrollTo" href="<?= WEBROOT; ?>user/subscribe">Inscription</a></li>
+                    <li><a href="<?= WEBROOT; ?>user/login">Connexion</a></li>
+
+                        <?php
+                            }
+                        ?>
+                    <li><a class="js-scrollTo" href="#contact">Contact</a>
 
                     </li>
 
                 </ul>
             </nav>
-        <!--     <div class="account">
-                    <a class="callPopin" href="#connexion">Se connecter</a>
-                    <span class="separator">|</span>
-                    <a class="callPopin" href="#subscribe">Inscription</a>
-            </div> -->
-        <!--     <div class="mob_menu">
-                <div class="button"><img src="http://nightlives.fr/images/common/hamburger.png"></div>
-                <ul>
-                    <li><a href="http://nightlives.fr">Accueil</a></li>
-                    <li><a href="http://nightlives.fr/festivals">Festivals</a></li>
-                    <li><a href="http://nightlives.fr/soirees">Soirées</a></li>
-                    <li><a href="http://nightlives.fr/concerts">Concerts</a></li>
-                    <li><a href="http://nightlives.fr/sportifes">sportifes</a></li>
-                                            <li class="mob_account"><a class="callPopin" href="#connexion">Se connecter</a></li>
-                        <li class="mob_account"><a class="callPopin" href="#subscribe">S'inscrire</a></li>
-                                    </ul>
-            </div> -->
+    
         </div>
     </header>
-
+<br/><br/><br/> <br/><br/>
 
 
  <?php include $this->view;?>
@@ -103,13 +139,13 @@
         <a href="#" class="footer__logo"></a>
 
                 <p class="footer-links">
-                    <a href="index'; ?>">Acceuil</a>
+                    <a href="index">Acceuil</a>
                     ·
-                    <a href="musculation'; ?>">Musculation</a>
+                    <a href="musculation">Musculation</a>
                     ·
-                    <a href="fitness'; ?>">Fitness</a>
+                    <a href="fitness">Fitness</a>
                     ·
-                    <a href="reglement'; ?>">Mentions Légales</a>
+                    <a href="reglement">Mentions Légales</a>
                 </p>
 
                 <p class="footer-company-name">Designed, Developed &amp; Hosted By Wedo &copy; 2016
@@ -126,7 +162,7 @@
 
 
 
-                      <a href="RSS/flux_rss.xml" class="rss" target="_blank">
+                      <a href="http://localhost/wedo/rss/feed/musculation" class="rss" target="_blank">
                             <i class="fa fa-rss-square" aria-hidden="true" style="color: white;"></i>
                             Flux RSS News
                         </a>
@@ -154,8 +190,22 @@
 
             <p>Contactez Nous</p>
 
+                <?php 
 
-                <form id="contactForm contact" name="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
+                if(isset($msg_error)){
+                 echo $msg_error;
+                }
+                 ?>
+
+                   <?php 
+
+                if(isset($msg_send)){
+                 echo $msg_send;
+                }
+                 ?>
+
+
+                <form id="contactForm contact" name="contact" id="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
 
                      <div>
                         <input placeholder="Nom" type="text" name="name" id="name" required="" tabindex="2" />
@@ -183,36 +233,29 @@
                     </div>
                 </form>
         </footer>
+        </body>
 
 
 <!--END WEDO FOOTER-->
 
-    <div class="cookie_container">
-        <div id="cookiebar" style="display:none;">
-            <div class="message"><p>Pour proposer un contenu en correspondance avec vos centres d’intérêt, ce site utilise des cookies.<br>
-    En poursuivant votre navigation, vous acceptez cet usage.</p></div>
-            <div class="close">Fermer</div>
-        </div>
+ <script src="../public/js/cookie.js"></script>
+  <script src="../public/js/jQuery.js"></script>
+<?php 
+
+if (!isset($_COOKIE['accept-cookies'])) {
+    # code...
+
+?>
+<div class="cookie-banner">
+    <div class="container">
+    Nous utilisons des cookies
+    <a href="?accept-cookies" class="button">Ok, continue</a>
     </div>
 
-    <script type="text/javascript">
+</div>
 
+<?php
+}
+?>
 
-    jQuery(document).ready(function($) {
-        console.log(jQuery.cookie('cookiebar'));
-        if (jQuery.cookie && jQuery.cookie('cookiebar') != 'true')
-        {
-            jQuery.cookie('cookiebar', 'true', {expires: 365});
-            jQuery("#cookiebar").show();
-        }
-    });
-
-    jQuery(document).on( 'click', '#cookiebar .close', function() {
-        jQuery('#cookiebar').css('display', 'none');
-    });
-
-    var isMobile = 0;
-    var isTablet = 0;
-    </script>
-</body>
 </html>

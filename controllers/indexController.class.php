@@ -9,6 +9,7 @@ class indexController{
 	
 
 	public function indexAction($args){
+		session_start();
 		
     
 	    // Afficher les erreurs à l'écran
@@ -23,9 +24,61 @@ class indexController{
 		$v->setView("indexIndex");
 
 
+
+
+		$a = new article();
+		// $article = $a->getAllBy(["id_category"=>1],["id"=>"DESC"],3);
+
+		$article = $a->getAllBy([],["id"=>"DESC"],3);
+
 		
 
+
+
+		// var_dump($article);
+		
+		// // var_dump($article->getId());
+
+		// foreach ($article as $unArticle) {
+
+			
+		// 	$tabArticles[$unArticle->getIdCategory()] = $unArticle;
+		// }
+
+		// var_dump($unArticle);
+		// $v->assign('articlelist',$tabArticles);
+
+
+	
+		$v->assign('articlelist',$article);
+
+		$c = new categorie();
+		//On cherche tous les catégories
+		$categorie = $c->getAllBy([],['id'=>'ASC'],'');
+
+		
+
+		$idCategorie = Article::findBy("id_category",$a->getIdCategory(),"int");
+		
+		//on récupère tous les 4 derniers articles en fonction de chaque catégorie
+		$articles = $a->getAllBy(['id_category' => $c->getId()], ['id' => 'DESC'] ,'');
+
+		// $articles = $a->getAllBy(['id_category' => 1], ['id' => 'DESC', 'LIMIT' => '4'] ,'');
+	
+
+		$v->assign('categorielist',$categorie);
+		// $v->assign('articles',$articles);
+
 	}
+
+
+
+
+
+
+
+
+
 }
 
 	
