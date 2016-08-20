@@ -26,7 +26,7 @@ var_dump($prev_like);
 			$test = new interest();
 
 			var_dump($test);
-			die();
+			
 	
 			$interests = $test->getAllBy(["id_user"=>$_SESSION['id']],['id'=>'DESC'],"");
 			//si l'user à déjà voté 
@@ -140,6 +140,6 @@ if($i->articleExist($idArticle)){// Verif : Si l'article existe dans la table in
 }
 
 
-
+die();
 
 ?>
