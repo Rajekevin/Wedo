@@ -162,7 +162,7 @@ if (isset($_GET['accept-cookies'])) {
 
 
 
-                      <a href="http://wedo-awesome.herokuapp.com/wedo/rss/feed/musculation" class="rss" target="_blank">
+                      <a href="<?= WEBROOT; ?>/rss/feed/musculation" class="rss" target="_blank">
                             <i class="fa fa-rss-square" aria-hidden="true" style="color: white;"></i>
                             Flux RSS News
                         </a>
