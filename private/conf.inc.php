@@ -8,11 +8,11 @@
     define("BDD_DBNAME", "heroku_ed738c1d37eed3e");
     define("BDD_USER", "bc47686cf08767");
     define("BDD_PWD", "ca8b4fd0");
-    define("LINK", "http://localhost/wedo/");
-    define("IMG", "http://localhost/wedo/img/");
-    define("ARTICLES", "http://localhost/wedo/article/");
-    define("ARTICLE", "http://localhost/wedo/article/musculation/");
-    define("PAGE", "http://localhost/wedo/index/p?id=");
+    define("LINK", "http://wedo-awesome.herokuapp.com/wedo/");
+    define("IMG", "http://wedo-awesome.herokuapp.com/wedo/img/");
+    define("ARTICLES", "http://wedo-awesome.herokuapp.com/wedo/article/");
+    define("ARTICLE", "http://wedo-awesome.herokuapp.com/wedo/article/musculation/");
+    define("PAGE", "http://wedo-awesome.herokuapp.com/wedo/index/p?id=");
     define("SALT", "GFDSgfdsgf34543");
 
     /* SMTP */
