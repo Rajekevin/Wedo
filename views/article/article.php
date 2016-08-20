@@ -6,7 +6,6 @@
 function cwRating(id,type,target){
 
 
-alert('ok');
 
 
 	$.ajax({
@@ -14,7 +13,12 @@ alert('ok');
 		url:'../rating',
 		data:'id='+id+'&type='+type,
 
+
+
 		success:function(msg){
+
+
+			alert(data);
 			if(msg == 'err'){
 				alert('Some problem occured, please try again.');
 			
