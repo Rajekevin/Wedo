@@ -189,11 +189,6 @@
 
 
 
-<?php } }else{
-  echo "";}?>
-
-
-
 
 
             <div class="image"></div>
