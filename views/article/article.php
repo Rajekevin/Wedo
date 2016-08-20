@@ -35,37 +35,6 @@ function cwRating(id,type,target){
 
 </script>
 
-<script>
-function clo(){
-
-
-	$.ajax({
-		type:'POST',
-	
-
-		success:function(msg){
-			if(msg == 'err'){
-				alert('Some problem occured, please try again.');
-			
-
-
-			}else{
-				alert('Some problem occured, please try again.');
-				
-			}
-		}
-	});
-	
-	
-			
-
-
-	
-
-
-}
-</script>
-
 
 
 
