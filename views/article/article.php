@@ -141,7 +141,7 @@ function clo(){
 	}
  
 	.heart {
-		background: url(../../public/img/article/like/twitter-heart-button.png);
+		background: url(/public/img/article/like/twitter-heart-button.png);
 		background-position: left;
 		background-repeat: no-repeat;
 		height: 50px;
@@ -160,7 +160,7 @@ function clo(){
     	font-family: arial;
     }
     .heart {
-	    background: url(../../public/img/article/like/twitter-heart-button.png);
+	    background: url(/public/img/article/like/twitter-heart-button.png);
 	    background-position: left;
 	    background-repeat: no-repeat;
 	    height: 50px;
