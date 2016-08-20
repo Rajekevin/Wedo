@@ -58,25 +58,11 @@
           <?php if ($login == $_SESSION['login']): ?>
             
          
-                  <div class="drop">drop file here</div>
-                
-                <div id="dropfile">Drop an image from your computer</div>
-
-                <div class="drop">Drop files here</div> 
-                <form action="upload" method="post" id="myForm" enctype="multipart/form-data">
-                    <input type="file" name="file" id="file"><br>
-                    <input type="submit" name="submit" class="btn btn-success" value="Upload Image">
-                </form>
-
-                <div class="progress progress-striped active">
-                  <div class="progress-bar"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
-                         <span class="sr-only">0% Complete</span>
-                  </div>
-                </div>
+              
 
               
 
-                     <a href="<?= LINK;?>user/updateProfil?login=<?= $login ?>"> Modier vote profil </a>
+                     <a href="<?= LINK;?>user/updateProfil?login=<?= $login ?>"> Modifier vote profil </a>
 
                  <?php endif ?>
               
@@ -299,120 +285,3 @@
   <script src="drop.js"></script>
 
 
-  <script type="text/javascript">
-    
-
-    $(".drop").on('dragover drop', function(e) { 
-    e.preventDefault();
-    e.stopPropagation();
-});
-
-$(".drop").on('dragover, dragenter', function(e){
-  $(".drop").addClass('onenter')
-  
-});
-
-$(".drop").on('drop', function(e) {
-  droppedFiles = e.originalEvent.dataTransfer.files;
-  reader = new FileReader();
-  reader.onload = function(e){
-    var img = new Image();
-    img.src = e.target.result;
-    img.width = 500;
-    document.body.appendChild(img);
-  };
-  
-  reader.readAsDataURL(droppedFiles[0]);
-});
-
-
-$(function(){
-
-  //select the drop container
-  var obj = $('.drop');
-
-  // dragover event listener
-  obj.on('dragover',function(e){
-    e.stopPropagation();
-    e.preventDefault();
-    $(this).css('border',"2px solid #16a085");
-  });
-
-  //drop event listener
-  obj.on('drop',function(e){
-    e.stopPropagation();
-    e.preventDefault();
-    $(this).css('border',"2px dotted #bdc3c7");
-
-    //capture the files
-    var files = e.originalEvent.dataTransfer.files;
-    var file =files[0];
-    //console.log(file);
-
-    //upload the file using xhr object
-    upload(file);
-
-    
-
-  });
-
-  function upload(file){
-
-    //create xhr object
-
-    xhr = new XMLHttpRequest();
-
-    //check if the uploading file is image
-    if(xhr.upload && check(file.type))
-    {
-    //initiate request
-    xhr.open('post','drop',true);
-
-    //set headers
-    xhr.setRequestHeader('Content-Type',"multipart/form-data");
-    xhr.setRequestHeader('X-File-Name',file.fileName);
-    xhr.setRequestHeader('X-File-Size',file.fileSize);
-    xhr.setRequestHeader('X-File-Type',file.fileType);
-
-    //send the file
-    xhr.send(file);
-
-    //event listener
-    xhr.upload.addEventListener("progress",function(e){
-      var progress= (e.loaded/e.total)*100;
-      $('.progress').show();
-      $('.progress-bar').css('width',progress+"%");
-    },false);
-
-    //upload complete check
-    xhr.onreadystatechange = function (e){
-      if(xhr.readyState ===4)
-      {
-        if(xhr.status==200)
-        {
-          $('.progress').hide();
-          $(".image").html("<img src='"+xhr.responseText+"' width='100%'/>");
-        }
-      }
-    }
-    }
-    else
-      alert("please upload only images");
-  }
-
-  //function to check the image type
-  function check(image){
-    switch(image){
-      case 'image/jpeg':
-      return 1;
-      case 'image/png':
-      return 1;
-      case 'image/gif':
-      return 1;
-      default:
-      return 0;
-    }
-  }
-
-});
-  </script>
