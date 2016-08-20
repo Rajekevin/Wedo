@@ -202,18 +202,7 @@
  <?php if (isset($interest)){ ?>
        <?php foreach($interest as $key => $toto):   ?>
       <?php 
-     $idArt = $toto['id_article']; 
-
-       $idArticle = article::findById($idArt);                
-              $Title = $idArticle->getTitle();
-              $Img = $idArticle->getImg();           
-
-
-              $CategorieArticle = $idArticle->getIdCategory();
-              
-
-
-         $categorieName = Categorie::findBy("id",$CategorieArticle,"int");
+    
 
 
          if ($categorieName==true) { 
