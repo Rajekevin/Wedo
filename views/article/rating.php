@@ -14,7 +14,7 @@ if($_POST['id']){
 
 
 var_dump($prev_like);
-die();
+
 		
 		$idUser = Membre::findBy("login",$_SESSION['login'],"string");
 		$idLogin=$idUser->getId();	//id_USER 
@@ -25,7 +25,7 @@ die();
 			$test = new interest();
 
 			var_dump($test);
-			die();
+			
 	
 			$interests = $test->getAllBy(["id_user"=>$_SESSION['id']],['id'=>'DESC'],"");
 			//si l'user à déjà voté 
