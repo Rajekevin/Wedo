@@ -129,7 +129,7 @@ function clo(){
 
 
 	.heart_icon {
-		background: url("../../public/img/article/like/twitter-heart-button.png");
+		background: url("/public/img/article/like/twitter-heart-button.png");
 		background-size: 2900px;
 		background-repeat: no-repeat;
 		height: 100px;
