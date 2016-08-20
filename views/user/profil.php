@@ -186,76 +186,7 @@
 </div>
 
 
-<div class="membre_info" id="next_events">
 
-
-                <h2>Mes Articles préférés</h2>
-                <hr>
-                <div class="list_events">
-                    <div class="event">
-                   </div>
-                    <h3></h3>
-                    <p></p>
-                    <a class="call_to" href=""></a></div>                   
-                    <div class="lineclear"></div>
-
- <?php if (isset($interest)){ ?>
-       <?php foreach($interest as $key => $toto):   ?>
-      <?php 
-     $idArt = $toto['id_article']; 
-
-       $idArticle = article::findById($idArt);                
-              $Title = $idArticle->getTitle();
-              $Img = $idArticle->getImg();           
-
-
-              $CategorieArticle = $idArticle->getIdCategory();
-              
-
-
-         $categorieName = Categorie::findBy("id",$CategorieArticle,"int");
-
-
-         if ($categorieName==true) { 
-   
-        $categorieName= $categorieName->getName();
-
-     
-
-        if ($categorieName!="Sportif") {?>
-
-
-
-       
-           
-
-
-
-        
-<div class="membre_info" id="next_events">
-            <h2></h2>     
-                
-             <?php  echo "Titre de l'article : ".$Title; ?>
-             <div class="sportifs_list">
-             <div class="sportif">
-            <div class="logo_sportif">
-             <img  src="<?= WEBROOT; ?>public/img/article/<?= $Img; ?>" />
-             </div>
-             </div>
-             </div>
-              </div>
-
-
-
-             
-      <?php  } } ?>     
-
-   
-
-
-      <?php endforeach; ?>
-
-</div>
 
 
 <?php } }else{
