@@ -392,16 +392,16 @@ public function loginAction($args)
 
 		$var = implode ($args);
 
-		$thisuser = new membre();
-	    $tab= $thisuser->getOneBy(['id'=>$_SESSION['id']]);
+		// $thisuser = new membre();
+	 //    $tab= $thisuser->getOneBy(['id'=>$_SESSION['id']]);
 
-	    $_SESSION['avatar'] = $tab['avatar'];
-		$_SESSION['login'] = $tab['login'];
-		$_SESSION['token'] = $tab['token'];
-		$_SESSION['statut'] = $tab['statut'];
-		$_SESSION['mail'] = $tab['mail'];
-		$_SESSION['date_inscription'] = $tab['date_inscription'];
-		$_SESSION['ville'] = $tab['ville'];
+	 //    $_SESSION['avatar'] = $tab['avatar'];
+		// $_SESSION['login'] = $tab['login'];
+		// $_SESSION['token'] = $tab['token'];
+		// $_SESSION['statut'] = $tab['statut'];
+		// $_SESSION['mail'] = $tab['mail'];
+		// $_SESSION['date_inscription'] = $tab['date_inscription'];
+		// $_SESSION['ville'] = $tab['ville'];
 
 
 		
@@ -462,12 +462,7 @@ public function loginAction($args)
 
 		
 
-		
-
-
 	
-		// var_dump($commentaires->getId());
-
 
 		
 
