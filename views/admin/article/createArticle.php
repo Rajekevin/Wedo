@@ -9,7 +9,7 @@
 $a = new article();
 
 
-
+$id= intval($_GET["id"]);
 
 $tab=$a->getOneBy(['id'=>$id]);
 
