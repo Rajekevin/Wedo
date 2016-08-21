@@ -71,8 +71,8 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 				}else{
  			
- 			$a->setAuteur(strip_tags($_SESSION['login']));
-			$a->setDescription(strip_tags($_POST['description']));			
+ 		// 	$a->setAuteur(strip_tags($_SESSION['login']));
+			// $a->setDescription(strip_tags($_POST['description']));			
 			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
@@ -80,9 +80,9 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 	
 
 
-			$title=format_url($_POST['title']);
+			// $title=format_url($_POST['title']);
 
-			$a->setTitle(strip_tags($title));
+			// $a->setTitle(strip_tags($title));
 	
 			$a->setContenu($_POST['contenu']);
 
@@ -107,8 +107,8 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 			// $a->setImg($_FILES['img']['name']);
 			
-			$value=0;
-			$a->setInterest($value);
+			// $value=0;
+			// $a->setInterest($value);
 			// var_dump($a);
 
 			$a->save();
