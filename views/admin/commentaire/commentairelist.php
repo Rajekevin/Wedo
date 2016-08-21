@@ -18,8 +18,8 @@
   <?php foreach ($commentairelist as $key => $value) :
 
 
-       $idUser= Membre::findById($value['id_user']);                
-  $avatar = $idUser->getAvatar();  ?>  
+  //      $idUser= Membre::findById($value['id_user']);                
+  // $avatar = $idUser->getAvatar();  ?>  
 
 
   <tr>
