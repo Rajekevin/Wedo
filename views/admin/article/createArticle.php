@@ -9,7 +9,7 @@
 $a = new article();
 
 
-$id= intval($_GET["id"]);
+
 
 $tab=$a->getOneBy(['id'=>$id]);
 
@@ -71,8 +71,8 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 				}else{
  			
- 			$a->setAuteur(strip_tags($_SESSION['login']));
-			$a->setDescription(strip_tags($_POST['description']));			
+ 			$a->setAuteur($_SESSION['login']);
+			$a->setDescription($_POST['description']);			
 			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
