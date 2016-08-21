@@ -1,8 +1,4 @@
 
-<?php foreach ($createArticle as $key => $value): 
-	?>
-
-	<?php endforeach; ?>
 
 
 <?php
