@@ -57,7 +57,7 @@ function format_url($str)
 
 
 
-
+echo "ok";
 if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'])&&isset($_POST['contenu']) ){
 
 
@@ -66,7 +66,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 				echo '<script type="text/javascript">window.alert("Le titre existe déjà");</script>';			
 
 				}else{
- 			
+ 			echo"ouloulou";
  			$a->setAuteur(strip_tags($_SESSION['login']));
 			$a->setDescription(strip_tags($_POST['description']));			
 			
