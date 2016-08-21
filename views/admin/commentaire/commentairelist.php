@@ -16,14 +16,11 @@
     <th>Action</th>
   </tr>
   <?php foreach ($commentairelist as $key => $value) :
+  $idUser= membre::findById($value['id_user']);
+   $avatar = $idUser->getAvatar(); ?>       
+  
 
-   //                
-   // $avatar = $idUser->getAvatar(); 
-
-   // var_dump($idUser);
-   // var_dump($avatar);
-
- ?>  
+?>
 
 
 
@@ -36,8 +33,7 @@
         <?php endif; ?>
       </td>
       <td>
-   <?php   $idUser= Membre::findById($value['id_user']);
-   $avatar = $idUser->getAvatar(); ?>
+ 
             <a href="<?= WEBROOT; ?>user/profil?name=<?= $value['nom_user']; ?>"> <img src="<?= WEBROOT; ?>public/img/avatar/<?= $avatar; ?>"  width="90px" height="90px" ></a>
     
       </td>
