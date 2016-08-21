@@ -144,7 +144,7 @@ function format_url($str)
             <div class="article_list"> 
 
                 <div class="article">
-                    
+                    <center><i><h4><?= $value['title']; ?></h4></i> </center> 
 
                     <div class="logo_article"><img  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div> 
                     <a href="<?= ARTICLE.$value['title'] ?>">
@@ -152,7 +152,7 @@ function format_url($str)
                     <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
                     </div>
                     </a>
-                    <h5></h5><p> <?= $value['title']; ?></p>
+                    
                     <a class="Wedo_Button" href="">Je commente</a>
           </div>
 
