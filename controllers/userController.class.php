@@ -503,6 +503,8 @@ public function loginAction($args)
 
 	
 		$v->assign("interest",$interest);
+
+		var_dump($interest);
 		
 
 
