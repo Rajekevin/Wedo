@@ -492,8 +492,9 @@ public function loginAction($args)
 
 
 /*récupère lobjet membre en fonction du login*/
-		$membre = membre::findBy("login", $args['login'], "string");		
-		$idMembre= $membre->getId();
+
+		
+		$idMembre= $user->getId();
 
 		$i = new interest();
 	
