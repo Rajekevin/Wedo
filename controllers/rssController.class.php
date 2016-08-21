@@ -28,7 +28,7 @@ class rssController
         // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
         ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 
-        // header("Content-Type: application/rss+xml; charset=ISO-8859-1");
+        header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 
             $args_access = ["musculation", "fitness", "all"];
             if( !empty( $args ) && in_array($args[0], $args_access, true) )
