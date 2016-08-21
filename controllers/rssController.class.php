@@ -14,7 +14,7 @@ class rssController
         ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 
         header("Content-Type: application/rss+xml; charset=ISO-8859-1");
-        $view = new View();
+        $view = new view();
         $view->setView("rss/show");
     }
 
