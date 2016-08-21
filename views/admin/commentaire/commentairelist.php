@@ -17,7 +17,7 @@
   </tr>
   <?php foreach ($commentairelist as $key => $value) :
   $idUser= membre::findById($value['id_user']);
-   $avatar = $idUser->getAvatar(); ?>       
+   $avatar = $idUser->getAvatar();        
   
 
 ?>
