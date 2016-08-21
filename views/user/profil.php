@@ -150,7 +150,7 @@
               
 
         
-         $categorieName = Categorie::findBy("id",$CategorieArticle,"int"); 
+         $categorieName = categorie::findBy("id",$CategorieArticle,"int"); 
 
          
    if($categorieName==true){
