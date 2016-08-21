@@ -1,5 +1,5 @@
 <!-- Liste des commentaires -->
-
+<?php $idUser= Membre::findById($value['id_user']); ?>
 <div id ="ArticlesList">
 <table border="1" cellpadding="10" cellspacing="1" width="100%">
   <tr>
@@ -17,7 +17,7 @@
   </tr>
   <?php foreach ($commentairelist as $key => $value) :
 
-   // $idUser= Membre::findById($value['id_user']);                
+   //                
    // $avatar = $idUser->getAvatar(); 
 
    // var_dump($idUser);
