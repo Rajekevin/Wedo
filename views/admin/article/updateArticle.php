@@ -55,12 +55,12 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['auteur'])&&i
 			$a->setDescription($_POST['description']);			
 			$a->setTitle($_POST['title']);
 
-		if($_POST['categorie']=="Musculation"){
-			$a->setIdCategory(1);
-				}else{
-			$a->setIdCategory(2);
-
-				}
+				/*on recherche l'id de la catégorie sélectionné par l'user */
+			$idCategory = categorie::findBy("name", $_POST['categorie'], "string");
+			$idCategory = $idCategory->getId();
+		
+		
+			$a->setIdCategory($idCategory);
 
 			$a->setContenu($_POST['contenu']);
 			if(upload("img","img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)

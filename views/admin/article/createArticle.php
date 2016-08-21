@@ -6,12 +6,12 @@
 
 
 <?php
-// $a = new article();
+$a = new article();
 
 
 
 
-// $tab=$a->getOneBy(['id'=>$id]);
+$tab=$a->getOneBy(['id'=>$id]);
 
 
 
