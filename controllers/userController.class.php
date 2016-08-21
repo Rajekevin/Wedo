@@ -464,7 +464,6 @@ public function loginAction($args)
 
 		
 
-		$commentaires = $commentaire->getAllBy(["nom_user"=>$args['login']],['id_article'=>'DESC'],"4");
 
 	
 		// var_dump($commentaires->getId());
@@ -504,7 +503,7 @@ public function loginAction($args)
 	
 		$v->assign("interest",$interest);
 
-		var_dump($interest);
+
 		
 
 
