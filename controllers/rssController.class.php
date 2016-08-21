@@ -18,7 +18,7 @@ class rssController
         ini_set('log_errors', 1);
         // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
         ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
-        
+
         header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 
             $args_access = ["musculation", "fitness", "all"];
@@ -39,7 +39,7 @@ class rssController
                 {
                    
                 
-                     $articles = Article::findAll();
+                     $articles = article::findAll();
                    
                     foreach($articles as $key => $article)
                     {
