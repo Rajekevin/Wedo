@@ -246,35 +246,13 @@ class adminController{
 		$c = new categorie();
 		$categorie = $c->getAllBy([],[],'');		
 
-		$articles= $a->getOneBy(["id"=>$var]);		
-		$v->assign('articles',$articles);
-		
-
-		// $membre= new membre();
-		// $tab = $membre->getOneBy(['mail'=>$args['email']]);
-
-		// $_SESSION['id'] = $tab['id'];
-		// $_SESSION['login'] = $tab['login'];
-		// $_SESSION['token'] = $tab['token'];
-		// $_SESSION['statut'] = $tab['statut'];
+		// $articles= $a->getOneBy(["id"=>$var]);		
+		// $v->assign('articles',$articles);
 
 		
 
 		$v->assign('createArticle',$article);
 		$v->assign('categorie',$categorie);
-
-
-
-
-
-	
-
-
-
-		
-
-	
-
 		
 		
 	}else{

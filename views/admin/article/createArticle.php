@@ -9,7 +9,7 @@
 $a = new article();
 
 
-// $id= intval($_GET["id"]);
+
 
 $tab=$a->getOneBy(['id'=>$id]);
 
@@ -77,12 +77,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
 
-			// if($_POST['categorie']=="Musculation"){
-			// $a->setIdCategory(1);
-			// 	}else{
-			// $a->setIdCategory(2);
-
-			// 	}
+	
 
 
 			$title=format_url($_POST['title']);
@@ -121,14 +116,6 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
         	
 
-		// foreach ($articles as $key => $value): 
-  //                   // if ($thisArticle['id'] != $value['id']):
-  //         var_dump($value['id']);
-  //         	endforeach;
-
-  //         	$idArticle = $value['id'];
-  //         	$theArticle= $idArticle+1;
-		//  echo "Votre article vient d'être publier rendez-vous sur  http://localhost/wedo/index/a?id=".$theArticle;
 		}
 
 
@@ -190,7 +177,5 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 </form>
 
-<!--  $test = $a->save(['id'=>$id]);
 
- var_dump($a->save(['id'=>$id])); -->
 
