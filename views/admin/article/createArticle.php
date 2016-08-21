@@ -51,7 +51,7 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 
 function format_url($str)
 	{
-    $str = mb_strtolower($str);
+    // $str = mb_strtolower($str);
     $str = utf8_decode($str);
     $str = strtr($str, utf8_decode('àâäãáåçéèêëíìîïñóòôöõøùúûüýÿ'), 'aaaaaaceeeeiiiinoooooouuuuyy');
     $str = preg_replace('`[^a-z0-9]+`', '-', $str);
