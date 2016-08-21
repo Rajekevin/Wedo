@@ -144,7 +144,7 @@ function format_url($str)
             <div class="article_list"> 
 
                 <div class="article">
-                    <center><i><h2><?= $value['title']; ?></h2></i> </center> 
+                    
 
                     <div class="logo_article"><img  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div> 
                     <a href="<?= ARTICLE.$value['title'] ?>">
