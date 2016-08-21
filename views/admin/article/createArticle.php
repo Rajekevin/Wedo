@@ -6,12 +6,12 @@
 
 
 <?php
-$a = new article();
+// $a = new article();
 
 
 
 
-$tab=$a->getOneBy(['id'=>$id]);
+// $tab=$a->getOneBy(['id'=>$id]);
 
 
 
@@ -71,8 +71,8 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 				}else{
  			
- 		// 	$a->setAuteur(strip_tags($_SESSION['login']));
-			// $a->setDescription(strip_tags($_POST['description']));			
+ 			$a->setAuteur(strip_tags($_SESSION['login']));
+			$a->setDescription(strip_tags($_POST['description']));			
 			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
@@ -80,9 +80,9 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 	
 
 
-			// $title=format_url($_POST['title']);
+			$title=format_url($_POST['title']);
 
-			// $a->setTitle(strip_tags($title));
+			$a->setTitle(strip_tags($title));
 	
 			$a->setContenu($_POST['contenu']);
 
@@ -93,22 +93,22 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 			
 			/*on recherche l'id de la catégorie sélectionné par l'user */
-			// $idCategory = categorie::findBy("name", $_POST['categorie'], "string");
-			// $idCategory = $idCategory->getId();
+			$idCategory = categorie::findBy("name", $_POST['categorie'], "string");
+			$idCategory = $idCategory->getId();
 		
 		
-			// $a->setIdCategory($idCategory);
+			$a->setIdCategory($idCategory);
 
-			// if(upload("img","public/img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)
-			// {
+			if(upload("img","public/img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)
+			{
 
-			// 	echo "L'upload s'est bien passé !";
-			// }
+				echo "L'upload s'est bien passé !";
+			}
 
-			// $a->setImg($_FILES['img']['name']);
+			$a->setImg($_FILES['img']['name']);
 			
-			// $value=0;
-			// $a->setInterest($value);
+			$value=0;
+			$a->setInterest($value);
 			// var_dump($a);
 
 			$a->save();
