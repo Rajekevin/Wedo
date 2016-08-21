@@ -89,6 +89,8 @@ class basesql{
 			}
 			$query->execute($data);
 
+			var_dump($query);
+
 			
 
 		}

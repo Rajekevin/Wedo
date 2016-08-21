@@ -102,7 +102,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			
 			$value=0;
 			$a->setInterest($value);
-			// var_dump($a);
+			var_dump($a);
 
 			$a->save();
 
