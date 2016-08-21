@@ -86,8 +86,8 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 	
 			$a->setContenu($_POST['contenu']);
 
-			echo $a;
-			var_dump($a);
+			
+		
 
 		
 
