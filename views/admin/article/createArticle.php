@@ -1,4 +1,8 @@
 
+<?php foreach ($createArticle as $key => $value): 
+	?>
+
+	<?php endforeach; ?>
 
 
 <?php
@@ -57,7 +61,7 @@ function format_url($str)
 
 
 
-echo "ok";
+
 if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'])&&isset($_POST['contenu']) ){
 
 
@@ -66,7 +70,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 				echo '<script type="text/javascript">window.alert("Le titre existe déjà");</script>';			
 
 				}else{
- 			echo"ouloulou";
+ 			
  			$a->setAuteur(strip_tags($_SESSION['login']));
 			$a->setDescription(strip_tags($_POST['description']));			
 			
@@ -81,6 +85,9 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			$a->setTitle(strip_tags($title));
 	
 			$a->setContenu($_POST['contenu']);
+
+			echo $a;
+			var_dump($a);
 
 		
 
@@ -102,7 +109,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			
 			$value=0;
 			$a->setInterest($value);
-			var_dump($a);
+			// var_dump($a);
 
 			$a->save();
 
