@@ -140,13 +140,13 @@ if (isset($_GET['accept-cookies'])) {
         <a href="#" class="footer__logo"></a>
 
                 <p class="footer-links">
-                    <a href="index">Acceuil</a>
+                    <a href="<?= LINK.'index'; ?>">Acceuil</a>
                     ·
-                    <a href="musculation">Musculation</a>
+                    <a href="<?= LINK.'musculation'; ?>">Musculation</a>
                     ·
-                    <a href="fitness">Fitness</a>
+                    <a href="<?= LINK.'fitness'; ?>">Fitness</a>
                     ·
-                    <a href="reglement">Mentions Légales</a>
+                    <a href="<?= WEBROOT.'reglement'; ?>">Mentions Légales</a>
                 </p>
 
                 <p class="footer-company-name">Designed, Developed &amp; Hosted By Wedo &copy; 2016
