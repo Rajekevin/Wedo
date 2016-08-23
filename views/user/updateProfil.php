@@ -70,7 +70,7 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 
 
 
-<div id="home" class="site-content">
+<div id="home" class="site-content articles white">
 
 
 <form method="POST" action=""  enctype="multipart/form-data">
