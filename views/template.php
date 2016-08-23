@@ -60,7 +60,7 @@ if (isset($_GET['accept-cookies'])) {
       <!--END SMOOTHSCROLL -->
 
     </head>
-</head>
+
 
 <body>
     <header class="scroll">
