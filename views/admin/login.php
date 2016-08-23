@@ -16,7 +16,7 @@
            
             <input type="password" id="pass" name="pass"  placeholder="Password"  required />
             <i class="fa fa-key"></i>
-            <a href="#">Mot de passe oublié ?</a>
+            <a href="<?= WEBROOT; ?>/user/resetPass">Mot de passe oublié ?</a>
 
 
          

@@ -164,8 +164,14 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 	{
 		CKEDITOR.replace( 'editor1' );
 	};
+
+
+
+
+}
 </script>
 </label>
+
 
 
 <label for="photo">Image : Icône du fichier (JPG, PNG ou GIF | max. 15 Ko) :</label>  
