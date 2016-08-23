@@ -16,7 +16,9 @@ if(isset($msg_error)){
 
       <input type="submit" value="Connexion">
       <p class="message">Pas encore inscrit ? <a href="<?= WEBROOT; ?>/user/subscribe">Cliquez-ici</a></p>
-      <p class="message"> <a href="<?= WEBROOT; ?>/user/subscribe">Mot de passe oublié</a></p>
+      <p class="message"> <a href="<?= WEBROOT; ?>/user/resetPass">Mot de passe oublié</a></p>
+
+     
     </form>
   </div>
 </div>
