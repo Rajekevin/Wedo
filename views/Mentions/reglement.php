@@ -1,6 +1,6 @@
 <div id="home" class="site-content">
 
-	<section class="articles white">
+	<section class="articles white entry-content">
 		<h1>▪ MENTIONS LEGALES<br><br></h1>
 		<div class="content">
 	        <?php foreach ($page as $key => $value):  ?>
