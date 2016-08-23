@@ -225,7 +225,7 @@ if (isset($_GET['accept-cookies'])) {
                         <div id="email-error" class="error"></div>
                     </div>
                     <div>
-                       <textarea placeholder="message" type="text" name="content"> </textarea>
+                       <textarea placeholder="message"  name="content"> </textarea>
                         <div id="message-error" class="error"></div>
                     </div>
                     <input type="hidden" name="contact" value="6se84f3" />

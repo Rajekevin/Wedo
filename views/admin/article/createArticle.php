@@ -167,8 +167,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 
 
-
-}
+	
 </script>
 </label>
 
