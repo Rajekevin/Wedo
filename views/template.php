@@ -233,6 +233,7 @@ if (isset($_GET['accept-cookies'])) {
                         <input type="submit" name="Envoyer" id="contact" name="contact" tabindex="2">
                     </div>
                 </form>
+            </div>
         </footer>
         </body>
 
