@@ -169,7 +169,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 
 <label for="photo">Image : Icône du fichier (JPG, PNG ou GIF | max. 15 Ko) :</label>  
-<input type="file" id="img" name="img" value="<?php echo $tab['img']; ?>">
+<input type="file" required="" id="img" name="img" value="<?php echo $tab['img']; ?>">
 
 
 
