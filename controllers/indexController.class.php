@@ -27,6 +27,8 @@ class indexController{
 
 
 		$a = new article();
+
+		$v->assign('a',$a);
 		// $article = $a->getAllBy(["id_category"=>1],["id"=>"DESC"],3);
 
 		$article = $a->getAllBy([],["id"=>"DESC"],3);
