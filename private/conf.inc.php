@@ -8,7 +8,8 @@
     define("LINK", "http://localhost/wedo/");
     define("IMG", "http://localhost/wedo/img/");
     define("ARTICLES", "http://localhost/wedo/article/");
-    define("ARTICLE", "http://localhost/wedo/article/musculation/");
+    define("ARTICLE", "http://localhost/wedo/article/index/");
+    define("CATEGORIE", "http://localhost/wedo/article/show/");
     define("PAGE", "http://localhost/wedo/index/p?id=");
     define("SALT", "GFDSgfdsgf34543");
 

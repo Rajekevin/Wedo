@@ -28,9 +28,8 @@
                     $nbArticles= count($articles);
                     if($nbArticles > 1) {
                       print_r($nbArticles." articles");
-                    }else{
-                      print_r("pas d'article");
-                    }?>
+                      ?>
+                
           
                     </p>
                     <a href="<?= ARTICLE.$value['name'] ?>">
@@ -39,7 +38,12 @@
                     </div>
                     </a>
                     
-                    <a class="Wedo_Button" href="">Je découvre les articles ..</a>
+                    <a class="Wedo_Button" href="<?= CATEGORIE.$value['name'] ?>">Je découvre les articles ..</a>
+
+                       <?php }else{
+                      print_r("pas encore d'articles"); ?>
+                       <a class="Wedo_Button" href="#">Bientôt</a>
+                   <?php }?>
           </div>
 
 
