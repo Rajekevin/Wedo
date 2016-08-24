@@ -90,7 +90,7 @@ function format_url($str)
 
 
      <?php
-    $c = new categorie();
+  
     $a = new article();
         //On cherche tous les catégories
         $categorie = $c->getAllBy([],['id'=>'ASC'],'');

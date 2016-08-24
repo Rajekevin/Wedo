@@ -53,6 +53,10 @@ class indexController{
 		$v->assign('articlelist',$article);
 
 		$c = new categorie();
+
+		$v->assign('c',$c);
+
+
 		//On cherche tous les catégories
 		$categorie = $c->getAllBy([],['id'=>'ASC'],'');
 
