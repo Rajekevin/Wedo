@@ -19,11 +19,8 @@ class basesql extends PDO{
 
 		$all_vars = get_object_vars($this);
 		$class_vars = get_class_vars(get_class());
-		// $this->columns = array_keys(array_diff_key($all_vars, $class_vars));
+		$this->columns = array_keys(array_diff_key($all_vars, $class_vars));
 
-		if(($key = array_search("table", $this->columns)) !== false) {
-		    unset($this->columns[$key]);
-		}
 	}
 
 	public function save(){
