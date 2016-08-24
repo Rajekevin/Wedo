@@ -92,8 +92,6 @@ function format_url($str)
      <?php
   
   
-        //On cherche tous les catégories
-        $categorie = $c->getAllBy([],['id'=>'ASC'],'');
 
         
 
