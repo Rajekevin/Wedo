@@ -1,6 +1,3 @@
-dans view>article>articlelist.php
-
-
 <section class="articles homepage_articles">
 <?php foreach ($categorielist as $key => $value): ?>
     
