@@ -324,4 +324,6 @@ public function showAction($args)
 		
 		
 		}
+
+	}
 }
