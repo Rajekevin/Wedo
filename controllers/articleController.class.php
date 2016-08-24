@@ -273,4 +273,43 @@ class articleController
 		
 	
 }
+
+
+
+
+public function showAction($args)
+	{
+	session_start();
+		$v = new view();
+		
+		$var = implode ($args);
+		$v->setView("article/show");
+		
+		$c = new categorie();
+		$categorielist = $c->getAllBy([],[],'');
+		$thisCat = $c->getOneBy(['name'=>$var]);
+		
+	
+		
+	
+		
+		$title = categorie::findBy("name", $args[0], "string");
+		
+		if($title==false)
+		{
+			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
+			//$v->setView("user/login");
+		}else{
+		$idCat = $title->getId();
+		echo $idCat;
+		
+		$v->assign('idCat',$idCat );
+		$a = new article();
+		//on récupère tous les 4 derniers articles en fonction de chaque catégorie
+		$articles = $a->getAllBy(['id_category' => $idCat], ['id' => 'DESC'] ,'');
+		$v->assign('articles',$articles);
+
+		
+		
+		}
 }

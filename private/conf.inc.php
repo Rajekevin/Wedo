@@ -12,6 +12,10 @@
     define("IMG", "http://wedo-awesome.herokuapp.com/wedo/img/");
     define("ARTICLES", "http://wedo-awesome.herokuapp.com/wedo/article/");
     define("ARTICLE", "http://wedo-awesome.herokuapp.com/wedo/article/index/");
+
+    define("CATEGORIE", "http://wedo-awesome.herokuapp.com/wedo/article/show/");
+
+
     define("PAGE", "http://wedo-awesome.herokuapp.com/wedo/index/p?id=");
     define("SALT", "GFDSgfdsgf34543");
 
