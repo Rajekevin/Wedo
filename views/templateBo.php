@@ -130,7 +130,14 @@
 
 				endforeach;
 				?>
-				Il y a actuellement <?php echo $value['ip'] ?> visiteurs connectes sur mon site !
+				Il y a actuellement   
+				<?php $connectes = count($connectes);
+			        if($connectes > 1) {
+			          print_r($connectes." visiteurs connectes sur mon site !");
+			        }else{
+			          print_r($articles." article");
+			        } ?>
+     
 				
 			</section>
 		</div> 
