@@ -114,10 +114,10 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			// var_dump($a);
 			$url =  ARTICLE.$title;
 
-			echo $url;
-			var_dump($url);
+		
+			$a->setUrl($url);
 
-			
+			echo "Votre article vient d'être creer : rendez-vous <a href='$url'> ici</a>";
 
 
 			
