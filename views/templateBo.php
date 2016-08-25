@@ -121,21 +121,7 @@
 				?>
 			</section>
 			<section id = "sideBar">	
-				// <?php
-
-    // 				foreach ($connectes as $key => $value):
-  		// 		$value['ip'];
-
-  			
-				// endforeach;
-				// ?>
-				// Il y a actuellement   
-				// <?php $connectes = count($connectes);
-			 //        if($connectes > 1) {
-			 //          print_r($connectes." visiteurs connectes sur mon site !");
-			 //        }else{
-			 //          print_r($articles." article");
-			 //        } ?>
+	
 
 				
 			</section>
