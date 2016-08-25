@@ -104,15 +104,16 @@ require('lib/PHPMailer/class.phpmailer.php');
 
 
 				$a = new connectes();
+				$a->setIp($_SERVER['REMOTE_ADDR']);
+				$a->setTimestamp(now());
+				
 				$connectes = $a->getAllBy([],[],'');
 				foreach ($connectes as $key => $value): 
 
 				endforeach; 
 				$this->assign('connectes', $connectes);
-				$a->setIp($_SERVER['REMOTE_ADDR']);
-				$a->setTimestamp(time());
+			
 				$a->save();
-
 				$this->template=$path_template;
 			}
 			else{
