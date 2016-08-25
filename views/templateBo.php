@@ -126,8 +126,7 @@
     				foreach ($connectes as $key => $value):
   				$value['ip'];
 
-  			var_dump($connectes);
-
+  			
 				endforeach;
 				?>
 				Il y a actuellement   
@@ -137,7 +136,7 @@
 			        }else{
 			          print_r($articles." article");
 			        } ?>
-     
+
 				
 			</section>
 		</div> 
