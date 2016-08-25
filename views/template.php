@@ -142,9 +142,9 @@ if (isset($_GET['accept-cookies'])) {
                 <p class="footer-links">
                     <a href="<?= LINK.'index'; ?>">Acceuil</a>
                     ·
-                    <a href="<?= LINK.'musculation'; ?>">Musculation</a>
+                    <a href="<?= LINK.'show/musculation'; ?>">Musculation</a>
                     ·
-                    <a href="<?= LINK.'fitness'; ?>">Fitness</a>
+                    <a href="<?= LINK.'show/fitness'; ?>">Fitness</a>
                     ·
                     <a href="<?= WEBROOT.'reglement'; ?>">Mentions Légales</a>
                 </p>
