@@ -117,7 +117,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 		
 			$a->setUrl($url);
 
-			echo "Votre article vient d'être creer : rendez-vous <a href='<?= $url ?>' > ici</a>";
+			echo "Votre article vient d'être creer : rendez-vous ici  $url ";
 
 			   
 
