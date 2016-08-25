@@ -105,7 +105,7 @@ require('lib/PHPMailer/class.phpmailer.php');
 
 				$a = new connectes();
 				$a->setIp($_SERVER['REMOTE_ADDR']);
-				$a->setTimestamp(now());
+				$a->setTimestamp(time());
 				
 				$connectes = $a->getAllBy([],[],'');
 				foreach ($connectes as $key => $value): 
