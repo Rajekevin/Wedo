@@ -126,6 +126,8 @@
     				foreach ($connectes as $key => $value):
   				$value['ip'];
 
+  			var_dump($connectes);
+
 				endforeach;
 				?>
 				Il y a actuellement <?php echo $value['ip'] ?> visiteurs connectes sur mon site !
