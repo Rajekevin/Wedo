@@ -77,13 +77,13 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
 		
-			$title=format_url($_POST['title']);
+			$title=$_POST['title'];
 			$a->setTitle($title);
 	
 			$a->setContenu($_POST['contenu']);
 
 			
-		
+			$titre=format_url($_POST['title']);
 
 		
 
@@ -108,7 +108,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 
 			// var_dump($a);
-			$url =  ARTICLE.$title;
+			$url =  ARTICLE.$titre;
 
 		
 			$a->setUrl($url);
