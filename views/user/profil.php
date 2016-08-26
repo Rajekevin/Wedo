@@ -95,13 +95,15 @@
        $idArticle = article::findById($idArt);                
               $Title = $idArticle->getTitle();
 
+              $url=$idArticle->getUrl();
+
               echo "Titre de l'article : ".$Title;
 
               ?>
         <span>
           <br/>
             <?= "Mon commentaire : ".$value['commentaire']; ?> <br/>
-            <a href="<?= $value['url']; ?>">Cliquez-ici pour retrouver l'article</a><br/>
+            <a href="<?= $url; ?>">Cliquez-ici pour retrouver l'article</a><br/>
           </span>
 
 
