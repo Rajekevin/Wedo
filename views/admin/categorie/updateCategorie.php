@@ -30,8 +30,10 @@ if( isset($_POST['valider'])&&isset($_POST['cat'])&&isset($_POST['description'])
 
 					$c->save();
 					echo"Votre categorie a été mis à jour ! ";
-		}
-
+	                echo"Vous allez être redirigé à la liste des catégorie dans 5s...... ";
+                   ?> <meta http-equiv="refresh" content="4;categorie/categorielist" />
+                  
+                <?php }
 
 
 
