@@ -76,13 +76,9 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
-			// if($_POST['categorie']=="Musculation"){
-			// $a->setIdCategory(1);
-			// 	}else{
-			// $a->setIdCategory(2);
-			// 	}
+		
 			$title=format_url($_POST['title']);
-			$a->setTitle(strip_tags($title));
+			$a->setTitle($title);
 	
 			$a->setContenu($_POST['contenu']);
 
