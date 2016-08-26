@@ -484,7 +484,7 @@ class adminController{
 	if (isset($_SESSION['login']) &&($_SESSION['statut'])==1)
            { 
 		$v = new view();
-		$v->setViewBo("admin/user/removeuser");
+		$v->setViewBo("admin/user/removeUser");
 
 		$membre = new membre();
 		$membre= $membre->getAllBy([],[],'');
