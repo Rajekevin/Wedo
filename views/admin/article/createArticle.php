@@ -9,7 +9,7 @@
 $a = new article();
 
 
-// $id= intval($_GET["id"]);
+
 
 $tab=$a->getOneBy(['id'=>$id]);
 
@@ -51,7 +51,7 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 
 function format_url($str)
 	{
-    $str = mb_strtolower($str);
+    // $str = mb_strtolower($str);
     $str = utf8_decode($str);
     $str = strtr($str, utf8_decode('àâäãáåçéèêëíìîïñóòôöõøùúûüýÿ'), 'aaaaaaceeeeiiiinoooooouuuuyy');
     $str = preg_replace('`[^a-z0-9]+`', '-', $str);
@@ -76,20 +76,14 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			
 			$a->setIdUser($_SESSION['id']);
 			$a->setDate(date('Y-m-d H:i:s'));
-
-			// if($_POST['categorie']=="Musculation"){
-			// $a->setIdCategory(1);
-			// 	}else{
-			// $a->setIdCategory(2);
-
-			// 	}
-
-
+		
 			$title=$_POST['title'];
-
-			$a->setTitle(strip_tags($title));
+			$a->setTitle($title);
 	
 			$a->setContenu($_POST['contenu']);
+
+			
+			$titre=format_url($_POST['title']);
 
 		
 
@@ -111,9 +105,25 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			
 			$value=0;
 			$a->setInterest($value);
+
+
 			// var_dump($a);
+			$url =  ARTICLE.$titre;
+
+		
+			$a->setUrl($url);
+
+			var_dump($a);
+
+			echo "Votre article vient d'être creer : rendez-vous ici  $url ";
+
+			   
+
+
+			
 
 			$a->save();
+
 
 			
 			}
@@ -121,14 +131,6 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
         	
 
-		// foreach ($articles as $key => $value): 
-  //                   // if ($thisArticle['id'] != $value['id']):
-  //         var_dump($value['id']);
-  //         	endforeach;
-
-  //         	$idArticle = $value['id'];
-  //         	$theArticle= $idArticle+1;
-		//  echo "Votre article vient d'être publier rendez-vous sur  http://localhost/wedo/index/a?id=".$theArticle;
 		}
 
 
@@ -174,12 +176,17 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 	{
 		CKEDITOR.replace( 'editor1' );
 	};
+
+
+
+	
 </script>
 </label>
 
 
+
 <label for="photo">Image : Icône du fichier (JPG, PNG ou GIF | max. 15 Ko) :</label>  
-<input type="file" id="img" name="img" value="<?php echo $tab['img']; ?>">
+<input type="file" required="" id="img" name="img" value="<?php echo $tab['img']; ?>">
 
 
 
@@ -190,7 +197,5 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 </form>
 
-<!--  $test = $a->save(['id'=>$id]);
 
- var_dump($a->save(['id'=>$id])); -->
 

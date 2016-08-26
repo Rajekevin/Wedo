@@ -1598,3 +1598,139 @@
 [24-Aug-2016 10:12:46 Europe/Paris] PHP   3. article->__construct() C:\wamp\www\wedo\controllers\indexController.class.php:29
 [24-Aug-2016 10:12:46 Europe/Paris] PHP   4. basesql->__construct() C:\wamp\www\wedo\models\article.class.php:18
 [24-Aug-2016 10:12:46 Europe/Paris] PHP   5. view->__destruct() C:\wamp\www\wedo\core\view.class.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 84
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Notice:  Undefined variable: idArticle in C:\wamp\www\wedo\views\article\article.php on line 200
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 84
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Notice:  Undefined variable: idArticle in C:\wamp\www\wedo\views\article\article.php on line 200
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 84
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Notice:  Undefined variable: idArticle in C:\wamp\www\wedo\views\article\article.php on line 200
+[26-Aug-2016 16:22:35 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:22:35 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Notice:  Undefined variable: data in C:\wamp\www\wedo\core\basesql.class.php on line 94
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   3. view->setViewBo() C:\wamp\www\wedo\controllers\adminController.class.php:246
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   4. basesql->save() C:\wamp\www\wedo\core\view.class.php:114
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Notice:  Undefined index: avatar in C:\wamp\www\wedo\views\templateBo.php on line 112
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Notice:  Undefined variable: id in C:\wamp\www\wedo\views\admin\article\createArticle.php on line 14
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\templateBo.php:138
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Notice:  Undefined variable: data in C:\wamp\www\wedo\core\basesql.class.php on line 94
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   3. view->setViewBo() C:\wamp\www\wedo\controllers\adminController.class.php:246
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   4. basesql->save() C:\wamp\www\wedo\core\view.class.php:114
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Notice:  Undefined index: avatar in C:\wamp\www\wedo\views\templateBo.php on line 112
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Notice:  Undefined variable: id in C:\wamp\www\wedo\views\admin\article\createArticle.php on line 14
+[26-Aug-2016 16:24:47 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:47 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\templateBo.php:138
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Notice:  Undefined variable: data in C:\wamp\www\wedo\core\basesql.class.php on line 94
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   3. view->setViewBo() C:\wamp\www\wedo\controllers\adminController.class.php:246
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   4. basesql->save() C:\wamp\www\wedo\core\view.class.php:114
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Notice:  Undefined index: avatar in C:\wamp\www\wedo\views\templateBo.php on line 112
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Notice:  Undefined variable: id in C:\wamp\www\wedo\views\admin\article\createArticle.php on line 14
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\templateBo.php:138
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Notice:  Undefined variable: data in C:\wamp\www\wedo\core\basesql.class.php on line 94
+[26-Aug-2016 16:24:53 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\templateBo.php:138
+[26-Aug-2016 16:24:53 Europe/Paris] PHP   6. basesql->save() C:\wamp\www\wedo\views\admin\article\createArticle.php:125
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Notice:  Undefined variable: data in C:\wamp\www\wedo\core\basesql.class.php on line 94
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   3. view->setViewBo() C:\wamp\www\wedo\controllers\adminController.class.php:246
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   4. basesql->save() C:\wamp\www\wedo\core\view.class.php:114
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Notice:  Undefined index: avatar in C:\wamp\www\wedo\views\templateBo.php on line 112
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Notice:  Undefined variable: id in C:\wamp\www\wedo\views\admin\article\createArticle.php on line 14
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\templateBo.php:138
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Notice:  Undefined variable: data in C:\wamp\www\wedo\core\basesql.class.php on line 94
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   3. view->setViewBo() C:\wamp\www\wedo\controllers\adminController.class.php:246
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   4. basesql->save() C:\wamp\www\wedo\core\view.class.php:114
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Notice:  Undefined index: avatar in C:\wamp\www\wedo\views\templateBo.php on line 112
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Notice:  Undefined variable: id in C:\wamp\www\wedo\views\admin\article\createArticle.php on line 14
+[26-Aug-2016 16:25:20 Europe/Paris] PHP Stack trace:
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   2. adminController->createArticleAction() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[26-Aug-2016 16:25:20 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\templateBo.php:138
