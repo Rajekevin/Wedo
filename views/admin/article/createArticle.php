@@ -124,8 +124,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 
 			$a->save();
 
-			echo"Vous allez être redirigé à la liste de vos articles dans 5s...... ";
-                   ?> <meta http-equiv="refresh" content="4;mesArticles" /><?php
+			
 
 
 			

@@ -111,6 +111,8 @@ if($i->articleExist($idArticle)){// Verif : Si l'article existe dans la table in
 				}		 		
 
 
+
+
 //Si l'id de la session correspond à l'id_user de la table Interest && l'id de l'article correspond à l'idArticle de la table interest
 // 	if($_POST['type'] < 1 && $idLogin==$interestLogin&& $idArticle==$interestArticle&&$articlos==$idArticle){
 
@@ -143,3 +145,5 @@ if($i->articleExist($idArticle)){// Verif : Si l'article existe dans la table in
 
 
 ?>
+
+<meta http-equiv="refresh" content="4" />
