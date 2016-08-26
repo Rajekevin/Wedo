@@ -24,17 +24,17 @@ class articleController
 		$a = new article();
 		$article = $a->getAllBy([],[],'');
 		$v->assign('article',$article);
-		
+			$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  
 		//Affichage de l'article demandé
 		$article = new article();
-		$thisArticle = $article->getOneBy(['url'=>$var]);
+		$thisArticle = $article->getOneBy(['url'=>$monUrl]);
 		$v->assign('thisArticle',$thisArticle);
 		
 	
 		$a = new article();
 		var_dump($article);
-		$url = article::findBy("url", $args[0], "string");
-		var_dump($url);		
+		$url = article::findBy("url", $monUrl, "string");
+			
 		if($url==false)
 		{
 			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
@@ -56,7 +56,7 @@ class articleController
 		
 }
 		$a = new article();
-		$url= article::findBy("url", $args[0], "string");
+		$url= article::findBy("url", $monUrl, "string");
 		
 		if($url==false)
 		{
