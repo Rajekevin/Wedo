@@ -28,7 +28,7 @@
       <h3>Administration</h3>
       <ul>
         <li><a href="<?= LINK.'/admin/createArticle'; ?>"><i class="fa fa-bookmark" aria-hidden="true"></i> Ecrire un article</a></li>
-        <li><a><i class="fa fa-plus" aria-hidden="true"></i> Ajouter une page</a></li>
+      
         <li><a href="<?= LINK.'index'; ?>" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i> Afficher le site</a></li>
       </ul>
     </div>

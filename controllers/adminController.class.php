@@ -568,6 +568,19 @@ public function commentaireListAction($args){
 }
 
 
+	public function themeCustomAction($args){
+		session_start();
+
+	
+
+        $v = new view();
+		$v->setViewBo("admin/options/homeCustom");
+		
+
+
+	
+	}
+
 public function updateReglementAction($args){
 
 		session_start();
