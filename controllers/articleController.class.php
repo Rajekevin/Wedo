@@ -16,19 +16,19 @@ class articleController
 		
 		//Affichage de l'article demandé
 		$article = new article();
-		$thisArticle = $article->getOneBy(['title'=>$var]);
+		$thisArticle = $article->getOneBy(['url'=>$var]);
 		$v->assign('thisArticle',$thisArticle);
 		
 	
 		$a = new article();
-		$title = article::findBy("title", $args[0], "string");
+		$url = article::findBy("url", $args[0], "string");
 		
-		if($title==false)
+		if($url==false)
 		{
 			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
 			//$v->setView("user/login");
 		}else{
-		$idArticle = $title->getId();
+		$idArticle = $url->getId();
 		
 		$v->assign('idArticle',$idArticle );
 /*like*/
@@ -43,14 +43,14 @@ class articleController
 		
 }
 		$a = new article();
-		$title = article::findBy("title", $args[0], "string");
+		$url= article::findBy("url", $args[0], "string");
 		
-		if($title==false)
+		if($url==false)
 		{
 			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
 			//$v->setView("user/login");
 		}else{
-		$idArticle = $title->getId();
+		$idArticle = $url->getId();
 		
 		$v->assign('idArticle',$idArticle );
 	}
@@ -126,19 +126,19 @@ class articleController
 		
 		//Affichage de l'article demandé
 		$article = new article();
-		$thisArticle = $article->getOneBy(['title'=>$var]);
+		$thisArticle = $article->getOneBy(['url'=>$var]);
 		$v->assign('thisArticle',$thisArticle);
 		
 	
 		$a = new article();
-		$title = article::findBy("title", $args[0], "string");
+		$url= article::findBy("url", $args[0], "string");
 		
-		if($title==false)
+		if($url=false)
 		{
 			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
 			//$v->setView("user/login");
 		}else{
-		$idArticle = $title->getId();
+		$idArticle = $url->getId();
 		
 		$v->assign('idArticle',$idArticle );
 /*like*/
@@ -153,14 +153,14 @@ class articleController
 		
 }
 		$a = new article();
-		$title = article::findBy("title", $args[0], "string");
+		$url = article::findBy("url", $args[0], "string");
 		
-		if($title==false)
+		if($url==false)
 		{
 			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
 			//$v->setView("user/login");
 		}else{
-		$idArticle = $title->getId();
+		$idArticle = $url->getId();
 		
 		$v->assign('idArticle',$idArticle );
 	}
@@ -275,7 +275,7 @@ class articleController
 		$v->setView("article/rating");
 		$var = implode ($args);
 		$a = new article();
-		$title = article::findBy("title", $var, "string");
+		$url = article::findBy("url", $var, "string");
 		
 		// $idArticle = $title->getId();
 		
