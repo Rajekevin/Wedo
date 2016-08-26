@@ -51,11 +51,11 @@ require('lib/PHPMailer/class.phpmailer.php');
 			    // echo 'Message could not be sent.';
 			    // echo 'Mailer Error: ' . $mail->ErrorInfo;
 			    $error = TRUE;
-	            $msg_error = "Votre message ne peut pas être envoyé";
+	            $mail_error = "Votre message ne peut pas être envoyé";
 	            // $msg_error .= 'Mailer Error: ' . $mail->ErrorInfo;
 
 		        $this->assign('error',$error);
-			    $this->assign('msg_error',$msg_error);
+			    $this->assign('mail_error',$msg_error);
 	        
 			} else {
 				$send = TRUE;
