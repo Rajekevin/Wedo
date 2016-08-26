@@ -20,7 +20,7 @@
 			<div id="goBack">
 
 				<div id="home" class="col-3 fleft">
-					<a href="http://www.wedo-awesome.com/">
+					<a href="http://wedo-awesome.herokuapp.com">
 						<i class="fa fa-home" aria-hidden="true"></i> WEDO 
 					</a>
 				</div>
@@ -120,7 +120,13 @@
 				echo strftime(' %A %d %B %Y'); // jeudi 11 octobre 2012
 				?>
 			</section>
-			<section id = "sideBar">	
+			<section id = "sideBar">
+
+					<div id="Logout" class="col-3 fRight">
+					<a href=" <?= LINK.'index/deconnexion'?>">
+					<i class="fa fa-power-off" aria-hidden="true"></i>
+					DECONNEXION</a>
+				</div> 		
 	
 
 				
