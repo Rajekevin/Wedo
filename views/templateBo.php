@@ -20,15 +20,11 @@
 			<div id="goBack">
 
 				<div id="home" class="col-3 fleft">
-					<a href="http://www.wedo-awesome.com/">
+					<a href="http://wedo-awesome.herokuapp.com">
 						<i class="fa fa-home" aria-hidden="true"></i> WEDO 
 					</a>
 				</div>
-				<div id="Logout" class="col-3 fRight">
-					<a href=" <?= LINK.'index/deconnexion'?>">
-					<i class="fa fa-power-off" aria-hidden="true"></i>
-					DECONNEXION</a>
-				</div> 			
+				
 			</div>
 			
 			<?php  if (isset($_SESSION['login']))

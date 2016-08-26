@@ -56,16 +56,15 @@ if($_POST['id']){
 					$interest->setIdUser($idLogin);
 					$interest->setIdArticle($idArticle);	
 					$interest->setDate(date("Y-m-d H:i:s"));	
-					$interest->save();
-					?>
+					$interest->save();?>
 
+					<meta http-equiv="refresh" content="2;index" />
+				
 					<script>
 					  $("#likeCount"+messageID).html(C+1);
       				  $(this).addClass("heartAnimation").attr("rel","unlike");
       				</script>
 			<?php }
-
-
 /*###################END TEST ###################################### */
 
 
@@ -139,4 +138,3 @@ if($i->articleExist($idArticle)){// Verif : Si l'article existe dans la table in
 
 ?>
 
-<meta http-equiv="refresh" content="1" />

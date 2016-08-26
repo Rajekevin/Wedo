@@ -405,4 +405,15 @@ $idArticle=$tab['id'];
  var_dump($a->save(['id'=>$id])); -->
 
 
-        
+        <?php 
+
+        if ($foo==true) {
+
+        	echo "ok";
+        	# code...
+        }else{
+        	echo "no"; 
+
+        	}
+
+        	?>
