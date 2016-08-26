@@ -4,11 +4,22 @@ class articleController
 {
 	public function indexAction($args)
 	{
-	session_start();
+		session_start();
+
+			    // Afficher les erreurs à l'écran
+	    ini_set('display_errors', 1);
+	    // Enregistrer les erreurs dans un fichier de log
+	    ini_set('log_errors', 1);
+	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
+	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
+	    
+	
 		$v = new view();
 		
 		$var = implode ($args);
 		$v->setView("article/article");
+
+		var_dump($var);
 		
 		$a = new article();
 		$article = $a->getAllBy([],[],'');
@@ -22,13 +33,14 @@ class articleController
 	
 		$a = new article();
 		$url = article::findBy("url", $args[0], "string");
-		
+		var_dump($url);		
 		if($url==false)
 		{
 			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
 			//$v->setView("user/login");
 		}else{
 		$idArticle = $url->getId();
+
 		
 		$v->assign('idArticle',$idArticle );
 /*like*/
