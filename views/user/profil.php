@@ -101,7 +101,7 @@
         <span>
           <br/>
             <?= "Mon commentaire : ".$value['commentaire']; ?> <br/>
-            <a href="<?= ARTICLE.$value['id_article'] ?>">Cliquez-ici pour retrouver l'article</a><br/>
+            <a href="<?= $value['url'] ?>">Cliquez-ici pour retrouver l'article</a><br/>
           </span>
 
 

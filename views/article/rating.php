@@ -146,4 +146,4 @@ if($i->articleExist($idArticle)){// Verif : Si l'article existe dans la table in
 
 ?>
 
-<meta http-equiv="refresh" content="4" />
+<meta http-equiv="refresh" content="1" />
