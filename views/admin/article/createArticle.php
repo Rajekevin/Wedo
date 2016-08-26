@@ -85,7 +85,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			// 	}
 
 
-			$title=format_url($_POST['title']);
+			$title=$_POST['title'];
 
 			$a->setTitle(strip_tags($title));
 	

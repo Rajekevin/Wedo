@@ -127,7 +127,7 @@ function format_url($str)
                     
                   <div class="intern_sportif">
                     <div class="logo_sportif"><img  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div>
-                    <h3><a href="<?= ARTICLE.$value['title'] ?>"><?= $value['title']; ?></a></h3>
+                    <h3><a href="<?= $value['url'] ?>"><?= $value['title']; ?></a></h3>
                     <a class="Wedo_Button" href="">J'aime</a>
                   </div>
                 </div>        
@@ -147,7 +147,7 @@ function format_url($str)
                     <center><i><h2><?= $value['title']; ?></h2></i> </center> 
 
                     <div class="logo_article"><img  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div> 
-                    <a href="<?= ARTICLE.$value['title'] ?>">
+                    <a href="<?= $value['url'] ?>">
                     <div class="divImageZoom">
                     <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
                     </div>
