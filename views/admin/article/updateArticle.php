@@ -72,6 +72,14 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['auteur'])&&i
 			$a->setImg($_FILES['img']['name']);
 
 			$a->save();
+
+			echo " votre Article à été mise à jour :)";
+
+
+			echo"Vous allez être redirigé à la liste de vos  articles dans 5s...... ";
+               ?>
+ 			<meta http-equiv="refresh" content="4;mesArticles" />
+ 			<?php
 		}
 
 

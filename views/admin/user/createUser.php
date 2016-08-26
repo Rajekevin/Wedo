@@ -25,12 +25,20 @@
 		$membre->setLogin($_POST['login']);
 		$membre->setSexe($_POST['sexe']);			
 		$membre->setPass($pwd);
-		$membre->setPays($_POST['pays']);
+		$membre->setVille($_POST['ville']);
 		$membre->setMail($_POST['mail']);
 		$membre->setStatut($_POST['statut']);
 		$membre->setToken();
 
 		$membre->save();
+
+
+        echo "Votre utilisateur à été creer :)";
+
+        echo"Vous allez être redirigé à la liste des utilisateurs du site Wedo dans 5s...... ";
+               ?>
+            <meta http-equiv="refresh" content="4;userlist" />
+<?php
 	}
 ?>
 
@@ -77,13 +85,8 @@
      <td><input type ="number" name="statut" value="<?php echo $tab['statut']; ?>"></tr><br/>
 
      <tr>
-    <td><label for="pays">Votre pays</label> :</td>
-     <td><select name="pays" id="pays">
-        <?php foreach ($pays as $key=>$pays): ?>
-            <option value="<?php echo $key;?>">
-                <?php echo $pays;?>
-            </option>
-        <?php endforeach;?></tr>
+    <td><label for="pays">Votre ville</label> :</td>
+     <td><input type="text" name="ville" id="name" placeholder="Ville" required/></tr>
     </select>  
    
    <tr> <td><input type="submit" value="Voilà! Je créer un utilisateur :)"></td></tr>

@@ -16,4 +16,7 @@
 
 	echo"Le commentaire vient d'être supprimé ! ";
 
-?>
+	   echo"Vous allez être redirigé à la liste des commentaires dans 5s...... ";
+               ?>
+ <meta http-equiv="refresh" content="4;commentairelist" />
+

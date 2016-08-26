@@ -19,4 +19,8 @@
 
 
 	echo"Votre Article vient d'être supprimé ! ";
-?>
+
+
+   echo"Vous allez être redirigé à la liste des vos articles dans 5s...... ";
+     ?>
+ <meta http-equiv="refresh" content="4;mesArticles" />

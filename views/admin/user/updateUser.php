@@ -39,6 +39,12 @@ if(isset($_POST['valider'])&& isset($_POST['login'])&&isset($_POST['mail'])&&iss
 
 
 		$membre->save();
+		echo "Votre utilisateur à été mise à jour :)";
+
+		 echo"Vous allez être redirigé à la liste des utilisateurs du site Wedo dans 5s...... ";
+               ?>
+            <meta http-equiv="refresh" content="4;userlist" />
+            <?php
 	}
 ?>
 <form name="inscription" method="post" action="" >
