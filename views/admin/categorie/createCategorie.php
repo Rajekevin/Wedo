@@ -31,8 +31,10 @@
 
 					$c->save();
 					echo"Votre categorie vient d'être creer ! ";
+                    echo"Vous allez être redirigé à la liste des catégorie dans 5s...... ";
+                   ?> <meta http-equiv="refresh" content="4;categorie/categorielist" />
 			      
-				}
+				<?php }
 
  
 ?>

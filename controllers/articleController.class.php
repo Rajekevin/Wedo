@@ -126,114 +126,6 @@ class articleController
 
 
 
-	public function musculationAction($args){
-		session_start();
-		$v = new view();
-		
-		$var = implode ($args);
-		$v->setView("article/article");
-		
-		$a = new article();
-		$article = $a->getAllBy([],[],'');
-		$v->assign('article',$article);
-		
-		//Affichage de l'article demandé
-		$article = new article();
-		$thisArticle = $article->getOneBy(['url'=>$var]);
-		$v->assign('thisArticle',$thisArticle);
-		
-	
-		$a = new article();
-		$url= article::findBy("url", $args[0], "string");
-		
-		if($url=false)
-		{
-			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
-			//$v->setView("user/login");
-		}else{
-		$idArticle = $url->getId();
-		
-		$v->assign('idArticle',$idArticle );
-/*like*/
-		$interest = new interest();		
-		$theseLikes = $interest->getAllBy(['id_article'=>$idArticle],['id'=>'DESC'],'');
-		/*nbre de j'aime*/
-		$nbOfLikes = count($theseLikes);		
-		$v->assign('theseLikes',$theseLikes);	
-		$v->assign('nbOfLikes',$nbOfLikes);
-		// $v->assign("formLike",$formLike);
-		
-		
-}
-		$a = new article();
-		$url = article::findBy("url", $args[0], "string");
-		
-		if($url==false)
-		{
-			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
-			//$v->setView("user/login");
-		}else{
-		$idArticle = $url->getId();
-		
-		$v->assign('idArticle',$idArticle );
-	}
-		//Affichage des commentaires par article
-		$com = new commentaire();
-		$commentaires = $com->getAllBy([],['id'=>'DESC'],20);
-		$v->assign('commentaires', $commentaires);
-		$var = [];
-		if (isset($_SESSION['login']))
-	            { 
-		
-		//on récupère les pseudo et les avatars des utilisateurs qui ont commentés
-		foreach ($commentaires as $key => $value){
-			$us = new membre();
-			$users = $us->getOneBy(['id'=>$_SESSION['id']]);
-			$thisuser[$key]['avatar'] = $users['avatar'];
-			$thisuser[$key]['login'] = $users['login'];
-		}
-		$v->assign('thisuser', $thisuser);
-}
-	//Formulaire de commentaire
-		$form = $com->getCommentaireForm();
-		$errors = [];
-
-	
-	
-
-		if(isset($_POST['comm']) ) {
-			$trimmed = trim($_POST['content']);
-
-			if ($trimmed==true){
-				# code...
-			
-			
-
-			var_dump($_POST['content']);
-		$errors = validator::check($form["struct"], $args);
-		$commentaire = new commentaire();
-		$commentaire->envoieCommentaire($_POST['idArticle']);
-			$sendCommentaire= "Votre commentaire vient d'être envoyé. Rappelez-vous que tous commentaires ne respectant pas la chartre du site pourra faire
-		l'objet d'une sanction ;(";
-		$v->assign ("sendCommentaire", $sendCommentaire);
-
-	}else{
-
-		$msg = 'HOP HOP.....Nourrisez-moi, je suis en période de prise de masse :(';
-		$v->assign ("msg", $msg);
-	}
-	
-		}
-
-
-	
-	
-		
-		$v->assign("form", $form);
-		$v->assign("errors", $errors);
-
-
-}
 
 
 
@@ -284,11 +176,11 @@ class articleController
 		session_start();
 		$v = new view();
 		
-		
+		$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  
 		$v->setView("article/rating");
 		$var = implode ($args);
 		$a = new article();
-		$url = article::findBy("url", $var, "string");
+		$url = article::findBy("url", $monUrl, "string");
 		
 		// $idArticle = $title->getId();
 		
