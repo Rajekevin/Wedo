@@ -32,6 +32,7 @@ class articleController
 		
 	
 		$a = new article();
+		var_dump($a);
 		$url = article::findBy("url", $args[0], "string");
 		var_dump($url);		
 		if($url==false)
