@@ -61,8 +61,8 @@ function cwRating(id,type,target){
         {      
         $("#likeCount"+messageID).html(C+1);
         $(this).addClass("heartAnimation").attr("rel","unlike");
-
         
+
         }
         else
         {
@@ -255,9 +255,9 @@ $idArticle=$tab['id'];
 		if (isset($_SESSION['login'])) { ?>
 			
 		
-				<div class="heart " id="like1" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
+				<div class="heart " id="like1" name="ok" rel="like"  onClick="cwRating(<?php echo $tab['id']; ?>,0,'dislike_count<?php echo $tab['interest']; ?>')"></div> 
 
-
+			
 			<div class="likeCount counter" id="likeCount1 like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?>
 			
 			</div>
@@ -404,3 +404,5 @@ $idArticle=$tab['id'];
 
  var_dump($a->save(['id'=>$id])); -->
 
+
+        
