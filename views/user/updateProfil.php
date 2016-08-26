@@ -63,7 +63,9 @@ function upload($index,$destination,$extension=false,$maxsize=false,$size=false)
 		$membre->setAvatar($_FILES['photo']['name']);
 		$membre->save();?>
 
-    <meta http-equiv="refresh" content="3;profil?login="<? $_POST['login']; ?>" />
+    <meta http-equiv="refresh" content="3;profil?login=<?= $_POST['login']; ?>" />
+
+
 
 
     <?php 
