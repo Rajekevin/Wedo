@@ -530,7 +530,7 @@ public function loginAction($args)
 		$v = new view();
 		$v->setView("user/updateProfil");
 
-			var_dump($args);
+			
 
 		$var = implode ($args);
 

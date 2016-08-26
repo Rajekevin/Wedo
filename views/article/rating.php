@@ -13,7 +13,7 @@ if($_POST['id']){
 	$prev_like = $articles->getInterest(); //récupère le nombre de like de l'article
 
 
-var_dump($prev_like);
+
 
 
 		
@@ -25,7 +25,7 @@ var_dump($prev_like);
 /*###################TEST POUR SAVOIR SI L'USER A DEJA VOTE ###################################### */
 			$test = new interest();
 
-			var_dump($test);
+			
 			
 	
 			$interests = $test->getAllBy(["id_user"=>$_SESSION['id']],['id'=>'DESC'],"");

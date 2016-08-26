@@ -19,7 +19,7 @@ class articleController
 		$var = implode ($args);
 		$v->setView("article/article");
 
-		var_dump($var);
+
 		
 		$a = new article();
 		$article = $a->getAllBy([],[],'');
@@ -32,7 +32,7 @@ class articleController
 		
 	
 		$a = new article();
-		var_dump($article);
+	
 		$url = article::findBy("url", $monUrl, "string");
 			
 		if($url==false)

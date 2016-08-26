@@ -90,7 +90,7 @@ class basesql extends PDO{
 			}
 			$query->execute($data);
 
-			var_dump($query);
+			
 
 			
 
