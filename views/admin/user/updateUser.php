@@ -44,26 +44,26 @@ if(isset($_POST['valider'])&& isset($_POST['login'])&&isset($_POST['mail'])&&iss
 <form name="inscription" method="post" action="" >
 	<label>
 		<h5>LOGIN</h5> 
-		<input type="text" name="login" value="<?php echo $tab['login']; ?>"/>
+		<input type="text" name="login" required="" value="<?php echo $tab['login']; ?>"/>
 	</label>
 
 	<label>
 		<h5>Nouveau mot de passe : </h5> 
-		<input type="password" name="pass1" id="name"  placeholder="Mot de passe" required/>
+		<input type="password" name="pass1" id="name" required=""  placeholder="Mot de passe" required/>
 	</label>
 	<label>
 		<h5>Retaper le mot de passe : </h5> 
-		 <input type="password" name="pass2"  id="name" placeholder="Retapez votre mot de passe" required/>
+		 <input type="password" name="pass2"  id="name" required=""  placeholder="Retapez votre mot de passe" required/>
 	</label>
 
 	<label>
 		<h5>MAIL</h5> 
-		<input type="text" name="mail" value="<?php echo $tab['mail']; ?>" />
+		<input type="text" name="mail"  required=""  value="<?php echo $tab['mail']; ?>" />
 	</label>
 
 	<label>
 		<h5>Statut</h5> 
-		<input type="numeric" name="statut" value="<?php echo $tab['statut'];?>"/>
+		<input type="numeric" name="statut" required=""  value="<?php echo $tab['statut'];?>"/>
 	</label>
 	<input type="submit" name="valider" value="valider"/>
 
