@@ -221,6 +221,7 @@ $idArticle=$tab['id'];
 
 	<p>
 
+	
 		<?php if(!empty($tab['img'])); ?>
 			
 				<img class="illusArticle" src="<?= WEBROOT; ?>public/img/article/<?= $tab['img']; ?>" />

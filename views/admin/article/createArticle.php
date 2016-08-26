@@ -110,6 +110,8 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 			// var_dump($a);
 			$url =  ARTICLE.$titre;
 
+			var_dump($url);
+
 		
 			$a->setUrl($url);
 

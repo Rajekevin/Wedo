@@ -23,16 +23,26 @@ class articleController
 		
 		$a = new article();
 		$article = $a->getAllBy([],[],'');
+
+		var_dump($article);
 		$v->assign('article',$article);
+
+
+		$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];  
+
+	
 		
 		//Affichage de l'article demandé
 		$article = new article();
-		$thisArticle = $article->getOneBy(['url'=>$var]);
+		var_dump($article);
+		$thisArticle = $article->getOneBy(['url'=>$monUrl]);
+		var_dump($thisArticle);
 		$v->assign('thisArticle',$thisArticle);
+		var_dump($thisArticle);
 		
 	
 		$a = new article();
-		$url = article::findBy("url", $args[0], "string");
+		$url = article::findBy("url", $monUrl , "string");
 		var_dump($url);		
 		if($url==false)
 		{
@@ -55,7 +65,7 @@ class articleController
 		
 }
 		$a = new article();
-		$url= article::findBy("url", $args[0], "string");
+		$url= article::findBy("url", $monUrl , "string");
 		
 		if($url==false)
 		{
