@@ -119,14 +119,16 @@
 				<?php			
 				echo strftime(' %A %d %B %Y'); // jeudi 11 octobre 2012
 				?>
-			</section>
-			<section id = "sideBar">
 
 					<div id="Logout" class="col-3 fRight">
 					<a href=" <?= LINK.'index/deconnexion'?>">
 					<i class="fa fa-power-off" aria-hidden="true"></i>
 					DECONNEXION</a>
-				</div> 		
+				</div> 	
+			</section>
+			<section id = "sideBar">
+
+
 	
 
 				
