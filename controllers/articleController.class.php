@@ -32,8 +32,9 @@ class articleController
 			
 		if($url==false)
 		{
-			echo"cette page n'existe pas"; //si la page n'existe pas renvoie un message d'erreur
-			//$v->setView("user/login");
+
+			$v->setViewError("error");
+			
 		}else{
 		$idArticle = $url->getId();
 

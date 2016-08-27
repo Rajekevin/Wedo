@@ -64,6 +64,19 @@ class indexController{
 	}
 
 
+		public function errorAction($args){
+		session_start();  
+	   
+	    
+   
+		$v = new view();
+		$v->setViewError("error");
+
+
+
+	}
+
+
 
 
 

@@ -29,10 +29,12 @@ if( file_exists($path_controller) ){
 	}
 	else{
 		//header('Location: http://www.google.com/');
+		header('Location:  http://wedo-awesome.herokuapp.com/wedo/index/error');
 		die("404, l'action n'existe pas");
 	}
 }
 else{
+	header('Location:  http://wedo-awesome.herokuapp.com/wedo/index/error');
 	die("404, le controller n'existe pas");
 }
 
