@@ -80,7 +80,7 @@ if (isset($_GET['accept-cookies'])) {
 
                     <li><a class="js-scrollTo" href="<?= LINK; ?>user/deconnexion">Deconnexion</a></li>
                     <li>
-                    <a class="js-scrollTo" href="<?= LINK; ?>/index#Musculation">Musculation</a>
+                    <a class="js-scrollTo" href="#Musculation">Musculation</a>
                       
 
                     </li>
@@ -102,7 +102,7 @@ if (isset($_GET['accept-cookies'])) {
                             {
                                 ?>    
                                 <li>
-                                <a class="js-scrollTo" href="<?= LINK.'index#Musculation'; ?>">Musculation</a>
+                                <a class="js-scrollTo" href="#Musculation">Musculation</a>
 
                     </li>
                     <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>                   
