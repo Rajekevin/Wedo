@@ -30,7 +30,7 @@ class rssController
 
         header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 
-            $args_access = ["musculation", "fitness", "all"];
+            $args_access = ["rssWedo", "fitness", "all"];
             if( !empty( $args ) && in_array($args[0], $args_access, true) )
             {
 
