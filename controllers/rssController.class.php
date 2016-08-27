@@ -40,7 +40,7 @@ class rssController
                 $feed .= '<title>My RSS feed '.$args[0].' </title>';
                 $feed .= '<link> '. WEBROOT. 'rss/feed/'. $args[0]. ' </link>';
                 $feed .= '<description>Les derniers actualités de Wedo :  '.$args[0]. ' ! </description>';
-                $feed .= '<image><title>Logo</title> <url><?= WEBROOT; ?>public/img/wedo/logo.gif> </url></image>';
+                $feed .= '<image><title>Logo</title> <url>http://img4.hostingpics.net/pics/375963anim.gif </url></image>';
 
             
                 $feed .= '<language>en-us</language>';
