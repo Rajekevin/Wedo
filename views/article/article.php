@@ -205,6 +205,29 @@ $idArticle=$tab['id'];
 
 ?>
 
+<script>
+
+$(function()
+{
+	// si on click dans l'article sur un élément ayant pour id lb_x
+	$("article").on('click','[id^="lb_"]',function()
+	{
+		// on récupère l'id en question en splitant sur underscore
+		var id = $(this).attr('id').split('_');
+		// on récupère le nombre de like actuel dans une variable
+		var old_lc = parseInt( $("#lc_"+id[1]).text() );
+		// on incremente de 1 le nombre actuel de like
+		var new_lc = old_lc+1;
+		
+		// ici tu poste ton nouveau nombre de like à ton traitement php
+		// $.post("like.php", { articleId: id[1] , numberLike: new_lc } );
+		// dans like.php recuperer articleId et numberLike via $_POST
+		
+		// et tu incremente en temps reel sur le site sans recharger
+		$("#lc_"+id[1]).html(new_lc);
+	});
+});
+		</script>
 
 
 
@@ -261,6 +284,12 @@ $idArticle=$tab['id'];
 			<div class="likeCount counter" id="likeCount1 like_count<?php echo $tab['id']; ?>"><?php echo $tab['interest']; ?>
 			
 			</div>
+
+<article>
+	<h2>Titre article 1</h2>
+	<p>Lorem ipsum dolor sit amet ...</p>
+	Like article : <span id="lc_1" class="likeCount">12</span><button id="lb_1" class="likeButton">&lt;3</button>
+</article>
 
 		<?php }else{ ?>
 

@@ -2548,3 +2548,149 @@
 [27-Aug-2016 10:58:07 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
 [27-Aug-2016 10:58:07 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
 [27-Aug-2016 10:58:07 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:53:34 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 437
+[27-Aug-2016 11:53:34 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:53:34 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 437
+[27-Aug-2016 11:53:34 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:53:34 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 437
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 437
+[27-Aug-2016 11:53:51 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:53:51 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:54:27 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:54:27 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:54:36 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:54:36 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:36 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:54:36 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:54:36 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:54:37 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:54:37 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:37 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:54:37 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:54:37 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:56:26 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:56:26 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 439
+[27-Aug-2016 11:56:35 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 11:56:35 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 444
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Notice:  Undefined variable: thisuser in C:\wamp\www\wedo\controllers\articleController.class.php on line 94
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 444
+[27-Aug-2016 12:00:57 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 12:00:57 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
