@@ -44,7 +44,7 @@ class rssController
                 $feed .= '<copyright>Copyright (C) 2016 wedo</copyright>';
 
     
-                  if($args[0] == "musculation" )
+                  if($args[0] == "rssWedo" )
                 {
                    
                 
@@ -55,7 +55,7 @@ class rssController
                         $feed .= '<item>';
                         $feed .= '<title> Article : ' . $article->getTitle() . '</title>';
                         $feed .= '<description>' . $article->getDescription() . '</description>';
-                        $feed .= '<link> '. WEBROOT. 'article/musculation/'.$article->getTitle().' </link>';
+                        $feed .= '<link> '.$article->getUrl().' </link>';
                         $feed .= '<pubDate>' . date("Y-m-d H:i:s", strtotime($article->getDate() )) . '</pubDate>';
                         $feed .= '</item>';
                     }
