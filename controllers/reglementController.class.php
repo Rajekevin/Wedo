@@ -14,12 +14,7 @@ class reglementController{
 		$page = new page();
 		$pages = $page->getAllBy([],[],'');
 
-		$v->assign('page',$pages);
-
-
-
-
-			
+		$v->assign('page',$pages);			
 
 
 

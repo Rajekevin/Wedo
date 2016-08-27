@@ -11,13 +11,7 @@ class adminController{
 	public function indexAction($args){
 		session_start();
 
-		    
-	    // Afficher les erreurs à l'écran
-	    ini_set('display_errors', 1);
-	    // Enregistrer les erreurs dans un fichier de log
-	    ini_set('log_errors', 1);
-	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
+	
 	    
 
 		echo"Vous n'avez pas accès à cette partie";
@@ -132,17 +126,9 @@ class adminController{
 		            echo "</ul>";
 		        }else{		         	
 		         	
-					//$membre->setId($args['id']);
-		   //       	$membre->setToken();
-		   //       	$membre->save();
-		         
-					// //on déclare les variables session avec l'id et le token de l'user
-		   //       	$_SESSION['id'] = $tab['id'];
-		   //       	$_SESSION['login'] = $tab['login'];
-					// $_SESSION['token'] = $tab['token'];
-		   //       	$_SESSION['statut'] = $tab['statut'];
+	
 					header('Location:'.LINK.'admin/index' );
-				 echo "MDR";
+				
 		         
 		        	echo 'Welcome '.$args['email'].', vous êtes désormais connecté';
 
@@ -237,12 +223,7 @@ class adminController{
 		public function createArticleAction($args){
 		session_start();
 
-	    // Afficher les erreurs à l'écran
-	    ini_set('display_errors', 1);
-	    // Enregistrer les erreurs dans un fichier de log
-	    ini_set('log_errors', 1);
-	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
+	  
 		
 	    
 		if (isset($_SESSION['login'])&&($_SESSION['statut']==1)   ){ 
@@ -393,13 +374,6 @@ class adminController{
 		session_start();
 
 
-		    // Afficher les erreurs à l'écran
-	    ini_set('display_errors', 1);
-	    // Enregistrer les erreurs dans un fichier de log
-	    ini_set('log_errors', 1);
-	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
-
 	 	if (isset($_SESSION['login'])&&($_SESSION['statut'])==1)
 	            { 
 		$v = new view();
@@ -526,15 +500,10 @@ class adminController{
 public function commentaireListAction($args){
 		session_start();
 
-	 if (isset($_SESSION['login']))
+	 if (isset($_SESSION['login']) &&($_SESSION['statut'])==1  )
 	            { 
 
-   // Afficher les erreurs à l'écran
-	    ini_set('display_errors', 1);
-	    // Enregistrer les erreurs dans un fichier de log
-	    ini_set('log_errors', 1);
-	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
+ 
 	            	
 		$v = new view();
 		$v->setViewBo("admin/commentaire/commentairelist");
@@ -553,7 +522,7 @@ public function commentaireListAction($args){
 	public function removeCommentaireAction($args){
 	 
 	session_start();
-	 if (isset($_SESSION['login']))
+	 if (isset($_SESSION['login']) &&($_SESSION['statut'])==1  )
                             { 
 		
 		$v = new view();
@@ -571,11 +540,15 @@ public function commentaireListAction($args){
 	public function themeCustomAction($args){
 		session_start();
 
-	
+	if (isset($_SESSION['login']) &&($_SESSION['statut'])==1  )
+	                    { 
+			
 
         $v = new view();
 		$v->setViewBo("admin/options/homeCustom");
-		
+			}else{
+			echo"Impossible d'accéder à la page"; 
+		}
 
 
 	
@@ -584,7 +557,7 @@ public function commentaireListAction($args){
 public function updateReglementAction($args){
 
 		session_start();
-		if (isset($_SESSION['login']))
+		if (isset($_SESSION['login']) &&($_SESSION['statut'])==1  )
 	                    { 
 			
 			$v = new view();

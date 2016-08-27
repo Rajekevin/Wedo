@@ -19,12 +19,6 @@ class userController{
 
 		session_start();
 
-		 // Afficher les erreurs à l'écran
-	    ini_set('display_errors', 1);
-	    // Enregistrer les erreurs dans un fichier de log
-	    ini_set('log_errors', 1);
-	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 		$v = new view();
 		$v->setView("user/subscribe");
 		
@@ -52,14 +46,7 @@ class userController{
 	            $error = TRUE;
 	            $msg_error .= "Le login doit faire plus d'un caractère";
 	    	}
-	        /*if(strlen($this->surname)<2){
-	            $error = TRUE;
-	            $msg_error .= "<li>Le prénom doit faire plus d'un caractère";
-	        }
-	        if( $this->name === $this->surname){
-	            $error = TRUE;
-	            $msg_error .= "<li>Le prénom doit être différent du nom";
-	        }*/
+	    
 	        if(!filter_var($args['email'], FILTER_VALIDATE_EMAIL))
 	        {
 	            $error = TRUE;
@@ -75,21 +62,7 @@ class userController{
 	            $error = TRUE;
 	            $msg_error .= " | Le mot de passe de confirmation ne correspond pas";
 	        }
-	        /*if(! isset($ville[$args['pays']]) )
-	        {
-	            $error = TRUE;
-	            $msg_error .= "<li>Votre ville n'existe pas";
-	        }*/       
-
-	        
-	        //gestion du captcha
-
-	       /* $code = strtoupper($code);
-	        if( $code != $captcha ) 
-	        {
-	           $error = TRUE;
-	           $msg_error .= "<li>Le code est incorrect";
-	        }*/	      
+	         
 	        $now = new DateTime();
 
 
@@ -385,12 +358,7 @@ public function loginAction($args)
 	{
 		session_start();
 
-		   // Afficher les erreurs à l'écran
-	    ini_set('display_errors', 1);
-	    // Enregistrer les erreurs dans un fichier de log
-	    ini_set('log_errors', 1);
-	    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-	    ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
+	
 		$v = new view();
 		$v->setView("user/profil");
 
@@ -399,19 +367,7 @@ public function loginAction($args)
 
 		$var = implode ($args);
 
-		// $thisuser = new membre();
-	 //    $tab= $thisuser->getOneBy(['id'=>$_SESSION['id']]);
 
-	 //    $_SESSION['avatar'] = $tab['avatar'];
-		// $_SESSION['login'] = $tab['login'];
-		// $_SESSION['token'] = $tab['token'];
-		// $_SESSION['statut'] = $tab['statut'];
-		// $_SESSION['mail'] = $tab['mail'];
-		// $_SESSION['date_inscription'] = $tab['date_inscription'];
-		// $_SESSION['ville'] = $tab['ville'];
-
-
-		
 		
 		
 		$user = membre::findBy("login", $args['login'], "string");

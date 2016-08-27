@@ -37,20 +37,6 @@ class indexController{
 
 
 
-		// var_dump($article);
-		
-		// // var_dump($article->getId());
-
-		// foreach ($article as $unArticle) {
-
-			
-		// 	$tabArticles[$unArticle->getIdCategory()] = $unArticle;
-		// }
-
-		// var_dump($unArticle);
-		// $v->assign('articlelist',$tabArticles);
-
-
 	
 		$v->assign('articlelist',$article);
 
