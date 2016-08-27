@@ -142,6 +142,24 @@ require('lib/PHPMailer/class.phpmailer.php');
 		}
 	}
 
+
+	public function setViewError($view, $layout="errorTemplate"){
+		$path_view = "views/".$view.".php";
+		$path_template = "views/".$layout.".php";
+		if (file_exists($path_view)) {
+			$this->view=$path_view;
+			if (file_exists($path_template)) {
+				$this->template=$path_template;
+			}
+			else{
+				die("Erreur, le template n'existe pas");
+			}
+		}
+		else{
+			die("Erreur, la vue n'existe pas");
+		}
+	}
+
 	public function assign($key, $value){
 		$this->data[$key]=$value;
 	}

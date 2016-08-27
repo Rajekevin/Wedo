@@ -31,23 +31,6 @@ class indexController{
 
 		$article = $a->getAllBy([],["id"=>"DESC"],3);
 
-		
-
-
-
-		// var_dump($article);
-		
-		// // var_dump($article->getId());
-
-		// foreach ($article as $unArticle) {
-
-			
-		// 	$tabArticles[$unArticle->getIdCategory()] = $unArticle;
-		// }
-
-		// var_dump($unArticle);
-		// $v->assign('articlelist',$tabArticles);
-
 
 	
 		$v->assign('articlelist',$article);
@@ -74,9 +57,19 @@ class indexController{
 
 
 
+		public function errorAction($args){
+		session_start();
+		
+    
+	   
+	    
+   
+		$v = new view();
+		$v->setViewError("error");
 
 
 
+	}
 
 
 }
