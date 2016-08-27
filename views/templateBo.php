@@ -25,7 +25,9 @@
 					</a>
 				</div>
 				<div id="Logout" class="col-3 fRight">
-					<a href=" <?= LINK.'index/deconnexion'?>">
+					<a href=" <?= LINK.'admin/deconnexion'?>">
+
+
 					<i class="fa fa-power-off" aria-hidden="true"></i>
 					DECONNEXION</a>
 				</div> 			
