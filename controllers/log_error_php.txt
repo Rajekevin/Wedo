@@ -2464,3 +2464,87 @@
 [26-Aug-2016 18:57:41 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
 [26-Aug-2016 18:57:41 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
 [26-Aug-2016 18:57:41 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 415
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 415
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Notice:  Undefined variable: idArticle in C:\wamp\www\wedo\views\article\article.php on line 200
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 415
+[27-Aug-2016 10:46:44 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:46:44 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 415
+[27-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:47:00 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 415
+[27-Aug-2016 10:47:00 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:47:00 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:48:49 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 419
+[27-Aug-2016 10:48:49 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:48:49 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 419
+[27-Aug-2016 10:48:49 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:48:49 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:51:39 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 422
+[27-Aug-2016 10:51:39 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:51:39 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:51:39 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:51:39 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:51:39 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:51:39 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:51:40 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 422
+[27-Aug-2016 10:51:40 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:51:40 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:51:40 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:51:40 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:51:40 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:51:40 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:58:07 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 428
+[27-Aug-2016 10:58:07 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127
+[27-Aug-2016 10:58:07 Europe/Paris] PHP Notice:  Undefined variable: foo in C:\wamp\www\wedo\views\article\article.php on line 428
+[27-Aug-2016 10:58:07 Europe/Paris] PHP Stack trace:
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   1. {main}() C:\wamp\www\wedo\index.php:0
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   2. articleController->indexAction() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   3. view->__destruct() C:\wamp\www\wedo\index.php:28
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   4. include() C:\wamp\www\wedo\core\view.class.php:151
+[27-Aug-2016 10:58:07 Europe/Paris] PHP   5. include() C:\wamp\www\wedo\views\template.php:127

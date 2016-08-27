@@ -291,6 +291,11 @@ $idArticle=$tab['id'];
 			<div class='commentaire'>
 				<!-- <h2>Commentaires</h2> -->
 				<p> Laissez un commentaire ici </p>
+
+	
+
+<link rel="canonical"
+  href="https://dev.twitter.com/web/tweet-button">
 				<hr class="sep-foot">
 				<div class='col-m-12'>
 					<div class="col-12">
