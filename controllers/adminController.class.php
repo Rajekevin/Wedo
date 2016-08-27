@@ -67,6 +67,16 @@ class adminController{
 	}
 }
 
+	public function deconnexionAction($args){
+		session_start();
+		unset($_SESSION['id']);
+		unset($_SESSION['login']);
+		unset($_SESSION['token']);
+		
+		header('Location: '.WEBROOT);
+	}
+
+
 
 
 
