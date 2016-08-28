@@ -1398,6 +1398,8 @@ input[type="text"], input[type="password"], input[type="date"] {
     margin-top: 13px;
     padding-left: 10px;
 }
+
+
  
 .divImg >.hoverImg, .divImg:hover > .hoverImg{
 -webkit-transition-duration: 0.5s;
