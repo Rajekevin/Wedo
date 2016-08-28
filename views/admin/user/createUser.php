@@ -78,7 +78,7 @@
 
      <tr>
     <td><label>Date de Naissance</label></td>
-    <td><input type="date" name="birth" placeholder="jj/mm/aaaa" value="<?php echo $tab['birth']; ?>"></tr><br />
+    <td><input type="date" name="birth" required="" placeholder="jj/mm/aaaa" value="<?php echo $tab['birth']; ?>"></tr><br />
 
      <tr>
     <td><label> Statut </label> </td>
