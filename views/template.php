@@ -155,13 +155,17 @@ if (isset($_GET['accept-cookies'])) {
 
                 <div class="footer-icons">
 
-                    <a href="https://www.facebook.com/WEDO-1704124243137727/"><li class="facebook"></li></a>
-                    <a href="https://twitter.com/WedoAwesome"><li class="twitter"></li></a>
-                    <a href="https://www.instagram.com/wedoawesomeofficial/"><li class="instagram"></li></a>
-                    <a href="https://plus.google.com/105054521400131253436/posts"><li class="google"></li></a>
+                
                   <!--   <a href="#"><li class="youtube"></li></a> -->
 
 
+        <div id="socialicons">
+                <p><a>Suivez-nous</a></p>
+            <a class="icon" href="https://twitter.com/WedoAwesome" title="Follow with Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="icon" href="https://www.facebook.com/WEDO-1704124243137727/" title="Follow with Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="icon" href="https://www.instagram.com/wedoawesomeofficial/" title="Follow with Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a class="icon" href="https://plus.google.com/105054521400131253436/posts" title="Follow with Google Plus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true" ></i></a>
+        </div>
 
                       <a href="<?= WEBROOT; ?>/rss/feed/rssWedo" class="rss" target="_blank">
                             <i class="fa fa-rss-square" aria-hidden="true" style="color: white;"></i>

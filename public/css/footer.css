@@ -189,6 +189,28 @@
 }
 
 
+
+        #socialicons .icon{
+    color: MAIN_COLOR;
+    border: 1px solid #CFCFCF;
+    display: inline-block;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 1px 8px;
+    -webkit-border-radius: 17px; 
+    -moz-border-radius: 17px; 
+    border-radius: 17px; 
+}
+#socialicons .icon:hover{
+    color: HOVER_COLOR;
+    border: 1px solid #CFCFCF;
+}
+
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 1000px) {
