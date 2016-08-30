@@ -14,14 +14,18 @@
 			<span>Ne perdez pas votre temps, rejoignez-nous sur les réseaux sociaux :</span></p>
 			
 		<div class="icons">
-		<p>Follow us on:</p>
+		<p>Suivez-nous :</p>
 		  <ul>
-		  	 <li><a href="#"><img src="web/images/img1.png"></a></li>
-		     <li><a href="#"><img src="web/images/img2.png"></a></li>
-		     <li><a href="#"><img src="web/images/img3.png"></a></li>
-		     <li><a href="#"><img src="web/images/img4.png"></a></li>
-		     <li><a href="#"><img src="web/images/img5.png"></a></li>
+		  	 <li>
+		  <a class="icon" href="https://twitter.com/WedoAwesome" title="Follow with Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		     <li><a class="icon" href="https://www.facebook.com/WEDO-1704124243137727/" title="Follow with Facebook" target="_blank"><i class="fa fa-facebook"></i></a><</li>
+		     <li><a class="icon" href="https://www.instagram.com/wedoawesomeofficial/" title="Follow with Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		     <li> <a class="icon" href="https://plus.google.com/105054521400131253436/posts" title="Follow with Google Plus" target="_blank"><i class="fa fa-google-plus" aria-hidden="true" ></i></a></li>
+		     
 		  </ul>	
+
+
+		  
 	   </div>
    </div>
 	<div class="footer">
