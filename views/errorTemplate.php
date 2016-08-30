@@ -7,6 +7,7 @@
 	
 		<link rel="icon" type="image/png" href="<?= WEBROOT; ?>/public/img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/error.css">
+		 <link rel="stylesheet" href="<?= WEBROOT; ?>/public/css/font-awesome/css/font-awesome.min.css" > 
 	
 		
 
