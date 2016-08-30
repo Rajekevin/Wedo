@@ -100,7 +100,7 @@ if(isset($msg_error)){
 
 
  
-   <p>En cliquant ci-dessous, vous acceptez nos <a href="#">Conditions Generales d'Utilisation (CGU) </a> <input type="checkbox" id="agree" required />.</p>
+   <p>En cliquant ci-dessous, vous acceptez nos <a href="http://wedo-awesome.herokuapp.com/reglement">Conditions Generales d'Utilisation (CGU) </a> <input type="checkbox" id="agree" required />.</p>
  <!--   <a href="#"  class="button">Inscription</a> -->
 
    <input id="subscribe" type="submit" value="Inscription"  >
