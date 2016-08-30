@@ -169,23 +169,42 @@
 }
 
 .facebook{
-    background-image: url(../img/facebook.png) ;
+    background-image: url(../img/social-icons/facebook.png) ;
 }
 
 .twitter{
-    background-image: url(../img/twitter.png) ;
+    background-image: url(../img/social-icons/twitter.png) ;
 }
 
 .instagram{
-    background-image: url(../img/instagram.png) ;
+    background-image: url(../img/social-icons/instagram.png) ;
 }
 
 .google{
-    background-image: url(../img/google.png) ;
+    background-image: url(../img/social-icons/google.png) ;
 }
 
-.youtube{
-    background-image: url(../img/youtube.png) ;
+#socialicons {
+    text-align: center;
+}
+#socialicons .icon{
+    color: MAIN_COLOR;
+    border: 1px solid #CFCFCF;
+    display: inline-block;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 1px 8px;
+    -webkit-border-radius: 17px; 
+    -moz-border-radius: 17px; 
+    border-radius: 17px; 
+}
+#socialicons .icon:hover{
+    color: HOVER_COLOR;
+    border: 1px solid #CFCFCF;
 }
 
 
