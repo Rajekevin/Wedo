@@ -65,7 +65,7 @@ class commentaire extends basesql{
      	$comment->setNom_User($_SESSION['login']);
      	$comment->setCommentaire(strip_tags($commentaire));
      	$comment->setDate($date);
-     	//A remplacer par l'id de l'article - dynamiquement
+     	
      	$comment->setID_Article($idArticle);
      	$comment->save();
 
@@ -74,9 +74,9 @@ class commentaire extends basesql{
      			
      		$email = new email();		
 
-     		// $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 	
+     		$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 	
 
-     		$url = 'http://localhost/wedo/index/a?id='.$idArticle;
+     		$url = $monUrl;
 			// //On renseigne le sujet et le message de l'email
 			$email->setSujet("Un internaute à Commenté sur Wedo");
 			 $email->setDestinataires('wedo.media.social@gmail.com');

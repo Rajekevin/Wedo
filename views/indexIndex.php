@@ -22,7 +22,7 @@
 
 
                         <p class="paragraphe"><a href="#"></a></p><img class="img_about"></img><p></p>
-                        test
+                        
                         Voyez comme il bouge notre mascotte Wedo, pour prouvez que vous l'aimez utilisez #WeLoveWedo !
                             <br/>Né en Septembre 2015 sous l’impulsion de quatre passionnés qui souhaitaient partagés leurs passions sportives. <br/>Wedo a pour objectif de devenir la référence de la Musculation/Fitness.
                              Dès ses débuts, Wedo  s’est attaché à rassembler tous les passionés sportives autour d'un seul et même Hashtag #Wedo.
