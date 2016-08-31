@@ -309,7 +309,7 @@ $idArticle=$tab['id'];
 
 						if(isset($sendCommentaire)){
 						 echo $sendCommentaire;
-						   echo" <meta http-equiv='refresh' content='2;$title' />";
+						   echo" <meta http-equiv='refresh' content='2;$url' />";
 						}
 
 					if(isset($msg)){
