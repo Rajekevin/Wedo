@@ -21,8 +21,8 @@
   <p class="sousTitleTB">Wedo Dashboard va vous aider à prendre en main votre site.</p>
   <div class="col-12" style="padding: 0;">
     <div class="col-3 debut">
-      <h3>Theme</h3>
-      <a href="<?= LINK.'/admin/themeCustom'; ?>" class="personnalize">Personnalisez votre site</a>
+      <h3>Mentions Légales</h3>
+      <a href="<?= LINK.'/admin/themeCustom'; ?>" class="personnalize">Mettre à jours les Mentions Légales</a>
     </div>
     <div class="col-3 debut">
       <h3>Administration</h3>
@@ -35,7 +35,7 @@
     <div class="col-3 debut">
       <h3>Plus d'actions :</h3>
       <ul>
-        <li><a><i class="fa fa-list-alt" aria-hidden="true"></i> Gerer les menus</a></li>
+       
         <li><a href="<?= LINK.'admin/articlelist'; ?>"><i class="fa fa-file-text" aria-hidden="true"></i> Gerer les articles</a></li>
         <li><a href="<?= LINK.'/admin/commentairelist'; ?>"><i class="fa fa-comments" aria-hidden="true"></i> Moderer les commentaires</a></li>
       </ul>
