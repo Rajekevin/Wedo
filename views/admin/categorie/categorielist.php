@@ -52,7 +52,7 @@
                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     </a>';
             ?>
-              <?php  if ($id==1||$id==2){ ?>
+              <?php  if ($id==1||$id==2||$id==3){ ?>
 
      
      <?php }else{ ?>  
