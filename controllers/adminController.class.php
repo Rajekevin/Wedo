@@ -12,9 +12,7 @@ class adminController{
 		session_start();
 
 	
-	    
-
-		echo"Vous n'avez pas accès à cette partie";
+	 
 
 	if(isset($_SESSION['id']) && isset($_SESSION['token']) && isset($_SESSION['statut']) && isset($_SESSION['login'])){
 
