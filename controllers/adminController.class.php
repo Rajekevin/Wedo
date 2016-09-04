@@ -62,6 +62,9 @@ class adminController{
 		 	}	
   
 
+	}else{
+		
+		header('Location:  http://wedo-awesome.herokuapp.com/wedo/index/error');
 	}
 }
 
