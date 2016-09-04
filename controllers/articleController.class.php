@@ -207,7 +207,7 @@ public function showAction($args)
 			$v->setViewError("error");
 		}else{
 		$idCat = $title->getId();
-		echo $idCat;
+
 		
 		$v->assign('idCat',$idCat );
 		$a = new article();

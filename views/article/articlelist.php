@@ -26,7 +26,7 @@
 
                     <p><?php 
                     $nbArticles= count($articles);
-                    if($nbArticles > 1) {
+                    if($nbArticles >= 1) {
                       print_r($nbArticles." articles");
                       ?>
                 
