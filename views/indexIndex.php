@@ -117,7 +117,7 @@ function format_url($str)
 
                     
                   <div class="intern_sportif">
-                    <div class="logo_sportif"><img alt="<?= $value['description']; ?>"  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div>
+                    <div class="logo_sportif"><img alt="<?= $value['description']; ?>"  src="../public/img/article/<?= $value['img']; ?>" /></div>
                     <h3><a href="<?= $value['url'] ?>"><?= $value['title']; ?></a></h3>
                     <a class="Wedo_Button" href="<?= $value['url'] ?>">J'aime</a>
                   </div>
@@ -137,10 +137,10 @@ function format_url($str)
                 <div class="article">
                     <center><i><h4><?= $value['title']; ?></h4></i> </center> 
 
-                    <div class="logo_article"><img alt="<?= $value['description']; ?>" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div> 
+                    <div class="logo_article"><img alt="<?= $value['description']; ?>" src="../public/img/article/<?= $value['img']; ?>" /></div> 
                     <a href="<?= $value['url'] ?>">
                     <div class="divImageZoom">
-                    <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
+                    <img class="top" src="../public/img/article/<?= $value['img']; ?>" />
                     </div>
                     </a>
                     
