@@ -43,9 +43,7 @@
 
 
 
-<!-- <section class="articles grey"  >
-    <div class="content">
-       <!--  <h2>Musculation</h2> -->
+
     
 
             <?php
@@ -60,16 +58,11 @@ function format_url($str)
     return $str;
     }
 
-    // $url=format_url($value['title']);
+   
 
 ?>
 
-          
-<!--                         <div class="lineclear"></div>
-            <a class="Wedo_Button see_more white" href="">Voir tous les articles Musculation</a>
-        </div>
-    </div>
-</section> -->
+
 
 
 
