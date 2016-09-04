@@ -66,7 +66,7 @@ if (isset($_GET['accept-cookies'])) {
     <header class="scroll">
         <div class="content">
             <div class="logo"><a href="/wedo/index">
-            <img src="<?= WEBROOT; ?>public/img/wedo/logo.gif" alt="Wedo Logo"><p>It's time to be awesome !</p></a></div>
+            <img src="../public/img/wedo/logo.gif" alt="Wedo Logo"><p>It's time to be awesome !</p></a></div>
             <nav>
                 <ul>   <?php
                             if (isset($_SESSION['login']))
@@ -223,7 +223,7 @@ if (isset($_GET['accept-cookies'])) {
 
 
                     <div>
-                        <input placeholder="Prenom" type="text" name="firstname" id="firstname"  required=""tabindex="2" />
+                        <input placeholder="Prenom" type="text" name="firstname" id="firstname"  required=""  tabindex="2" />
                         <div id="email-error" class="error"></div>
                     </div>
 
