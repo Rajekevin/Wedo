@@ -26,9 +26,9 @@ if (isset($_GET['accept-cookies'])) {
         <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
         <link rel="stylesheet" type="text/css" href="../public/css/footer.css" />
         <link rel="stylesheet" type="text/css" href="../public/css/form.css" />
-         <link rel="stylesheet" type="text/css" href="../public/css/membre.css" />
-        <link rel="stylesheet" type="text/css" href="../public/css/cookie.css" />
-        <link rel="stylesheet" href="../public/css/font-awesome/css/font-awesome.min.css" > 
+         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/membre.css" />
+        <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/cookie.css" />
+        <link rel="stylesheet" href="<?= WEBROOT; ?>/public/css/font-awesome/css/font-awesome.min.css" > 
 
 
 
