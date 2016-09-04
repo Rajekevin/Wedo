@@ -7,7 +7,7 @@
                     <center><i><h2><?= $value['title']; ?></h2></i> </center> 
 
                     <div class="logo_article"><img  src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" /></div> 
-                    <a href="<?= ARTICLE.$value['title'] ?>">
+                    <a href="<?= $value['url'] ?>">
                     <div class="divImageZoom">
                     <img class="top" src="<?= WEBROOT; ?>public/img/article/<?= $value['img']; ?>" />
                     </div>
