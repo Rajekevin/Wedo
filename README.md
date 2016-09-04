@@ -3,7 +3,7 @@ Wedo Version 1.0.0
 It's time to be awesome !
 
 ======
-**Wedo is a fully customisable CMS from scratch in PHP*. 
+**Wedo is a website based on Musculation and Fitness*. 
 
 
 
