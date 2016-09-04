@@ -80,11 +80,11 @@ if (isset($_GET['accept-cookies'])) {
 
                     <li><a class="js-scrollTo" href="<?= LINK; ?>user/deconnexion">Deconnexion</a></li>
                     <li>
-                    <a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Musculation">Musculation</a>
+                    <a class="js-scrollTo" href="#Musculation">Musculation</a>
                       
 
                     </li>
-                    <li><a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Fitness">Fitness</a></li>
+                    <li><a class="js-scrollTo" href="<?= WEBROOT; ?>index#Fitness">Fitness</a></li>
                  <!--    <li><a href="">Articles</a>
                          <ul class="sous_menu">
                             <li><a href="">Musculation</a></li>
@@ -102,10 +102,10 @@ if (isset($_GET['accept-cookies'])) {
                             {
                                 ?>    
                                 <li>
-                                <a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Musculation">Musculation</a>
+                                <a class="js-scrollTo" href="#Musculation">Musculation</a>
 
                     </li>
-                    <li><a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Fitness">Fitness</a></li>                   
+                    <li><a class="js-scrollTo" href="<?= WEBROOT; ?>index#Fitness">Fitness</a></li>                   
 
                     <li><a class="js-scrollTo" href="<?= WEBROOT; ?>user/subscribe">Inscription</a></li>
                     <li><a href="<?= WEBROOT; ?>user/login">Connexion</a></li>
@@ -141,7 +141,7 @@ if (isset($_GET['accept-cookies'])) {
         <a href="#" class="footer__logo"></a>
 
                 <p class="footer-links">
-                    <a href="<?= LINK.'index'; ?>">Acceuil</a>
+                    <a href="<?= LINK.'index'; ?>">Accueil</a>
                     ·
                     <a href="<?= LINK.'article/show/musculation'; ?>">Musculation</a>
                     ·
