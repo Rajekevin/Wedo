@@ -101,7 +101,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['description'
 				echo "L'upload s'est bien passé !";
 			}
 
-			var_dump($_FILES['img']['name']);
+			
 
 			$a->setImg($_FILES['img']['name']);
 			
