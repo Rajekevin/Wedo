@@ -80,11 +80,11 @@ if (isset($_GET['accept-cookies'])) {
 
                     <li><a class="js-scrollTo" href="<?= LINK; ?>user/deconnexion">Deconnexion</a></li>
                     <li>
-                    <a class="js-scrollTo" href="#Musculation">Musculation</a>
+                    <a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Musculation">Musculation</a>
                       
 
                     </li>
-                    <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>
+                    <li><a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Fitness">Fitness</a></li>
                  <!--    <li><a href="">Articles</a>
                          <ul class="sous_menu">
                             <li><a href="">Musculation</a></li>
@@ -102,13 +102,14 @@ if (isset($_GET['accept-cookies'])) {
                             {
                                 ?>    
                                 <li>
-                                <a class="js-scrollTo" href="#Musculation">Musculation</a>
+                                <a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Musculation">Musculation</a>
 
                     </li>
-                    <li><a class="js-scrollTo" href="#Fitness">Fitness</a></li>                   
+                    <li><a class="js-scrollTo" href="http://wedo-awesome.herokuapp.com/wedo/index#Fitness">Fitness</a></li>                   
 
                     <li><a class="js-scrollTo" href="<?= WEBROOT; ?>user/subscribe">Inscription</a></li>
                     <li><a href="<?= WEBROOT; ?>user/login">Connexion</a></li>
+                    <li><a class="js-scrollTo" href="<?= LINK; ?>article/all">Article</a></li>
 
                         <?php
                             }
