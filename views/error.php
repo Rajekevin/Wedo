@@ -1,11 +1,4 @@
-<html>
-<head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
-</head>
-<body>
   <div class="wrap">
 	 <div class="main">
 		<h3>Wedo</h3>
@@ -29,8 +22,6 @@
 	   </div>
    </div>
 	<div class="footer">
-		<p>© Tout droit réservées par   <a href="">Wedo</a></p>
+		<p>© Tout droit réservées par   <a href="http://wedo-awesome.herokuapp.com/">Wedo</a></p>
     </div>
   </div>
-</body>
-</html>
