@@ -1,4 +1,4 @@
-<section class="articles homepage_articles">
+<section>
 <div class="content">
 <?php foreach ($articles as $key => $value): ?>
 	      <div class="article_list"> 
