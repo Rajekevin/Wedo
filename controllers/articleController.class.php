@@ -19,12 +19,12 @@ class articleController
 		$var = implode ($args);
 		$v->setView("article/article");
 
-		var_dump($var);
+		
 		
 		$a = new article();
 		$article = $a->getAllBy([],[],'');
 
-		var_dump($article);
+		
 		$v->assign('article',$article);
 
 
@@ -34,16 +34,16 @@ class articleController
 		
 		//Affichage de l'article demandé
 		$article = new article();
-		var_dump($article);
+		
 		$thisArticle = $article->getOneBy(['url'=>$monUrl]);
-		var_dump($thisArticle);
+	
 		$v->assign('thisArticle',$thisArticle);
-		var_dump($thisArticle);
+		
 		
 	
 		$a = new article();
 		$url = article::findBy("url", $monUrl , "string");
-		var_dump($url);		
+			
 		if($url==false)
 		{
 			
@@ -108,7 +108,7 @@ class articleController
 			
 			
 
-			var_dump($_POST['content']);
+			
 		$errors = validator::check($form["struct"], $args);
 		$commentaire = new commentaire();
 		$commentaire->envoieCommentaire($_POST['idArticle']);
@@ -218,7 +218,7 @@ class articleController
 			
 			
 
-			var_dump($_POST['content']);
+			
 		$errors = validator::check($form["struct"], $args);
 		$commentaire = new commentaire();
 		$commentaire->envoieCommentaire($_POST['idArticle']);

@@ -11,11 +11,11 @@ class adminController{
 	public function indexAction($args){
 		session_start();
 
-		echo"Vous n'avez pas accès à cette partie";
+	
 
 	if(isset($_SESSION['id']) && isset($_SESSION['token']) && isset($_SESSION['statut']) && isset($_SESSION['login'])){
 
-		echo"VOUS NAVEZ PAS ACCES";
+		
 		 	
 		 	if ($_SESSION['login'] && $_SESSION['statut']== 1) {
 
