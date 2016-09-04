@@ -196,7 +196,12 @@ class userController{
 			//envoie de l'email
 			$email->envoieEmail();
         	echo 'Bienvenue '.$args['login'].', vous allez recevoir un email pour valider votre compte';
-        	header('Location: '.WEBROOT);
+        	$welcome ='Bienvenue '.$args['login'].', vous allez recevoir un email pour valider votre compte';
+        	$v->assign('welcome',$welcome); 
+        	// header('Location: '.WEBROOT);
+
+
+			
 
 			}
 		}		
@@ -231,7 +236,9 @@ class userController{
 
 		         	$error = FALSE;
 					$msg_error= "Identifiants incorrects";
-
+					?>
+	<meta http-equiv="refresh" content="2;login" />
+<?php
 			//Si les inputs email et password sont initialisé
 			if(isset($args['email']) AND isset($args['pass'])){
 				

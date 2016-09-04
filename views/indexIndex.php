@@ -3,7 +3,8 @@
   
      <center><span class="header-title border-full relative">It's time to be awesome 
             
-    </span> </center>
+    </span> 
+ </center>
 
 
 </section>

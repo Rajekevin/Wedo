@@ -1,40 +1,25 @@
 
-  <!--       <script type="text/javascript">
 
-         
-          
 
+  <?php 
+
+if(isset($welcome)){
+?>
+<section class="banner_container" id="banner">
+<div id="welcome">
+  <center><span id="login" class="welcome-title  relative"><?php  echo $welcome; ?>
+  <meta http-equiv="refresh" content="3;<?php LINK ?>" />
             
+    </span>
 
-            // $('#subscribe').on('submit',function(){
+ </center>
+ </div>
 
-            //    alert('ou sont les putains');
-            //   var login = $('#login').val();
-
-            //    if(login=='')
-            //     {
-            //       $("#erreur").html('Le login doit faire plus dun caractère !');
-                  
-            //   }
-
-            //   alert("ok");
-
-
-            //   return false;
-            // });
-
-
-            $(function() { //shorthand document.ready function
-                alert('ok');
-              });
-          });
-          
-
-          </script> -->
-
-
-
-
+ </section>
+<?php
+ 
+}else{
+ ?>
 
 <section class="articles grey"  id="musculation">
     <div class="content">
@@ -44,7 +29,7 @@
        
         <div class="article_list">
 
-        	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
 <div class="testbox">
@@ -133,3 +118,5 @@ if(isset($msg_error)){
 // });
 
 </script>
+
+<?php } ?>
