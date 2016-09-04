@@ -63,7 +63,7 @@ if(isset($_POST['valider'])&& isset($_POST['title'])&&isset($_POST['auteur'])&&i
 			$a->setIdCategory($idCategory);
 
 			$a->setContenu($_POST['contenu']);
-			if(upload("img","img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)
+			if(upload("img","public/img/article/", array("png","jpg","gif", "bmp"),100000000000000000000,array(15420,15420))==true)
 				{
 
 					echo "L'upload s'est bien pasé !";
