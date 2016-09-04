@@ -23,7 +23,7 @@ if (isset($_GET['accept-cookies'])) {
         <meta name="description" content="It's time to be awesome !" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta property="og:image" content="<?= WEBROOT; ?>/public/img/wedo.png" />
-        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/footer.css" />
         <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/form.css" />
          <link rel="stylesheet" type="text/css" href="<?= WEBROOT; ?>/public/css/membre.css" />
