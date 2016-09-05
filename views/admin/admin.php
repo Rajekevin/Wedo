@@ -118,10 +118,10 @@
     <td>
       <?= $value['commentaire']; ?>
     </td>
-    <td>
+    
      
   <?php endforeach; ?>
-    </td>
+    
   </tr>
 </table>
 
