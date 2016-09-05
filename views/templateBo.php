@@ -111,7 +111,6 @@
 				
 				
 
-				<img src="<?= WEBROOT; ?>public/img/avatar/<?= $_SESSION['avatar']; ?>" width="90px" height="90px" />
 
 
 			
