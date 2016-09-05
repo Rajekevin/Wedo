@@ -119,11 +119,7 @@
       <?= $value['commentaire']; ?>
     </td>
     <td>
-       <li class="no">
-        <a>
-            Desapprouver et supprimer
-        </a>
-       </li>
+     
   <?php endforeach; ?>
     </td>
   </tr>
