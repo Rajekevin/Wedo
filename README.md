@@ -13,3 +13,5 @@ It's time to be awesome !
 * http://wedo-awesome.herokuapp.com/
 * email: social.media.wedo@gmail.com
 * Twitter: [@WedoAwesome](https://twitter.com/WedoAwesome "WedoAwesome on twitter")
+
+<p align="center"> Made from scratch with ❤ and 💪 </p>
